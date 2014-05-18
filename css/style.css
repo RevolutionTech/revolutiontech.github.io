@@ -22,7 +22,13 @@
 }
 
 .footer-links {
-  margin: 3em 0 0;
+  margin: 4.5em 0 0;
+}
+.footer-links a {
+  color: #000000;
+}
+.footer-links a:hover {
+  color: #ffffff;
 }
 .footer-links > li {
   margin-bottom: 0.2em;
