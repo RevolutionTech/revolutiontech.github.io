@@ -2125,10 +2125,6 @@ legend + .control-group {
   -moz-border-radius: 6px;
   border-radius: 6px;
 }
-.btn-large [class^="icon-"],
-.btn-large [class*=" icon-"] {
-  margin-top: 4px;
-}
 .btn-small {
   padding: 2px 10px;
   font-size: 13.6px;
