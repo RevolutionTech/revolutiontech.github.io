@@ -46,6 +46,10 @@
   width: 300px;
   margin-left: 1.5em;
 }
+.item-featured-wide {
+  width: 400px;
+  margin-left: 1.5em;
+}
 
 .item-description {
   font-size: 14px;
