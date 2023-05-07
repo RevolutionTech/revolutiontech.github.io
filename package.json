@@ -1,23 +1,33 @@
 {
   "name": "revolutiontech-react",
   "version": "1.0.0",
-  "description": "",
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "license": "UNLICENSED",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "clean": "rm dist/bundle.js",
+    "clean": "rimraf .parcel-cache dist",
     "start": "parcel src/index.html",
-    "build-prod": "parcel build src/index.html"
+    "build": "parcel build src/index.html",
+    "typecheck": "tsc --noemit"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-brands-svg-icons": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "lodash": "^4.17.21",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-responsive-carousel": "^3.2.23",
+    "react-router": "^6.11.1",
+    "react-router-dom": "^6.11.1",
+    "styled-components": "^5.3.10"
   },
   "devDependencies": {
+    "@parcel/resolver-glob": "^2.8.3",
+    "@types/lodash": "^4.14.194",
     "@types/react": "^18.0.37",
     "@types/react-dom": "^18.0.11",
+    "@types/styled-components": "^5.1.26",
     "parcel": "^2.8.3",
     "prettier": "^2.8.7",
     "process": "^0.11.10"

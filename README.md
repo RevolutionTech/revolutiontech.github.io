@@ -1,31 +1,17 @@
-# revolutiontech-react
+# revolutiontech.github.io
 
-Empty project.
+#### Revolution Technologies website
 
-## Building and running on localhost
+## Installation
 
-First install dependencies:
+    yarn install
 
-```sh
-npm install
-```
+## Development
 
 To run in hot module reloading mode:
 
-```sh
-npm start
-```
+    yarn start
 
 To create a production build:
 
-```sh
-npm run build-prod
-```
-
-## Running
-
-Open the file `dist/index.html` in your browser
-
-## Credits
-
-Made with [createapp.dev](https://createapp.dev/)
+    yarn run build
