@@ -1,8 +1,7 @@
 import * as React from "react";
 import keyBy from "lodash/keyBy";
 
-import EspritsLabyrinthSetup from "../assets/download/esprits-labyrinth-setup.exe";
-import { Platform, ProjectLinkType, Project } from "./project";
+import { Platform, Project } from "./project";
 
 export const PROJECT_LIST: Project[] = [
   {
@@ -35,14 +34,14 @@ export const PROJECT_LIST: Project[] = [
     platforms: [Platform.WEB],
     minPlayers: 2,
     maxPlayers: 6,
-    links: [
+    additionalLinks: [
       {
-        type: ProjectLinkType.EXTERNAL,
         url: "https://letterjoy.revolutiontech.ca/",
+        description: "Play Letter Joy",
       },
       {
-        type: ProjectLinkType.SOURCE,
         url: "https://github.com/RevolutionTech/letter-joy",
+        description: "View Source Code",
       },
     ],
   },
@@ -59,10 +58,10 @@ export const PROJECT_LIST: Project[] = [
       </>
     ),
     platforms: [Platform.WEB, Platform.LINUX],
-    links: [
+    additionalLinks: [
       {
-        type: ProjectLinkType.SOURCE,
         url: "https://github.com/RevolutionTech/perdiem-django",
+        description: "View Source Code",
       },
     ],
   },
@@ -84,13 +83,8 @@ export const PROJECT_LIST: Project[] = [
     platforms: [Platform.WINDOWS],
     minPlayers: 1,
     maxPlayers: 1,
-    links: [
+    additionalLinks: [
       {
-        type: ProjectLinkType.DOWNLOAD,
-        url: EspritsLabyrinthSetup,
-      },
-      {
-        type: ProjectLinkType.EXTERNAL,
         url: "https://www.youtube.com/watch?v=8udWR2oizvs",
         description: "Watch the Trailer",
       },

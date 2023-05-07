@@ -7,6 +7,9 @@ import {
   faAndroid,
 } from "@fortawesome/free-brands-svg-icons";
 
+import EXE_DOWNLOADS from "../assets/download/*.exe";
+import SWF_DOWNLOADS from "../assets/download/*.swf";
+import ZIP_DOWNLOADS from "../assets/download/*.zip";
 import JPG_SCREENSHOTS from "../assets/img/project/*/*.jpg";
 import PNG_SCREENSHOTS from "../assets/img/project/*/*.png";
 
@@ -33,26 +36,6 @@ export const PLATFORM_TO_FA_ICON: Record<Platform, IconDefinition> = {
   [Platform.ANDROID]: faAndroid,
 };
 
-export enum ProjectLinkType {
-  DOWNLOAD,
-  EXTERNAL,
-  SOURCE,
-}
-
-export const projectLinkDefaultCopy = (
-  projectName: string,
-  linkType: ProjectLinkType
-) => {
-  switch (linkType) {
-    case ProjectLinkType.DOWNLOAD:
-      return `Download ${projectName}`;
-    case ProjectLinkType.EXTERNAL:
-      return `Try ${projectName}`;
-    case ProjectLinkType.SOURCE:
-      return "View Source Code";
-  }
-};
-
 export const projectScreenshots = (projectSlug: string) => [
   ...Object.values(
     (JPG_SCREENSHOTS as Record<string, string[]>)[projectSlug] ?? {}
@@ -62,10 +45,14 @@ export const projectScreenshots = (projectSlug: string) => [
   ),
 ];
 
+export const projectDownload = (projectSlug: string) =>
+  (EXE_DOWNLOADS as Record<string, string>)[projectSlug] ??
+  (ZIP_DOWNLOADS as Record<string, string>)[projectSlug] ??
+  (SWF_DOWNLOADS as Record<string, string>)[projectSlug];
+
 type ProjectLink = {
-  type: ProjectLinkType;
   url: string;
-  description?: string;
+  description: string;
 };
 
 export type Project = {
@@ -76,5 +63,5 @@ export type Project = {
   platforms: Platform[];
   minPlayers?: number;
   maxPlayers?: number;
-  links: ProjectLink[];
+  additionalLinks?: ProjectLink[];
 };

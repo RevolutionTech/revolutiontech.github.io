@@ -7,8 +7,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { NotFound } from "../nav/NotFound";
 import { PlatformList } from "./PlatformList";
 import { PlayerCount } from "./PlayerCount";
-import { projectLinkDefaultCopy } from "./projectLink";
-import { ProjectLinkType, projectScreenshots } from "./project";
+import { projectScreenshots, projectDownload } from "./project";
 import { PROJECT_MAP } from "./AllProjects";
 
 const ProjectDetailsBox = styled.div`
@@ -71,6 +70,7 @@ export const ProjectDetails = () => {
   }
 
   const screenshots = projectScreenshots(project.slug);
+  const download = projectDownload(project.slug);
   return (
     <ProjectDetailsBox>
       <h1>
@@ -103,17 +103,19 @@ export const ProjectDetails = () => {
       </ProjectCarousel>
       <p>{project.description}</p>
       <ProjectButtons>
-        {project.links.map((link, i) => (
+        {download && (
+          <ProjectButton href={download} isPrimary>
+            Download {project.name}
+          </ProjectButton>
+        )}
+        {project.additionalLinks?.map((link, i) => (
           <ProjectButton
             key={link.url}
             href={link.url}
-            {...(link.type === ProjectLinkType.DOWNLOAD
-              ? {}
-              : { target: "_blank" })}
-            isPrimary={i === 0}
+            target="_blank"
+            isPrimary={!download && i === 0}
           >
-            {link.description ??
-              projectLinkDefaultCopy(project.name, link.type)}
+            {link.description}
           </ProjectButton>
         ))}
       </ProjectButtons>
