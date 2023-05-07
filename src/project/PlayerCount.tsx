@@ -19,11 +19,14 @@ const playerCountText = (minPlayers?: number, maxPlayers?: number): string => {
   return "";
 };
 
-export const PlayerCount = (props: PlayerCountProps) => (
-  <>
-    <FontAwesomeIcon
-      icon={(props.maxPlayers ?? props.minPlayers) === 1 ? faUser : faUsers}
-    />{" "}
-    {playerCountText(props.minPlayers, props.maxPlayers)}
-  </>
-);
+export const PlayerCount = (props: PlayerCountProps) => {
+  const text = playerCountText(props.minPlayers, props.maxPlayers);
+  return text ? (
+    <>
+      <FontAwesomeIcon
+        icon={(props.maxPlayers ?? props.minPlayers) === 1 ? faUser : faUsers}
+      />{" "}
+      {text}
+    </>
+  ) : null;
+};
