@@ -7,6 +7,9 @@ import {
   faAndroid,
 } from "@fortawesome/free-brands-svg-icons";
 
+import JPG_SCREENSHOTS from "../assets/img/project/*/*.jpg";
+import PNG_SCREENSHOTS from "../assets/img/project/*/*.png";
+
 export enum Platform {
   WEB,
   WINDOWS,
@@ -50,6 +53,11 @@ export const projectLinkDefaultCopy = (
   }
 };
 
+export const projectScreenshots = (projectSlug: string) => [
+  ...Object.values(JPG_SCREENSHOTS[projectSlug] ?? {}),
+  ...Object.values(PNG_SCREENSHOTS[projectSlug] ?? {}),
+];
+
 type ProjectLink = {
   type: ProjectLinkType;
   url: string;
@@ -64,6 +72,5 @@ export type Project = {
   platforms: Platform[];
   minPlayers?: number;
   maxPlayers?: number;
-  screenshots: string[];
   links: ProjectLink[];
 };

@@ -1,9 +1,6 @@
 import * as React from "react";
 import keyBy from "lodash/keyBy";
 
-import LetterJoyScreenshots from "../assets/img/project/letter-joy*.png";
-import PerDiemScreenshot from "../assets/img/project/perdiem.png";
-import EspritsLabyrinthScreenshots from "../assets/img/project/esprits-labyrinth*.jpg";
 import EspritsLabyrinthSetup from "../assets/download/esprits-labyrinth-setup.exe";
 import { Platform, ProjectLinkType, Project } from "./project";
 
@@ -38,7 +35,6 @@ export const PROJECT_LIST: Project[] = [
     platforms: [Platform.WEB],
     minPlayers: 2,
     maxPlayers: 6,
-    screenshots: Object.values(LetterJoyScreenshots),
     links: [
       {
         type: ProjectLinkType.EXTERNAL,
@@ -63,7 +59,6 @@ export const PROJECT_LIST: Project[] = [
       </>
     ),
     platforms: [Platform.WEB, Platform.LINUX],
-    screenshots: [PerDiemScreenshot],
     links: [
       {
         type: ProjectLinkType.SOURCE,
@@ -89,7 +84,6 @@ export const PROJECT_LIST: Project[] = [
     platforms: [Platform.WINDOWS],
     minPlayers: 1,
     maxPlayers: 1,
-    screenshots: Object.values(EspritsLabyrinthScreenshots),
     links: [
       {
         type: ProjectLinkType.DOWNLOAD,

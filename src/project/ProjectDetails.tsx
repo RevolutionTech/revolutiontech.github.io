@@ -9,7 +9,7 @@ import { NotFound } from "../nav/NotFound";
 import { PlatformList } from "./PlatformList";
 import { PlayerCount } from "./PlayerCount";
 import { projectLinkDefaultCopy } from "./projectLink";
-import { ProjectLinkType } from "./project";
+import { ProjectLinkType, projectScreenshots } from "./project";
 import { PROJECT_MAP } from "./AllProjects";
 
 const ProjectFacts = styled.div`
@@ -54,6 +54,7 @@ export const ProjectDetails = () => {
     return <NotFound />;
   }
 
+  const screenshots = projectScreenshots(project.slug);
   return (
     <>
       <Header>
@@ -75,12 +76,12 @@ export const ProjectDetails = () => {
       <ProjectCarousel
         showArrows
         showStatus={false}
-        showIndicators={project.screenshots.length > 1}
+        showIndicators={screenshots.length > 1}
         infiniteLoop
         showThumbs={false}
         autoPlay
       >
-        {project.screenshots.map((screenshot) => (
+        {screenshots.map((screenshot) => (
           <img key={screenshot} src={screenshot} />
         ))}
       </ProjectCarousel>

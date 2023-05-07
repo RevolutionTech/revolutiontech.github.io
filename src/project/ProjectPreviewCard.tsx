@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 import { PlatformList } from "./PlatformList";
 import { PlayerCount } from "./PlayerCount";
-import { Project } from "./project";
+import { Project, projectScreenshots } from "./project";
 
 const ProjectPreviewCardBox = styled(Link)`
   display: flex;
@@ -43,7 +43,7 @@ interface ProjectCardProps {
 }
 
 export const ProjectPreviewCard = ({ project }: ProjectCardProps) => {
-  const randomScreenshot = sample(project.screenshots);
+  const randomScreenshot = sample(projectScreenshots(project.slug));
   return (
     <ProjectPreviewCardBox to={`project/${project.slug}`}>
       <ProjectPreviewScreenshot src={randomScreenshot} alt={project.name} />
