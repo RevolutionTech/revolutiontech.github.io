@@ -54,8 +54,12 @@ export const projectLinkDefaultCopy = (
 };
 
 export const projectScreenshots = (projectSlug: string) => [
-  ...Object.values(JPG_SCREENSHOTS[projectSlug] ?? {}),
-  ...Object.values(PNG_SCREENSHOTS[projectSlug] ?? {}),
+  ...Object.values(
+    (JPG_SCREENSHOTS as Record<string, string[]>)[projectSlug] ?? {}
+  ),
+  ...Object.values(
+    (PNG_SCREENSHOTS as Record<string, string[]>)[projectSlug] ?? {}
+  ),
 ];
 
 type ProjectLink = {

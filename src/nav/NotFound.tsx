@@ -1,7 +1,10 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
+import styled from "styled-components";
 
-import { Header } from "../molecules/Header";
+const Header = styled.h1`
+  margin-top: 0;
+`;
 
 export const NotFound = () => (
   <>

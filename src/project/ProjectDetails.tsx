@@ -4,7 +4,6 @@ import styled from "styled-components";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-import { Header } from "../molecules/Header";
 import { NotFound } from "../nav/NotFound";
 import { PlatformList } from "./PlatformList";
 import { PlayerCount } from "./PlayerCount";
@@ -12,11 +11,21 @@ import { projectLinkDefaultCopy } from "./projectLink";
 import { ProjectLinkType, projectScreenshots } from "./project";
 import { PROJECT_MAP } from "./AllProjects";
 
+const ProjectDetailsBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  h1,
+  p {
+    margin: 0;
+  }
+`;
+
 const ProjectFacts = styled.div`
   display: flex;
   flex-direction: column;
   gap: 8px;
-  margin-bottom: 16px;
   font-size: 20pt;
 `;
 
@@ -56,10 +65,10 @@ export const ProjectDetails = () => {
 
   const screenshots = projectScreenshots(project.slug);
   return (
-    <>
-      <Header>
+    <ProjectDetailsBox>
+      <h1>
         {project.name} ({project.year})
-      </Header>
+      </h1>
       <ProjectFacts>
         <PlatformList platforms={project.platforms} full />
         {(project.minPlayers || project.maxPlayers) && (
@@ -101,6 +110,6 @@ export const ProjectDetails = () => {
           </ProjectButton>
         ))}
       </ProjectButtons>
-    </>
+    </ProjectDetailsBox>
   );
 };

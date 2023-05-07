@@ -46,7 +46,9 @@ export const ProjectPreviewCard = ({ project }: ProjectCardProps) => {
   const randomScreenshot = sample(projectScreenshots(project.slug));
   return (
     <ProjectPreviewCardBox to={`project/${project.slug}`}>
-      <ProjectPreviewScreenshot src={randomScreenshot} alt={project.name} />
+      {randomScreenshot && (
+        <ProjectPreviewScreenshot src={randomScreenshot} alt={project.name} />
+      )}
       <div>
         <ProjectPreviewTitle>
           <div>
