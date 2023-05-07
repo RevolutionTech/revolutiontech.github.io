@@ -30,8 +30,15 @@ const ProjectFacts = styled.div`
 `;
 
 const ProjectCarousel = styled(Carousel)`
+  .carousel.carousel-slider .slide {
+    background: rgba(0, 0, 0, 0.2);
+  }
+  .carousel.carousel-slider .slide img {
+    width: unset;
+    max-width: 100%;
+  }
   .carousel.carousel-slider .control-arrow {
-    background-color: #0003;
+    opacity: unset;
   }
 `;
 
