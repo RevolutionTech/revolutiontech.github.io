@@ -5,7 +5,7 @@
     "..."
   ],
   "transformers": {
-    "*.exe": [
+    "*.(exe|zip)": [
       "@parcel/transformer-raw"
     ]
   }

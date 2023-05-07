@@ -10,3 +10,7 @@ declare module "*.exe" {
   const content: any;
   export default content;
 }
+declare module "*.zip" {
+  const content: any;
+  export default content;
+}
