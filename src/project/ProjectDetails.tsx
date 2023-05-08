@@ -30,6 +30,9 @@ const ProjectFacts = styled.div`
 
 const ProjectCarousel = styled(Carousel)`
   .carousel.carousel-slider .slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: rgba(0, 0, 0, 0.2);
   }
   .carousel.carousel-slider .slide img {
