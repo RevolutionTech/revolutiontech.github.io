@@ -201,6 +201,223 @@ export const PROJECT_LIST: Project[] = [
     ],
   },
   {
+    name: "Evil Clutches",
+    slug: "evil-clutches",
+    visible: false,
+    year: 2006,
+    description: (
+      <>
+        In Evil Clutches, you control a dragon parent who must collect his/her
+        young from the evil boss. Watch out for demons which the boss will
+        launch at you without warning. There are also power-ups to help you
+        survive and collect your children.
+        <br />
+        <br />
+        <small>
+          Evil Clutches is one of the nine games Revolution Games did not
+          create. They were originally created by Mark Overmars, and Jacob
+          Habgood for <em>The Game Maker&apos;s Apprentice</em>.
+        </small>
+      </>
+    ),
+    platforms: [Platform.WINDOWS],
+    minPlayers: 1,
+    maxPlayers: 1,
+  },
+  {
+    name: "Galactic Mail",
+    slug: "galactic-mail",
+    visible: false,
+    year: 2006,
+    description: (
+      <>
+        Galactic Mail is a simple space-themed game where you must travel to all
+        of the moons on the screen to deliver all of the mail to each one in
+        order to pass the level. After all of the mail is delivered, you can
+        then travel to the planet to pass.
+        <br />
+        <br />
+        <small>
+          Galactic Mail is one of the nine games Revolution Games did not
+          create. They were originally created by Mark Overmars, and Jacob
+          Habgood for <em>The Game Maker&apos;s Apprentice</em>.
+        </small>
+      </>
+    ),
+    platforms: [Platform.WINDOWS],
+    minPlayers: 1,
+    maxPlayers: 1,
+  },
+  {
+    name: "Lazarus",
+    slug: "lazarus",
+    visible: false,
+    year: 2006,
+    description: (
+      <>
+        What would happen if an evil villain had access to a pit at the bottom
+        of machinery capable of dropping heavy blocks on top of you? Lazarus
+        would happen! Play as the friendly blob Lazarus as he tries to use the
+        blocks to his advantage puzzling his way out of the pit and stop the
+        machinery!
+        <br />
+        <br />
+        <small>
+          Lazarus is one of the nine games Revolution Games did not create. They
+          were originally created by Mark Overmars, and Jacob Habgood for{" "}
+          <em>The Game Maker&apos;s Apprentice</em>.
+        </small>
+      </>
+    ),
+    platforms: [Platform.WINDOWS],
+    minPlayers: 1,
+    maxPlayers: 1,
+  },
+  {
+    name: "Super Rainbow Reef",
+    slug: "super-rainbow-reef",
+    visible: false,
+    year: 2006,
+    description: (
+      <>
+        Memories of the classic Breakout should arise as you play through this
+        game. Super Rainbow Reef is similar to the classic game with a lot of
+        new features and of course brand new graphics and music to a reef theme.
+        <br />
+        <br />
+        <small>
+          Super Rainbow Reef is one of the nine games Revolution Games did not
+          create. They were originally created by Mark Overmars, and Jacob
+          Habgood for <em>The Game Maker&apos;s Apprentice</em>.
+        </small>
+      </>
+    ),
+    platforms: [Platform.WINDOWS],
+    minPlayers: 1,
+    maxPlayers: 1,
+  },
+  {
+    name: "Koala-BR8",
+    slug: "koala-br8",
+    visible: false,
+    year: 2006,
+    description: (
+      <>
+        Koala-BR8 is a very entertaining maze game which really makes you think.
+        You must control a group of koalas at one time, and they all must reach
+        an exit without a single one being killed. I intended on creating an
+        additional 6 levels of a higher difficulty, but that was never
+        completed.
+        <br />
+        <br />
+        <small>
+          Koala-BR8 is one of the nine games Revolution Games did not create.
+          They were originally created by Mark Overmars, and Jacob Habgood for{" "}
+          <em>The Game Maker&apos;s Apprentice</em>.
+        </small>
+      </>
+    ),
+    platforms: [Platform.WINDOWS],
+    minPlayers: 1,
+    maxPlayers: 1,
+  },
+  {
+    name: "Wingman Sam",
+    slug: "wingman-sam",
+    visible: false,
+    year: 2006,
+    description: (
+      <>
+        Grab a friend and take down the opposing planes in Wingman Sam! Fire at
+        the planes as they come to attack you in preparation for the final boss
+        battle. Be careful though, if one of you is lost in action, the game is
+        over.
+        <br />
+        <br />
+        <small>
+          Wingman Sam is one of the nine games Revolution Games did not create.
+          They were originally created by Mark Overmars, and Jacob Habgood for{" "}
+          <em>The Game Maker&apos;s Apprentice</em>.
+        </small>
+      </>
+    ),
+    platforms: [Platform.WINDOWS],
+    minPlayers: 2,
+    maxPlayers: 2,
+  },
+  {
+    name: "Tank War",
+    slug: "tank-war",
+    visible: false,
+    year: 2006,
+    description: (
+      <>
+        Tank War is a fun multi-player shooting game where you play as tanks.
+        Travel around the small maps to find your opponent and defeat them,
+        there are various power-ups available to use to defeat your opponent.
+        <br />
+        <br />
+        <small>
+          Tank War is one of the nine games Revolution Games did not create.
+          They were originally created by Mark Overmars, and Jacob Habgood for{" "}
+          <em>The Game Maker&apos;s Apprentice</em>.
+        </small>
+      </>
+    ),
+    platforms: [Platform.WINDOWS],
+    minPlayers: 2,
+    maxPlayers: 2,
+  },
+  {
+    name: "Tic-Tac-Toe",
+    slug: "tic-tac-toe",
+    visible: false,
+    year: 2006,
+    description: (
+      <>
+        Everyone knows how to play Tic-Tac-Toe, so just go ahead and start
+        playing! Get three symbols of your kind in a row, column, or diagonal to
+        win! You may notice that instead of X&apos;s and O&apos;s, Game Maker
+        logos are used.
+        <br />
+        <br />
+        <small>
+          Tic-Tac-Toe is one of the nine games Revolution Games did not create.
+          They were originally created by Mark Overmars, and Jacob Habgood for{" "}
+          <em>The Game Maker&apos;s Apprentice</em>.
+        </small>
+      </>
+    ),
+    platforms: [Platform.WINDOWS],
+    minPlayers: 1,
+    maxPlayers: 1,
+  },
+  {
+    name: "Pyramid Panic",
+    slug: "pyramid-panic",
+    visible: false,
+    year: 2006,
+    description: (
+      <>
+        Pyramid Panic is a unique maze game with plenty of interesting features.
+        You control an explorer searching for an ancient treasure called the
+        "Sword of RA". To get there, you must avoid giant scorpions and beetles,
+        and destroy mummies. Only those who have ever held the "Sword of RA"
+        know its true power. Will you?
+        <br />
+        <br />
+        <small>
+          Pyramid Panic is one of the nine games Revolution Games did not
+          create. They were originally created by Mark Overmars, and Jacob
+          Habgood for <em>The Game Maker&apos;s Apprentice</em>.
+        </small>
+      </>
+    ),
+    platforms: [Platform.WINDOWS],
+    minPlayers: 1,
+    maxPlayers: 1,
+  },
+  {
     name: "Hummingbird",
     slug: "hummingbird",
     visible: false,
@@ -278,79 +495,6 @@ export const PROJECT_LIST: Project[] = [
     maxPlayers: 4,
   },
   {
-    name: "Evil Clutches",
-    slug: "evil-clutches",
-    visible: false,
-    year: 2006,
-    description: (
-      <>
-        In Evil Clutches, you control a dragon parent who must collect his/her
-        young from the evil boss. Watch out for demons which the boss will
-        launch at you without warning. There are also power-ups to help you
-        survive and collect your children.
-        <br />
-        <br />
-        <small>
-          Evil Clutches is one of the nine games Revolution Games did not
-          create. They were originally created by Mark Overmars, and Jacob
-          Habgood for <em>The Game Maker&apos;s Apprentice</em>.
-        </small>
-      </>
-    ),
-    platforms: [Platform.WINDOWS],
-    minPlayers: 1,
-    maxPlayers: 1,
-  },
-  {
-    name: "Galactic Mail",
-    slug: "galactic-mail",
-    visible: false,
-    year: 2006,
-    description: (
-      <>
-        Galactic Mail is a simple space-themed game where you must travel to all
-        of the moons on the screen to deliver all of the mail to each one in
-        order to pass the level. After all of the mail is delivered, you can
-        then travel to the planet to pass.
-        <br />
-        <br />
-        <small>
-          Galactic Mail is one of the nine games Revolution Games did not
-          create. They were originally created by Mark Overmars, and Jacob
-          Habgood for <em>The Game Maker&apos;s Apprentice</em>.
-        </small>
-      </>
-    ),
-    platforms: [Platform.WINDOWS],
-    minPlayers: 1,
-    maxPlayers: 1,
-  },
-  {
-    name: "Lazarus",
-    slug: "lazarus",
-    visible: false,
-    year: 2006,
-    description: (
-      <>
-        What would happen if an evil villain had access to a pit at the bottom
-        of machinery capable of dropping heavy blocks on top of you? Lazarus
-        would happen! Play as the friendly blob Lazarus as he tries to use the
-        blocks to his advantage puzzling his way out of the pit and stop the
-        machinery!
-        <br />
-        <br />
-        <small>
-          Lazarus is one of the nine games Revolution Games did not create. They
-          were originally created by Mark Overmars, and Jacob Habgood for{" "}
-          <em>The Game Maker&apos;s Apprentice</em>.
-        </small>
-      </>
-    ),
-    platforms: [Platform.WINDOWS],
-    minPlayers: 1,
-    maxPlayers: 1,
-  },
-  {
     name: "Spring Thing",
     slug: "spring-thing",
     visible: true,
@@ -371,27 +515,22 @@ export const PROJECT_LIST: Project[] = [
     maxPlayers: 4,
   },
   {
-    name: "Super Rainbow Reef",
-    slug: "super-rainbow-reef",
-    visible: false,
-    year: 2006,
+    name: "Yahtzee",
+    slug: "yahtzee",
+    visible: true,
+    year: 2010,
     description: (
       <>
-        Memories of the classic Breakout should arise as you play through this
-        game. Super Rainbow Reef is similar to the classic game with a lot of
-        new features and of course brand new graphics and music to a reef theme.
-        <br />
-        <br />
-        <small>
-          Super Rainbow Reef is one of the nine games Revolution Games did not
-          create. They were originally created by Mark Overmars, and Jacob
-          Habgood for <em>The Game Maker&apos;s Apprentice</em>.
-        </small>
+        Yahtzee is an electronic version of the classic board game with the same
+        name. My Grade 12 Computer Science partner, Christopher Pashartis and
+        myself created it as a final project for the course. You have the
+        ability to play with up to four players, and can also store high scores
+        in the high score table which is saved locally.
       </>
     ),
-    platforms: [Platform.WINDOWS],
+    platforms: [Platform.WEB],
     minPlayers: 1,
-    maxPlayers: 1,
+    maxPlayers: 4,
   },
   {
     name: "Dutch Blitz Sidekick",
@@ -432,16 +571,19 @@ export const PROJECT_LIST: Project[] = [
     maxPlayers: 1,
   },
   {
-    name: "3D Maze",
-    slug: "3d-maze",
+    name: "Asteroids",
+    slug: "asteroids",
     visible: true,
-    year: 2005,
+    year: 2006,
     description: (
       <>
-        3D Maze was my first attempt at a 3D game. It is relatively glitchy,
-        however for a first attempt I still think it&apos;s kind of
-        interesting... although you might have a hard time getting the average
-        person to play it for more than about 5 minutes.
+        Remember Asteroids? Asteroids is often recognized as the first video
+        game ever created (originally titled Spacewar!). Truly this video game
+        masterpiece deserves a remake from Revolution Games. Fortunately,
+        we&apos;ve done just that! Re-experience Asteroids as one of the
+        greatest classic arcade game ever made. Just as in the original, shoot
+        at the asteroids to make them break into smaller pieces and gain points.
+        Remember not to get hit by the asteroids, last as long as you can.
       </>
     ),
     platforms: [Platform.WINDOWS],
@@ -472,49 +614,16 @@ export const PROJECT_LIST: Project[] = [
     maxPlayers: 1,
   },
   {
-    name: "Koala-BR8",
-    slug: "koala-br8",
-    visible: false,
-    year: 2006,
+    name: "3D Maze",
+    slug: "3d-maze",
+    visible: true,
+    year: 2005,
     description: (
       <>
-        Koala-BR8 is a very entertaining maze game which really makes you think.
-        You must control a group of koalas at one time, and they all must reach
-        an exit without a single one being killed. I intended on creating an
-        additional 6 levels of a higher difficulty, but that was never
-        completed.
-        <br />
-        <br />
-        <small>
-          Koala-BR8 is one of the nine games Revolution Games did not create.
-          They were originally created by Mark Overmars, and Jacob Habgood for{" "}
-          <em>The Game Maker&apos;s Apprentice</em>.
-        </small>
-      </>
-    ),
-    platforms: [Platform.WINDOWS],
-    minPlayers: 1,
-    maxPlayers: 1,
-  },
-  {
-    name: "Pyramid Panic",
-    slug: "pyramid-panic",
-    visible: false,
-    year: 2006,
-    description: (
-      <>
-        Pyramid Panic is a unique maze game with plenty of interesting features.
-        You control an explorer searching for an ancient treasure called the
-        "Sword of RA". To get there, you must avoid giant scorpions and beetles,
-        and destroy mummies. Only those who have ever held the "Sword of RA"
-        know its true power. Will you?
-        <br />
-        <br />
-        <small>
-          Pyramid Panic is one of the nine games Revolution Games did not
-          create. They were originally created by Mark Overmars, and Jacob
-          Habgood for <em>The Game Maker&apos;s Apprentice</em>.
-        </small>
+        3D Maze was my first attempt at a 3D game. It is relatively glitchy,
+        however for a first attempt I still think it&apos;s kind of
+        interesting... although you might have a hard time getting the average
+        person to play it for more than about 5 minutes.
       </>
     ),
     platforms: [Platform.WINDOWS],
@@ -556,77 +665,6 @@ export const PROJECT_LIST: Project[] = [
     maxPlayers: 1,
   },
   {
-    name: "Jumble",
-    slug: "jumble",
-    visible: false,
-    year: 2009,
-    description: (
-      <>
-        Jumble is a simple thinking game that requires you to unscramble the
-        word entered by another player.
-      </>
-    ),
-    platforms: [Platform.WINDOWS],
-    minPlayers: 2,
-    maxPlayers: 2,
-  },
-  {
-    name: "Super Smash Brothers Brawl: Memory Edition",
-    slug: "ssbb-memory-edition",
-    visible: false,
-    year: 2010,
-    description: (
-      <>
-        Super Smash Brothers Brawl: Memory Edition is another example of the
-        classic game Concentration. In this edition, watch where the various
-        Nintendo characters are and select both of them to eliminate both of
-        their cards. You win the game once all the cards are removed from the
-        game. I needed to create this game for a Grade 12 Computer Science
-        project. The end result we were meant to create I found was extremely
-        lame, so I significantly improved on mine.
-      </>
-    ),
-    platforms: [Platform.WEB],
-    minPlayers: 1,
-    maxPlayers: 1,
-  },
-  {
-    name: "Asteroids",
-    slug: "asteroids",
-    visible: true,
-    year: 2006,
-    description: (
-      <>
-        Remember Asteroids? Asteroids is often recognized as the first video
-        game ever created (originally titled Spacewar!). Truly this video game
-        masterpiece deserves a remake from Revolution Games. Fortunately,
-        we&apos;ve done just that! Re-experience Asteroids as one of the
-        greatest classic arcade game ever made. Just as in the original, shoot
-        at the asteroids to make them break into smaller pieces and gain points.
-        Remember not to get hit by the asteroids, last as long as you can.
-      </>
-    ),
-    platforms: [Platform.WINDOWS],
-    minPlayers: 1,
-    maxPlayers: 1,
-  },
-  {
-    name: "Brick",
-    slug: "brick",
-    visible: false,
-    description: (
-      <>
-        Brick is another classic retro game also well known as Breakout. Simply
-        use the paddle at the bottom of the screen to help control where the
-        ball will go, to destroy all of the blocks on the screen. Once
-        you&apos;ve destroyed all of the blocks, you will pass the level.
-      </>
-    ),
-    platforms: [Platform.WINDOWS],
-    minPlayers: 1,
-    maxPlayers: 1,
-  },
-  {
     name: "Lunar Lander",
     slug: "lunar-lander",
     visible: true,
@@ -649,19 +687,20 @@ export const PROJECT_LIST: Project[] = [
     ],
   },
   {
-    name: "Poison Penny",
-    slug: "poison-penny",
+    name: "Brick",
+    slug: "brick",
     visible: false,
-    year: 2009,
     description: (
       <>
-        Poison Penny is a basic childhood game where the objective is to get the
-        other player to take the last penny.
+        Brick is another classic retro game also well known as Breakout. Simply
+        use the paddle at the bottom of the screen to help control where the
+        ball will go, to destroy all of the blocks on the screen. Once
+        you&apos;ve destroyed all of the blocks, you will pass the level.
       </>
     ),
     platforms: [Platform.WINDOWS],
-    minPlayers: 2,
-    maxPlayers: 2,
+    minPlayers: 1,
+    maxPlayers: 1,
   },
   {
     name: "Pong",
@@ -716,220 +755,6 @@ export const PROJECT_LIST: Project[] = [
     maxPlayers: 1,
   },
   {
-    name: "Pacman's Back For Those Dots!",
-    slug: "pacmans-back-for-those-dots",
-    visible: false,
-    description: (
-      <>
-        Pacman's Back For Those Dots! is essentially a remake of the classic
-        Snake game. Travel through the level and collect the dots as you see
-        them. Each dot is worth a different amount of points.
-      </>
-    ),
-    platforms: [Platform.WINDOWS],
-    minPlayers: 1,
-    maxPlayers: 1,
-  },
-  {
-    name: "Whack-A-Mole",
-    slug: "whack-a-mole",
-    visible: false,
-    year: 2003,
-    description: (
-      <>
-        Whack-A-Mole is a simple game where the object is to whack the moles
-        over the head! Click on the moles to defeat them, but keep your eye out
-        for the ghost moles, which will try to trick you!
-      </>
-    ),
-    platforms: [Platform.WINDOWS],
-    minPlayers: 1,
-    maxPlayers: 1,
-  },
-  {
-    name: "Rock, Paper, Scissors!",
-    slug: "rock-paper-scissors",
-    visible: false,
-    year: 2008,
-    description: (
-      <>
-        Rock, Paper, Scissors! is a childhood classic remade into a simple game
-        against the computer.
-      </>
-    ),
-    platforms: [Platform.WINDOWS],
-    minPlayers: 1,
-    maxPlayers: 1,
-  },
-  {
-    name: "Tic-Tac-Toe",
-    slug: "tic-tac-toe",
-    visible: false,
-    year: 2006,
-    description: (
-      <>
-        Everyone knows how to play Tic-Tac-Toe, so just go ahead and start
-        playing! Get three symbols of your kind in a row, column, or diagonal to
-        win! You may notice that instead of X&apos;s and O&apos;s, Game Maker
-        logos are used.
-        <br />
-        <br />
-        <small>
-          Tic-Tac-Toe is one of the nine games Revolution Games did not create.
-          They were originally created by Mark Overmars, and Jacob Habgood for{" "}
-          <em>The Game Maker&apos;s Apprentice</em>.
-        </small>
-      </>
-    ),
-    platforms: [Platform.WINDOWS],
-    minPlayers: 1,
-    maxPlayers: 1,
-  },
-  {
-    name: "Tic-Tac-Toe",
-    slug: "tic-tac-toe-java",
-    visible: false,
-    year: 2013,
-    description: (
-      <>
-        Yet another version of Tic-Tac-Toe. This version was created in Java for
-        CS 349 (User Interfaces) using a Model-View-Controller design pattern.
-        There is a Java desktop client as well as an Android client, which both
-        run the same model code.
-      </>
-    ),
-    platforms: [Platform.LINUX, Platform.ANDROID],
-    minPlayers: 2,
-    maxPlayers: 2,
-    screenshotCaptions: {
-      "tic-tac-toe-java":
-        "This is the Java client of the game running on Linux.",
-      "tic-tac-toe-android":
-        "This is the Android version of the game running on a Galaxy Nexus.",
-    },
-    additionalLinks: [
-      {
-        url: "https://bitbucket.org/RevolutionTech/tic-tac-toe",
-        description: "View Source Code",
-      },
-    ],
-  },
-  {
-    name: "Tic-Tac-Toe (4x4)",
-    slug: "tic-tac-toe-4x4",
-    visible: false,
-    year: 2010,
-    description: (
-      <>
-        Tic-Tac-Toe (4x4) is another version of Tic-Tac-Toe that I created. I
-        made this version in Adobe Flash in accordance with a Grade 12 Computer
-        Science project.
-      </>
-    ),
-    platforms: [Platform.WEB],
-    minPlayers: 2,
-    maxPlayers: 2,
-  },
-  {
-    name: "Yahtzee",
-    slug: "yahtzee",
-    visible: true,
-    year: 2010,
-    description: (
-      <>
-        Yahtzee is an electronic version of the classic board game with the same
-        name. My Grade 12 Computer Science partner, Christopher Pashartis and
-        myself created it as a final project for the course. You have the
-        ability to play with up to four players, and can also store high scores
-        in the high score table which is saved locally.
-      </>
-    ),
-    platforms: [Platform.WEB],
-    minPlayers: 1,
-    maxPlayers: 4,
-  },
-  {
-    name: "Tank War",
-    slug: "tank-war",
-    visible: false,
-    year: 2006,
-    description: (
-      <>
-        Tank War is a fun multi-player shooting game where you play as tanks.
-        Travel around the small maps to find your opponent and defeat them,
-        there are various power-ups available to use to defeat your opponent.
-        <br />
-        <br />
-        <small>
-          Tank War is one of the nine games Revolution Games did not create.
-          They were originally created by Mark Overmars, and Jacob Habgood for{" "}
-          <em>The Game Maker&apos;s Apprentice</em>.
-        </small>
-      </>
-    ),
-    platforms: [Platform.WINDOWS],
-    minPlayers: 2,
-    maxPlayers: 2,
-  },
-  {
-    name: "Wingman Sam",
-    slug: "wingman-sam",
-    visible: false,
-    year: 2006,
-    description: (
-      <>
-        Grab a friend and take down the opposing planes in Wingman Sam! Fire at
-        the planes as they come to attack you in preparation for the final boss
-        battle. Be careful though, if one of you is lost in action, the game is
-        over.
-        <br />
-        <br />
-        <small>
-          Wingman Sam is one of the nine games Revolution Games did not create.
-          They were originally created by Mark Overmars, and Jacob Habgood for{" "}
-          <em>The Game Maker&apos;s Apprentice</em>.
-        </small>
-      </>
-    ),
-    platforms: [Platform.WINDOWS],
-    minPlayers: 2,
-    maxPlayers: 2,
-  },
-  {
-    name: "Bumblebee",
-    slug: "bumblebee",
-    visible: false,
-    year: 2013,
-    description: (
-      <>
-        Bumblebee is a small program for creating simple patterns (can be good
-        for drawing flowers or similar shapes). The project was created for an
-        assignment in CS 349.
-      </>
-    ),
-    platforms: [Platform.LINUX],
-    additionalLinks: [
-      {
-        url: "https://bitbucket.org/RevolutionTech/bumblebee",
-        description: "View Source Code",
-      },
-    ],
-  },
-  {
-    name: "Color Selector",
-    slug: "color-selector",
-    visible: false,
-    year: 2012,
-    description: <>A simple tool to inspire color selections.</>,
-    platforms: [Platform.ANDROID],
-    additionalLinks: [
-      {
-        url: "https://bitbucket.org/RevolutionTech/color-selector",
-        description: "View Source Code",
-      },
-    ],
-  },
-  {
     name: "Walls of Pure Evil",
     slug: "walls-of-pure-evil",
     visible: false,
@@ -947,135 +772,6 @@ export const PROJECT_LIST: Project[] = [
     platforms: [Platform.WINDOWS],
     minPlayers: 1,
     maxPlayers: 1,
-  },
-  {
-    name: "Car Shooter",
-    slug: "car-shooter",
-    visible: false,
-    description: (
-      <>
-        Car Shooter is a simple game where the player's objective is to shoot at
-        the cars which appear on the street. Don't let the cops catch you!
-      </>
-    ),
-    platforms: [Platform.WINDOWS],
-    minPlayers: 1,
-    maxPlayers: 1,
-  },
-  {
-    name: "Helicopter Chase",
-    slug: "helicopter-chase",
-    visible: false,
-    description: (
-      <>
-        It's time to take revenge on the helicopters! Fire! Shoot down as many
-        helicopters as you can in many different levels.
-      </>
-    ),
-    platforms: [Platform.WINDOWS],
-    minPlayers: 1,
-    maxPlayers: 1,
-  },
-  {
-    name: "Shooter",
-    slug: "shooter",
-    visible: false,
-    description: (
-      <>
-        Watch many vehicles pass the horizon and shoot them down! Click to fire
-        at the vehicles and destroy them.
-      </>
-    ),
-    platforms: [Platform.WINDOWS],
-    minPlayers: 1,
-    maxPlayers: 1,
-  },
-  {
-    name: "Smiley the Smiley",
-    slug: "smiley-the-smiley",
-    visible: false,
-    year: 2004,
-    description: (
-      <>
-        Smiley the Smiley is an odd maze game. You control a small smiley face
-        in a maze and defeat the enemies by punching them. You can proceed to
-        the next level by hitting the flag in each level, you don't actually
-        need to defeat all of the smilies first.
-      </>
-    ),
-    platforms: [Platform.WINDOWS],
-    minPlayers: 1,
-    maxPlayers: 1,
-  },
-  {
-    name: "Switchy-Switchy",
-    slug: "switchy-switchy-nai",
-    visible: false,
-    description: (
-      <>
-        Switchy-Switchy is an implementation of the common game known as Three
-        Card Monte where the object is to find where the pea, or in this case,
-        diamond is located among the shells it is hidden in. This version plays
-        out differently every time you play.
-      </>
-    ),
-    platforms: [Platform.WINDOWS],
-    minPlayers: 1,
-    maxPlayers: 1,
-  },
-  {
-    name: "Tug-O-War",
-    slug: "tug-o-war",
-    visible: false,
-    description: (
-      <>
-        This game is a very simple version of the classic game we know as
-        Tug-Of-War or Tug-O-War. You can play with one or two people where the
-        object of the game is to pull your opponent into the river in the centre
-        by tugging on the rope by pressing one of the keys on the keyboard. You
-        can also play against computer players.
-      </>
-    ),
-    platforms: [Platform.WINDOWS],
-    minPlayers: 1,
-    maxPlayers: 2,
-  },
-  {
-    name: "My Desktop",
-    slug: "my-desktop",
-    visible: false,
-    year: 2009,
-    description: (
-      <>
-        My Desktop is an interesting program that I created for my summative
-        project in grade 11 computer science. My Desktop allows you to add
-        accounts with pictures, music, notes, to-do lists, and similar
-        information to personalize your own space. Of course, multiple people
-        can use the program with their own accounts with their own information.
-      </>
-    ),
-    platforms: [Platform.WINDOWS],
-  },
-  {
-    name: "Tasks",
-    slug: "tasks",
-    visible: false,
-    year: 2009,
-    description: (
-      <>
-        Inspired from Douglas Coupland's novel JPod, Tasks is a simple program
-        that I created as a tool for pursuing an experiment that I had titled
-        "The Lucas Connors Social Experiment". After entering the names of all
-        participants, the program randomly generates preset tasks for each
-        person to do throughout the week (Note that the primary location for
-        this is meant to be in a school). The tasks are silly random acts that
-        are intended to get people confused or ask questions. Some tasks include
-        "Take all speech literally" or "Burst into fake laughter when asked a
-        question". The user of course can add his or her own tasks to the
-        program if they wish.
-      </>
-    ),
-    platforms: [Platform.WINDOWS],
   },
   {
     name: "Catch the Clown",
@@ -1198,6 +894,176 @@ export const PROJECT_LIST: Project[] = [
     maxPlayers: 1,
   },
   {
+    name: "Car Shooter",
+    slug: "car-shooter",
+    visible: false,
+    description: (
+      <>
+        Car Shooter is a simple game where the player's objective is to shoot at
+        the cars which appear on the street. Don't let the cops catch you!
+      </>
+    ),
+    platforms: [Platform.WINDOWS],
+    minPlayers: 1,
+    maxPlayers: 1,
+  },
+  {
+    name: "Helicopter Chase",
+    slug: "helicopter-chase",
+    visible: false,
+    description: (
+      <>
+        It's time to take revenge on the helicopters! Fire! Shoot down as many
+        helicopters as you can in many different levels.
+      </>
+    ),
+    platforms: [Platform.WINDOWS],
+    minPlayers: 1,
+    maxPlayers: 1,
+  },
+  {
+    name: "Shooter",
+    slug: "shooter",
+    visible: false,
+    description: (
+      <>
+        Watch many vehicles pass the horizon and shoot them down! Click to fire
+        at the vehicles and destroy them.
+      </>
+    ),
+    platforms: [Platform.WINDOWS],
+    minPlayers: 1,
+    maxPlayers: 1,
+  },
+  {
+    name: "Smiley the Smiley",
+    slug: "smiley-the-smiley",
+    visible: false,
+    year: 2004,
+    description: (
+      <>
+        Smiley the Smiley is an odd maze game. You control a small smiley face
+        in a maze and defeat the enemies by punching them. You can proceed to
+        the next level by hitting the flag in each level, you don't actually
+        need to defeat all of the smilies first.
+      </>
+    ),
+    platforms: [Platform.WINDOWS],
+    minPlayers: 1,
+    maxPlayers: 1,
+  },
+  {
+    name: "Pacman's Back For Those Dots!",
+    slug: "pacmans-back-for-those-dots",
+    visible: false,
+    description: (
+      <>
+        Pacman's Back For Those Dots! is essentially a remake of the classic
+        Snake game. Travel through the level and collect the dots as you see
+        them. Each dot is worth a different amount of points.
+      </>
+    ),
+    platforms: [Platform.WINDOWS],
+    minPlayers: 1,
+    maxPlayers: 1,
+  },
+  {
+    name: "Whack-A-Mole",
+    slug: "whack-a-mole",
+    visible: false,
+    year: 2003,
+    description: (
+      <>
+        Whack-A-Mole is a simple game where the object is to whack the moles
+        over the head! Click on the moles to defeat them, but keep your eye out
+        for the ghost moles, which will try to trick you!
+      </>
+    ),
+    platforms: [Platform.WINDOWS],
+    minPlayers: 1,
+    maxPlayers: 1,
+  },
+  {
+    name: "Jumble",
+    slug: "jumble",
+    visible: false,
+    year: 2009,
+    description: (
+      <>
+        Jumble is a simple thinking game that requires you to unscramble the
+        word entered by another player.
+      </>
+    ),
+    platforms: [Platform.WINDOWS],
+    minPlayers: 2,
+    maxPlayers: 2,
+  },
+  {
+    name: "Tic-Tac-Toe",
+    slug: "tic-tac-toe-java",
+    visible: false,
+    year: 2013,
+    description: (
+      <>
+        Yet another version of Tic-Tac-Toe. This version was created in Java for
+        CS 349 (User Interfaces) using a Model-View-Controller design pattern.
+        There is a Java desktop client as well as an Android client, which both
+        run the same model code.
+      </>
+    ),
+    platforms: [Platform.LINUX, Platform.ANDROID],
+    minPlayers: 2,
+    maxPlayers: 2,
+    screenshotCaptions: {
+      "tic-tac-toe-java":
+        "This is the Java client of the game running on Linux.",
+      "tic-tac-toe-android":
+        "This is the Android version of the game running on a Galaxy Nexus.",
+    },
+    additionalLinks: [
+      {
+        url: "https://bitbucket.org/RevolutionTech/tic-tac-toe",
+        description: "View Source Code",
+      },
+    ],
+  },
+  {
+    name: "Tic-Tac-Toe (4x4)",
+    slug: "tic-tac-toe-4x4",
+    visible: false,
+    year: 2010,
+    description: (
+      <>
+        Tic-Tac-Toe (4x4) is another version of Tic-Tac-Toe that I created. I
+        made this version in Adobe Flash in accordance with a Grade 12 Computer
+        Science project.
+      </>
+    ),
+    platforms: [Platform.WEB],
+    minPlayers: 2,
+    maxPlayers: 2,
+  },
+  {
+    name: "Super Smash Brothers Brawl: Memory Edition",
+    slug: "ssbb-memory-edition",
+    visible: false,
+    year: 2010,
+    description: (
+      <>
+        Super Smash Brothers Brawl: Memory Edition is another example of the
+        classic game Concentration. In this edition, watch where the various
+        Nintendo characters are and select both of them to eliminate both of
+        their cards. You win the game once all the cards are removed from the
+        game. I needed to create this game for a Grade 12 Computer Science
+        project. The end result we were meant to create I found was extremely
+        lame, so I significantly improved on mine.
+      </>
+    ),
+    platforms: [Platform.WEB],
+    minPlayers: 1,
+    maxPlayers: 1,
+  },
+  {
     name: "Memory Match",
     slug: "memory-match",
     visible: false,
@@ -1210,6 +1076,140 @@ export const PROJECT_LIST: Project[] = [
     platforms: [Platform.WINDOWS],
     minPlayers: 1,
     maxPlayers: 1,
+  },
+  {
+    name: "Poison Penny",
+    slug: "poison-penny",
+    visible: false,
+    year: 2009,
+    description: (
+      <>
+        Poison Penny is a basic childhood game where the objective is to get the
+        other player to take the last penny.
+      </>
+    ),
+    platforms: [Platform.WINDOWS],
+    minPlayers: 2,
+    maxPlayers: 2,
+  },
+  {
+    name: "Rock, Paper, Scissors!",
+    slug: "rock-paper-scissors",
+    visible: false,
+    year: 2008,
+    description: (
+      <>
+        Rock, Paper, Scissors! is a childhood classic remade into a simple game
+        against the computer.
+      </>
+    ),
+    platforms: [Platform.WINDOWS],
+    minPlayers: 1,
+    maxPlayers: 1,
+  },
+  {
+    name: "Bumblebee",
+    slug: "bumblebee",
+    visible: false,
+    year: 2013,
+    description: (
+      <>
+        Bumblebee is a small program for creating simple patterns (can be good
+        for drawing flowers or similar shapes). The project was created for an
+        assignment in CS 349.
+      </>
+    ),
+    platforms: [Platform.LINUX],
+    additionalLinks: [
+      {
+        url: "https://bitbucket.org/RevolutionTech/bumblebee",
+        description: "View Source Code",
+      },
+    ],
+  },
+  {
+    name: "Color Selector",
+    slug: "color-selector",
+    visible: false,
+    year: 2012,
+    description: <>A simple tool to inspire color selections.</>,
+    platforms: [Platform.ANDROID],
+    additionalLinks: [
+      {
+        url: "https://bitbucket.org/RevolutionTech/color-selector",
+        description: "View Source Code",
+      },
+    ],
+  },
+  {
+    name: "Switchy-Switchy",
+    slug: "switchy-switchy-nai",
+    visible: false,
+    description: (
+      <>
+        Switchy-Switchy is an implementation of the common game known as Three
+        Card Monte where the object is to find where the pea, or in this case,
+        diamond is located among the shells it is hidden in. This version plays
+        out differently every time you play.
+      </>
+    ),
+    platforms: [Platform.WINDOWS],
+    minPlayers: 1,
+    maxPlayers: 1,
+  },
+  {
+    name: "Tug-O-War",
+    slug: "tug-o-war",
+    visible: false,
+    description: (
+      <>
+        This game is a very simple version of the classic game we know as
+        Tug-Of-War or Tug-O-War. You can play with one or two people where the
+        object of the game is to pull your opponent into the river in the centre
+        by tugging on the rope by pressing one of the keys on the keyboard. You
+        can also play against computer players.
+      </>
+    ),
+    platforms: [Platform.WINDOWS],
+    minPlayers: 1,
+    maxPlayers: 2,
+  },
+  {
+    name: "My Desktop",
+    slug: "my-desktop",
+    visible: false,
+    year: 2009,
+    description: (
+      <>
+        My Desktop is an interesting program that I created for my summative
+        project in grade 11 computer science. My Desktop allows you to add
+        accounts with pictures, music, notes, to-do lists, and similar
+        information to personalize your own space. Of course, multiple people
+        can use the program with their own accounts with their own information.
+      </>
+    ),
+    platforms: [Platform.WINDOWS],
+  },
+  {
+    name: "Tasks",
+    slug: "tasks",
+    visible: false,
+    year: 2009,
+    description: (
+      <>
+        Inspired from Douglas Coupland's novel JPod, Tasks is a simple program
+        that I created as a tool for pursuing an experiment that I had titled
+        "The Lucas Connors Social Experiment". After entering the names of all
+        participants, the program randomly generates preset tasks for each
+        person to do throughout the week (Note that the primary location for
+        this is meant to be in a school). The tasks are silly random acts that
+        are intended to get people confused or ask questions. Some tasks include
+        "Take all speech literally" or "Burst into fake laughter when asked a
+        question". The user of course can add his or her own tasks to the
+        program if they wish.
+      </>
+    ),
+    platforms: [Platform.WINDOWS],
   },
   {
     name: "Particle System",
