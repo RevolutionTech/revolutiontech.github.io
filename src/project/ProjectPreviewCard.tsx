@@ -52,7 +52,8 @@ export const ProjectPreviewCard = ({ project }: ProjectCardProps) => {
       <div>
         <ProjectPreviewTitle>
           <div>
-            {project.name} ({project.year})
+            {project.name}
+            {project.year && ` (${project.year})`}
           </div>
           <PlatformList platforms={project.platforms} />
           <PlayerCount

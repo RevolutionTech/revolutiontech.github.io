@@ -58,7 +58,7 @@ type ProjectLink = {
 export type Project = {
   name: string;
   slug: string;
-  year: number;
+  year?: number;
   description: React.ReactNode;
   platforms: Platform[];
   minPlayers?: number;

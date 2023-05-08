@@ -74,7 +74,8 @@ export const ProjectDetails = () => {
   return (
     <ProjectDetailsBox>
       <h1>
-        {project.name} ({project.year})
+        {project.name}
+        {project.year && ` (${project.year})`}
       </h1>
       <ProjectFacts>
         <PlatformList platforms={project.platforms} full />
