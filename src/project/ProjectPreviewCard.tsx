@@ -26,6 +26,14 @@ const ProjectPreviewCardBox = styled(Link)`
   }
 `;
 
+const ProjectPreviewScreenshotBox = styled.div`
+  display: flex;
+  justify-content: center;
+  min-width: 264px;
+  max-width: 264px;
+  height: 200px;
+`;
+
 const ProjectPreviewScreenshot = styled.img`
   max-width: 264px;
   max-height: 200px;
@@ -46,9 +54,11 @@ export const ProjectPreviewCard = ({ project }: ProjectCardProps) => {
   const randomScreenshot = sample(projectScreenshots(project.slug));
   return (
     <ProjectPreviewCardBox to={`project/${project.slug}`}>
-      {randomScreenshot && (
-        <ProjectPreviewScreenshot src={randomScreenshot} alt={project.name} />
-      )}
+      <ProjectPreviewScreenshotBox>
+        {randomScreenshot && (
+          <ProjectPreviewScreenshot src={randomScreenshot} alt={project.name} />
+        )}
+      </ProjectPreviewScreenshotBox>
       <div>
         <ProjectPreviewTitle>
           <div>
