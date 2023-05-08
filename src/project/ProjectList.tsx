@@ -11,10 +11,16 @@ const ProjectListBox = styled.div`
   gap: 8px;
 `;
 
-export const ProjectList = () => (
+interface ProjectListProps {
+  everything?: boolean;
+}
+
+export const ProjectList = (props: ProjectListProps) => (
   <ProjectListBox>
-    {PROJECT_LIST.map((project) => (
-      <ProjectPreviewCard key={project.slug} project={project} />
-    ))}
+    {PROJECT_LIST.filter((project) => props.everything || project.visible).map(
+      (project) => (
+        <ProjectPreviewCard key={project.slug} project={project} />
+      )
+    )}
   </ProjectListBox>
 );

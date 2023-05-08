@@ -42,6 +42,7 @@ const App = () => (
           <ContentBox>
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/everything" element={<Home everything />} />
               <Route path="project/:projectSlug" element={<ProjectDetails />} />
               <Route path="*" element={<NotFound />} />
             </Routes>

@@ -5,6 +5,7 @@ import Lucas from "./assets/img/Lucas.jpg";
 
 const IntroCard = styled.div`
   display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 16px;
   margin-bottom: 64px;
@@ -19,15 +20,26 @@ const ProfilePhoto = styled.img`
   border-radius: 50%;
 `;
 
-export const Intro = () => (
+interface IntroProps {
+  everything?: boolean;
+}
+
+export const Intro = (props: IntroProps) => (
   <IntroCard>
-    <p>
-      Hi! &#x1f44b; I&apos;m Lucas Connors. I work at{" "}
-      <a href="https://www.cascade.io/">Cascade</a> in San Francisco as a
-      Software Engineer, but outside of work I enjoy building a variety of side
-      projects. &#x1f468;&#x200d;&#x1f4bb; Below you can browse some of my
-      favourites.
-    </p>
+    {props.everything ? (
+      <p>
+        Wow, you really want to see everything, huh? &#x1f633; All right, just
+        don&apos;t say I didn&apos;t warn you&hellip; &#x1f605;
+      </p>
+    ) : (
+      <p>
+        Hi! &#x1f44b; I&apos;m Lucas Connors. I work at{" "}
+        <a href="https://www.cascade.io/">Cascade</a> in San Francisco as a
+        Software Engineer, but outside of work I enjoy building a variety of
+        side projects. &#x1f468;&#x200d;&#x1f4bb; Below you can browse some of
+        my favourites.
+      </p>
+    )}
     <div>
       <ProfilePhoto src={Lucas} alt="Lucas Connors" />
     </div>

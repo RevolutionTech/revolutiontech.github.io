@@ -58,6 +58,7 @@ type ProjectLink = {
 export type Project = {
   name: string;
   slug: string;
+  visible: boolean;
   year?: number;
   description: React.ReactNode;
   platforms: Platform[];

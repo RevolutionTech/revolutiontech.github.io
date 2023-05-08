@@ -7,6 +7,7 @@ export const PROJECT_LIST: Project[] = [
   {
     name: "Letter Joy",
     slug: "letter-joy",
+    visible: true,
     year: 2022,
     description: (
       <>
@@ -48,6 +49,7 @@ export const PROJECT_LIST: Project[] = [
   {
     name: "PerDiem",
     slug: "perdiem",
+    visible: true,
     year: 2016,
     description: (
       <>
@@ -68,6 +70,7 @@ export const PROJECT_LIST: Project[] = [
   {
     name: "Esprit's Labyrinth",
     slug: "esprits-labyrinth",
+    visible: true,
     year: 2010,
     description: (
       <>
@@ -93,6 +96,7 @@ export const PROJECT_LIST: Project[] = [
   {
     name: "Flamingo",
     slug: "flamingo",
+    visible: true,
     year: 2015,
     description: (
       <>
@@ -111,6 +115,7 @@ export const PROJECT_LIST: Project[] = [
   {
     name: "Seared Quail",
     slug: "seared-quail",
+    visible: true,
     year: 2015,
     description: (
       <>
@@ -131,6 +136,7 @@ export const PROJECT_LIST: Project[] = [
   {
     name: "django-conditions",
     slug: "django-conditions",
+    visible: true,
     year: 2014,
     description: (
       <>
@@ -155,6 +161,7 @@ export const PROJECT_LIST: Project[] = [
   {
     name: "Blockade",
     slug: "blockade",
+    visible: true,
     year: 2009,
     description: (
       <>
@@ -180,6 +187,7 @@ export const PROJECT_LIST: Project[] = [
   {
     name: "Hummingbird",
     slug: "hummingbird",
+    visible: false,
     year: 2014,
     description: (
       <>
@@ -201,6 +209,7 @@ export const PROJECT_LIST: Project[] = [
   {
     name: "Acid Drop",
     slug: "acid-drop",
+    visible: true,
     year: 2006,
     description: (
       <>
@@ -219,6 +228,7 @@ export const PROJECT_LIST: Project[] = [
   {
     name: "Attack of the Boom-Boom",
     slug: "attack-of-the-boom-boom",
+    visible: true,
     year: 2006,
     description: (
       <>
@@ -236,6 +246,7 @@ export const PROJECT_LIST: Project[] = [
   {
     name: "Ballistix",
     slug: "ballistix",
+    visible: true,
     year: 2005,
     description: (
       <>
@@ -253,6 +264,7 @@ export const PROJECT_LIST: Project[] = [
   {
     name: "Evil Clutches",
     slug: "evil-clutches",
+    visible: false,
     year: 2006,
     description: (
       <>
@@ -276,6 +288,7 @@ export const PROJECT_LIST: Project[] = [
   {
     name: "Galactic Mail",
     slug: "galactic-mail",
+    visible: false,
     year: 2006,
     description: (
       <>
@@ -299,6 +312,7 @@ export const PROJECT_LIST: Project[] = [
   {
     name: "Lazarus",
     slug: "lazarus",
+    visible: false,
     year: 2006,
     description: (
       <>
@@ -323,6 +337,7 @@ export const PROJECT_LIST: Project[] = [
   {
     name: "Spring Thing",
     slug: "spring-thing",
+    visible: true,
     year: 2006,
     description: (
       <>
@@ -342,6 +357,7 @@ export const PROJECT_LIST: Project[] = [
   {
     name: "Super Rainbow Reef",
     slug: "super-rainbow-reef",
+    visible: false,
     year: 2006,
     description: (
       <>
@@ -364,6 +380,7 @@ export const PROJECT_LIST: Project[] = [
   {
     name: "Dutch Blitz Sidekick",
     slug: "dutch-blitz-sidekick",
+    visible: true,
     year: 2012,
     description: (
       <>
@@ -383,6 +400,7 @@ export const PROJECT_LIST: Project[] = [
   {
     name: "Tree Obviator",
     slug: "tree-obviator",
+    visible: true,
     year: 2005,
     description: (
       <>
@@ -400,6 +418,7 @@ export const PROJECT_LIST: Project[] = [
   {
     name: "3D Maze",
     slug: "3d-maze",
+    visible: true,
     year: 2005,
     description: (
       <>
@@ -416,6 +435,7 @@ export const PROJECT_LIST: Project[] = [
   {
     name: "Jewel Hunter",
     slug: "jewel-hunter",
+    visible: true,
     year: 2006,
     description: (
       <>
@@ -438,6 +458,7 @@ export const PROJECT_LIST: Project[] = [
   {
     name: "Koala-BR8",
     slug: "koala-br8",
+    visible: false,
     year: 2006,
     description: (
       <>
@@ -462,6 +483,7 @@ export const PROJECT_LIST: Project[] = [
   {
     name: "Pyramid Panic",
     slug: "pyramid-panic",
+    visible: false,
     year: 2006,
     description: (
       <>
@@ -486,6 +508,7 @@ export const PROJECT_LIST: Project[] = [
   {
     name: "Platform Time",
     slug: "platform-time",
+    visible: false,
     year: 2004,
     description: (
       <>
@@ -503,6 +526,7 @@ export const PROJECT_LIST: Project[] = [
   {
     name: "Jumble",
     slug: "jumble",
+    visible: false,
     year: 2009,
     description: (
       <>
@@ -517,6 +541,7 @@ export const PROJECT_LIST: Project[] = [
   {
     name: "Super Smash Brothers Brawl: Memory Edition",
     slug: "ssbb-memory-edition",
+    visible: false,
     year: 2010,
     description: (
       <>
@@ -536,6 +561,7 @@ export const PROJECT_LIST: Project[] = [
   {
     name: "Asteroids",
     slug: "asteroids",
+    visible: true,
     year: 2006,
     description: (
       <>
@@ -555,6 +581,7 @@ export const PROJECT_LIST: Project[] = [
   {
     name: "Brick",
     slug: "brick",
+    visible: false,
     description: (
       <>
         Brick is another classic retro game also well known as Breakout. Simply
@@ -570,6 +597,7 @@ export const PROJECT_LIST: Project[] = [
   {
     name: "Lunar Lander",
     slug: "lunar-lander",
+    visible: true,
     year: 2013,
     description: (
       <>
@@ -585,6 +613,7 @@ export const PROJECT_LIST: Project[] = [
   {
     name: "Poison Penny",
     slug: "poison-penny",
+    visible: false,
     year: 2009,
     description: (
       <>
@@ -599,6 +628,7 @@ export const PROJECT_LIST: Project[] = [
   {
     name: "Pong",
     slug: "pong",
+    visible: false,
     description: (
       <>
         Pong. Everyone knows this game. Control the paddle to avoid the ball
@@ -613,6 +643,7 @@ export const PROJECT_LIST: Project[] = [
   {
     name: "Rock, Paper, Scissors!",
     slug: "rock-paper-scissors",
+    visible: false,
     year: 2008,
     description: (
       <>
@@ -627,6 +658,7 @@ export const PROJECT_LIST: Project[] = [
   {
     name: "Tic-Tac-Toe",
     slug: "tic-tac-toe",
+    visible: false,
     year: 2006,
     description: (
       <>
@@ -650,6 +682,7 @@ export const PROJECT_LIST: Project[] = [
   {
     name: "Tic-Tac-Toe",
     slug: "tic-tac-toe-java",
+    visible: false,
     year: 2013,
     description: (
       <>
@@ -672,6 +705,7 @@ export const PROJECT_LIST: Project[] = [
   {
     name: "Yahtzee",
     slug: "yahtzee",
+    visible: true,
     year: 2010,
     description: (
       <>
@@ -689,6 +723,7 @@ export const PROJECT_LIST: Project[] = [
   {
     name: "Tank War",
     slug: "tank-war",
+    visible: false,
     year: 2006,
     description: (
       <>
@@ -711,6 +746,7 @@ export const PROJECT_LIST: Project[] = [
   {
     name: "Wingman Sam",
     slug: "wingman-sam",
+    visible: false,
     year: 2006,
     description: (
       <>
@@ -734,6 +770,7 @@ export const PROJECT_LIST: Project[] = [
   {
     name: "Bumblebee",
     slug: "bumblebee",
+    visible: false,
     year: 2013,
     description: (
       <>
