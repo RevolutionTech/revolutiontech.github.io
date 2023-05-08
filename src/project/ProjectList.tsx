@@ -7,7 +7,7 @@ import { ProjectPreviewCard } from "./ProjectPreviewCard";
 const ProjectListBox = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
   gap: 8px;
 `;
 
