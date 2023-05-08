@@ -524,6 +524,22 @@ export const PROJECT_LIST: Project[] = [
     maxPlayers: 1,
   },
   {
+    name: "Maze Daze",
+    slug: "maze-daze",
+    visible: false,
+    year: 2004,
+    description: (
+      <>
+        Maze Daze was the very first maze game I ever made. This game has many
+        important elements missing, and poor mistakes in it, but it's a
+        moderately entertaining simple maze game.
+      </>
+    ),
+    platforms: [Platform.WINDOWS],
+    minPlayers: 1,
+    maxPlayers: 1,
+  },
+  {
     name: "Jumble",
     slug: "jumble",
     visible: false,
@@ -609,6 +625,12 @@ export const PROJECT_LIST: Project[] = [
     platforms: [Platform.LINUX],
     minPlayers: 1,
     maxPlayers: 1,
+    additionalLinks: [
+      {
+        url: "https://bitbucket.org/RevolutionTech/lunar-lander",
+        description: "View Source Code",
+      },
+    ],
   },
   {
     name: "Poison Penny",
@@ -639,6 +661,74 @@ export const PROJECT_LIST: Project[] = [
     platforms: [Platform.WINDOWS],
     minPlayers: 1,
     maxPlayers: 2,
+  },
+  {
+    name: "Pacman's Back in Red",
+    slug: "pacmans-back-in-red",
+    visible: false,
+    year: 2004,
+    description: (
+      <>
+        Pacman's Back in Red is a platform game featuring a red version of the
+        classic video game character, Pac-Man! Jump to the top of each level,
+        blasting away any monsters in your way with Pac-Dots! In later levels,
+        you will need to collect all the atoms in the level to pass.
+      </>
+    ),
+    platforms: [Platform.WINDOWS],
+    minPlayers: 1,
+    maxPlayers: 1,
+  },
+  {
+    name: "Flag Frenzy",
+    slug: "flag-frenzy",
+    visible: false,
+    description: (
+      <>
+        Flag Frenzy would probably seem like a completely random game at first
+        glance. You can play as either a British flag, or Turkish flag and
+        destroy zombies travelling from level to level. The truth is, I made
+        this game for a couple that was getting married using information that I
+        knew about them. The flowers the British flag shoots out are trademarked
+        by the bride, and the guitar that the Turkish flag plays is a picture of
+        the groom's guitar. The background music is 'their song'. This game is
+        dedicated to Mr. and Mrs. Yetkiner.
+      </>
+    ),
+    platforms: [Platform.WINDOWS],
+    minPlayers: 1,
+    maxPlayers: 1,
+  },
+  {
+    name: "Pacman's Back For Those Dots!",
+    slug: "pacmans-back-for-those-dots",
+    visible: false,
+    description: (
+      <>
+        Pacman's Back For Those Dots! is essentially a remake of the classic
+        Snake game. Travel through the level and collect the dots as you see
+        them. Each dot is worth a different amount of points.
+      </>
+    ),
+    platforms: [Platform.WINDOWS],
+    minPlayers: 1,
+    maxPlayers: 1,
+  },
+  {
+    name: "Whack-A-Mole",
+    slug: "whack-a-mole",
+    visible: false,
+    year: 2003,
+    description: (
+      <>
+        Whack-A-Mole is a simple game where the object is to whack the moles
+        over the head! Click on the moles to defeat them, but keep your eye out
+        for the ghost moles, which will try to trick you!
+      </>
+    ),
+    platforms: [Platform.WINDOWS],
+    minPlayers: 1,
+    maxPlayers: 1,
   },
   {
     name: "Rock, Paper, Scissors!",
@@ -701,6 +791,22 @@ export const PROJECT_LIST: Project[] = [
         description: "View Source Code",
       },
     ],
+  },
+  {
+    name: "Tic-Tac-Toe (4x4)",
+    slug: "tic-tac-toe-4x4",
+    visible: false,
+    year: 2010,
+    description: (
+      <>
+        Tic-Tac-Toe (4x4) is another version of Tic-Tac-Toe that I created. I
+        made this version in Adobe Flash in accordance with a Grade 12 Computer
+        Science project.
+      </>
+    ),
+    platforms: [Platform.WEB],
+    minPlayers: 2,
+    maxPlayers: 2,
   },
   {
     name: "Yahtzee",
@@ -786,6 +892,522 @@ export const PROJECT_LIST: Project[] = [
         description: "View Source Code",
       },
     ],
+  },
+  {
+    name: "Color Selector",
+    slug: "color-selector",
+    visible: false,
+    year: 2012,
+    description: <>A simple tool to inspire color selections.</>,
+    platforms: [Platform.ANDROID],
+    additionalLinks: [
+      {
+        url: "https://bitbucket.org/RevolutionTech/color-selector",
+        description: "View Source Code",
+      },
+    ],
+  },
+  {
+    name: "Walls of Pure Evil",
+    slug: "walls-of-pure-evil",
+    visible: false,
+    description: (
+      <>
+        Walls of Pure Evil is a very strange game. The way this game was
+        designed was rather foolish in hindsight. The end result really doesn't
+        make that much sense. Regardless, it is available to play because once
+        you understand the game, it actually can be somewhat entertaining. Play
+        as the skull and find the hidden wall creatures within your
+        surroundings. Sometimes they will camouflage with the true walls. Once
+        you've gathered all of the wall creatures, you must burn them all!
+      </>
+    ),
+    platforms: [Platform.WINDOWS],
+    minPlayers: 1,
+    maxPlayers: 1,
+  },
+  {
+    name: "Car Shooter",
+    slug: "car-shooter",
+    visible: false,
+    description: (
+      <>
+        Car Shooter is a simple game where the player's objective is to shoot at
+        the cars which appear on the street. Don't let the cops catch you!
+      </>
+    ),
+    platforms: [Platform.WINDOWS],
+    minPlayers: 1,
+    maxPlayers: 1,
+  },
+  {
+    name: "Helicopter Chase",
+    slug: "helicopter-chase",
+    visible: false,
+    description: (
+      <>
+        It's time to take revenge on the helicopters! Fire! Shoot down as many
+        helicopters as you can in many different levels.
+      </>
+    ),
+    platforms: [Platform.WINDOWS],
+    minPlayers: 1,
+    maxPlayers: 1,
+  },
+  {
+    name: "Shooter",
+    slug: "shooter",
+    visible: false,
+    description: (
+      <>
+        Watch many vehicles pass the horizon and shoot them down! Click to fire
+        at the vehicles and destroy them.
+      </>
+    ),
+    platforms: [Platform.WINDOWS],
+    minPlayers: 1,
+    maxPlayers: 1,
+  },
+  {
+    name: "Smiley the Smiley",
+    slug: "smiley-the-smiley",
+    visible: false,
+    year: 2004,
+    description: (
+      <>
+        Smiley the Smiley is an odd maze game. You control a small smiley face
+        in a maze and defeat the enemies by punching them. You can proceed to
+        the next level by hitting the flag in each level, you don't actually
+        need to defeat all of the smilies first.
+      </>
+    ),
+    platforms: [Platform.WINDOWS],
+    minPlayers: 1,
+    maxPlayers: 1,
+  },
+  {
+    name: "Switchy-Switchy",
+    slug: "switchy-switchy-nai",
+    visible: false,
+    description: (
+      <>
+        Switchy-Switchy is an implementation of the common game known as Three
+        Card Monte where the object is to find where the pea, or in this case,
+        diamond is located among the shells it is hidden in. This version plays
+        out differently every time you play.
+      </>
+    ),
+    platforms: [Platform.WINDOWS],
+    minPlayers: 1,
+    maxPlayers: 1,
+  },
+  {
+    name: "Tug-O-War",
+    slug: "tug-o-war",
+    visible: false,
+    description: (
+      <>
+        This game is a very simple version of the classic game we know as
+        Tug-Of-War or Tug-O-War. You can play with one or two people where the
+        object of the game is to pull your opponent into the river in the centre
+        by tugging on the rope by pressing one of the keys on the keyboard. You
+        can also play against computer players.
+      </>
+    ),
+    platforms: [Platform.WINDOWS],
+    minPlayers: 1,
+    maxPlayers: 2,
+  },
+  {
+    name: "My Desktop",
+    slug: "my-desktop",
+    visible: false,
+    year: 2009,
+    description: (
+      <>
+        My Desktop is an interesting program that I created for my summative
+        project in grade 11 computer science. My Desktop allows you to add
+        accounts with pictures, music, notes, to-do lists, and similar
+        information to personalize your own space. Of course, multiple people
+        can use the program with their own accounts with their own information.
+      </>
+    ),
+    platforms: [Platform.WINDOWS],
+  },
+  {
+    name: "Tasks",
+    slug: "tasks",
+    visible: false,
+    year: 2009,
+    description: (
+      <>
+        Inspired from Douglas Coupland's novel JPod, Tasks is a simple program
+        that I created as a tool for pursuing an experiment that I had titled
+        "The Lucas Connors Social Experiment". After entering the names of all
+        participants, the program randomly generates preset tasks for each
+        person to do throughout the week (Note that the primary location for
+        this is meant to be in a school). The tasks are silly random acts that
+        are intended to get people confused or ask questions. Some tasks include
+        "Take all speech literally" or "Burst into fake laughter when asked a
+        question". The user of course can add his or her own tasks to the
+        program if they wish.
+      </>
+    ),
+    platforms: [Platform.WINDOWS],
+  },
+  {
+    name: "Catch the Clown",
+    slug: "catch-the-clown-nai",
+    visible: false,
+    year: 2003,
+    description: (
+      <>
+        The simplest version of the catching games I provide. Catch the Clown is
+        a simple clicking game where the object is to click on the clowns
+        without clicking on the evil clowns. The clowns get faster when you
+        click them, and the real clowns need to be clicked twice. Oh, and don't
+        let a clown get invincibility or you won't be able to click on it for 30
+        seconds.
+      </>
+    ),
+    platforms: [Platform.WINDOWS],
+    minPlayers: 1,
+    maxPlayers: 1,
+  },
+  {
+    name: "Fish Catching",
+    slug: "fish-catching",
+    visible: false,
+    description: (
+      <>
+        My final catching game, Fish Catching. This game is the most complex of
+        the clicking games, but trust me, it is probably the most entertaining.
+        There are all kinds of bonus things going all over the place, and it
+        really keep your interest for a surprisingly long period of time.
+      </>
+    ),
+    platforms: [Platform.WINDOWS],
+    minPlayers: 1,
+    maxPlayers: 1,
+  },
+  {
+    name: "Money Maker",
+    slug: "money-maker",
+    visible: false,
+    description: (
+      <>
+        Money Maker is a different Catching & Clicking game that's really
+        unique. Instead of hunting for the specific object, there are tons of
+        coins flowing down the screen, and the object is to click on the largest
+        coins to get the most amount of money. Go to the next level when you're
+        ready by clicking on the dynamite.
+      </>
+    ),
+    platforms: [Platform.WINDOWS],
+    minPlayers: 1,
+    maxPlayers: 1,
+  },
+  {
+    name: "Mario Catcher",
+    slug: "mario-catcher",
+    visible: false,
+    year: 2004,
+    description: (
+      <>
+        Mario Catcher is another remake of the Catch the Clown game. It plays
+        with Mario, and Luigi, as well as Bowser for the evil part of the game.
+        This version gets slightly more complex, but not by much. Every once and
+        a while there is a bonus round to allow the player to gather up extra
+        points!
+      </>
+    ),
+    platforms: [Platform.WINDOWS],
+    minPlayers: 1,
+    maxPlayers: 1,
+  },
+  {
+    name: "Butterfly Blaster",
+    slug: "butterfly-blaster",
+    visible: false,
+    year: 2003,
+    description: (
+      <>
+        Click on the keys to start. Then, click on the butterflies that appear
+        to gather up points. When you need a break, click the stop sign, and the
+        time and butterflies will stop. Once you wish to continue, you can press
+        the keys again. The game is rather simple, and quite boring.
+      </>
+    ),
+    platforms: [Platform.WINDOWS],
+    minPlayers: 1,
+    maxPlayers: 1,
+  },
+  {
+    name: "Runaway Dog",
+    slug: "runaway-dog",
+    visible: false,
+    year: 2003,
+    description: (
+      <>
+        Runaway Dog is another remake of the Catch the Clown game. This one
+        includes a dog and a cat running on the loose.
+      </>
+    ),
+    platforms: [Platform.WINDOWS],
+    minPlayers: 1,
+    maxPlayers: 1,
+  },
+  {
+    name: "Catch Your Own",
+    slug: "catch-your-own",
+    visible: false,
+    description: (
+      <>
+        Catch Your Own is a special game based off of the original Catch the
+        Clown game created by Mark Overmars. This game however is special,
+        because you can customize your very own Catch the Clown game anyway you
+        want to. You can make the player click on dogs, fish, or whatever you
+        want! You can also customize the background, background music, sound
+        effects, and even the walls.
+      </>
+    ),
+    platforms: [Platform.WINDOWS],
+    minPlayers: 1,
+    maxPlayers: 1,
+  },
+  {
+    name: "Memory Match",
+    slug: "memory-match",
+    visible: false,
+    description: (
+      <>
+        Memory Match is your classic game of Concentration. Simply pay attention
+        to which colours are where, and select them in order. It's quite simple.
+      </>
+    ),
+    platforms: [Platform.WINDOWS],
+    minPlayers: 1,
+    maxPlayers: 1,
+  },
+  {
+    name: "Particle System",
+    slug: "particle-system",
+    visible: false,
+    description: (
+      <>
+        Particle System is a simple program I developed while testing out
+        particle effects in Game Maker.
+      </>
+    ),
+    platforms: [Platform.WINDOWS],
+  },
+  {
+    name: "Pascal's Triangle",
+    slug: "pascals-triangle",
+    visible: false,
+    year: 2009,
+    description: (
+      <>
+        If Pascal&apos;s Triangle does not sound familiar to you, then this
+        program will not mean anything to you. However, if you are aware of
+        Pascal&apos;s Triangle, you may catch interest in this program as it
+        calculates several rows of the triangle automatically.
+      </>
+    ),
+    platforms: [Platform.WINDOWS],
+  },
+  {
+    name: "Eyes",
+    slug: "eyes",
+    visible: false,
+    description: (
+      <>
+        Eyes is the classic program that follows the cursor around with the
+        motion of the pupils.
+      </>
+    ),
+    platforms: [Platform.WINDOWS],
+  },
+  {
+    name: "Lotto 649 Ticket Generator",
+    slug: "lotto-649-ticket-generator",
+    visible: false,
+    year: 2009,
+    description: (
+      <>
+        Lotto 649 Ticket Generator randomly generates values appropriate for
+        entering on a Lotto 649 ticket. I developed this program when I became
+        too lazy to come up with numbers for my parents when they bought one.
+      </>
+    ),
+    platforms: [Platform.WINDOWS],
+  },
+  {
+    name: "Lotto 649 Simulator",
+    slug: "lotto-649-simulator",
+    visible: false,
+    year: 2009,
+    description: (
+      <>
+        Lotto 649 Simulator simulates the results of financial difference when
+        comparing the cost of buying Lotto 649 tickets with the odds of winning.
+        I like running the program and holding ALT+R. It reminds me why I do not
+        play lottery games.
+      </>
+    ),
+    platforms: [Platform.WINDOWS],
+  },
+  {
+    name: "Shrek Adventure Game",
+    slug: "shrek-adventure-game-nai",
+    visible: false,
+    year: 2003,
+    description: (
+      <>
+        Shrek Adventure Game was the very first game I ever created (and
+        actually finished). This game is primarily here for historical purposes,
+        and I'd strongly recommend not actually playing this game, unless you
+        wish to make fun of my early work. Hey&hellip; we all start somewhere,
+        right? The version released here is actually a slightly revised version
+        that improves some bugs, player mechanics, and some of the graphics.
+        (That's right, it used to be even worse!)
+      </>
+    ),
+    platforms: [Platform.WINDOWS],
+    minPlayers: 1,
+    maxPlayers: 4,
+  },
+  {
+    name: "Factor",
+    slug: "factor",
+    visible: false,
+    year: 2008,
+    description: (
+      <>
+        Factor is a simple program that determines the prime factorization of an
+        entered value. In other words if the value is not prime, it will output
+        the smallest values possible multiplied together to create the number of
+        the entered value.
+      </>
+    ),
+    platforms: [Platform.WINDOWS],
+  },
+  {
+    name: "Fraction Reducer",
+    slug: "fraction-reducer",
+    visible: false,
+    year: 2010,
+    description: (
+      <>
+        <em>Fraction Reducer</em> is a great little program that takes fractions
+        and puts them into lowest terms.
+      </>
+    ),
+    platforms: [Platform.WEB],
+  },
+  {
+    name: "Fibonacci Numbers",
+    slug: "fibonacci",
+    visible: false,
+    year: 2010,
+    description: (
+      <>
+        Fibonacci Numbers is a simple program that displays the Fibonacci number
+        according to the inputted term. Note that this program naively uses
+        recursion to find the solution for each term.
+      </>
+    ),
+    platforms: [Platform.WEB],
+  },
+  {
+    name: "n Choose R",
+    slug: "n-choose-r",
+    visible: false,
+    year: 2010,
+    description: (
+      <>
+        n Choose r is a useful little program that calculates inputted numbers
+        using the n Choose r (nCr) function. If you're unfamiliar with nCr, it
+        is a function that calculates how many possibilities exist in a
+        situation where you can choose a given amount of objects from a given
+        amount of possibilities. To better understand, you could calculate how
+        many different card combinations you could pick up in an initial dealing
+        of a game of Blackjack using a standard 52-card deck by calculating 52
+        Choose 2. The answer here would be 1326. This program spares you the
+        mathematics behind the function!
+      </>
+    ),
+    platforms: [Platform.WEB],
+  },
+  {
+    name: "Guess the Number",
+    slug: "guess-the-number",
+    visible: false,
+    year: 2008,
+    description: (
+      <>
+        Guess the Number is a classic game where you try to guess the number
+        between 1 and 100 that the computer has randomly selected. The game
+        keeps track of your wrong guesses, but gives you slight hints along the
+        way.
+      </>
+    ),
+    platforms: [Platform.WINDOWS],
+    minPlayers: 1,
+    maxPlayers: 1,
+  },
+  {
+    name: "Guessing Closer To",
+    slug: "guessing-closer-to",
+    visible: false,
+    year: 2008,
+    description: (
+      <>
+        Guessing Closer To is a slight revision of the game Guess the Number.
+        This time you play with a partner and try to guess the randomly-selected
+        three digit number. Whoever gets the closest without going over wins.
+      </>
+    ),
+    platforms: [Platform.WINDOWS],
+    minPlayers: 2,
+    maxPlayers: 2,
+  },
+  {
+    name: "Dice Roll Simulator",
+    slug: "dice-roll-simulator",
+    visible: false,
+    year: 2009,
+    description: (
+      <>
+        Dice Roll Simulator is a simple program that simulates the rolling of 2
+        dice. It loops 250 times and displays the results of totals continuously
+        until it has completed.
+      </>
+    ),
+    platforms: [Platform.WINDOWS],
+  },
+  {
+    name: "Coin Flip",
+    slug: "coin-flip",
+    visible: false,
+    description: (
+      <>
+        Coin Flip is a simple program I made a long time ago that simply allows
+        you to choose any Canadian coin and results in a random decision of
+        landing heads or tails. I will warn you though, the result of this
+        program was not very graphically pleasing.
+      </>
+    ),
+    platforms: [Platform.WINDOWS],
+  },
+  {
+    name: "Random Number Generator",
+    slug: "random-number-generator",
+    visible: false,
+    description: (
+      <>A classic random number generator that generates numbers from 0 to 9.</>
+    ),
+    platforms: [Platform.WINDOWS],
   },
 ];
 export const PROJECT_MAP = keyBy(PROJECT_LIST, "slug");
