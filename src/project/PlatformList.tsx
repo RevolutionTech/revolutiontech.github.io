@@ -7,7 +7,7 @@ import { Platform, PLATFORM_TO_NAME, PLATFORM_TO_FA_ICON } from "./project";
 const PlatformListBox = styled.span<{ full?: boolean }>`
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: ${(props) => (props.full ? "16px" : "4px")};
 `;
 
 interface PlatformListProps {
