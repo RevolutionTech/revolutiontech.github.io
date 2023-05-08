@@ -72,7 +72,7 @@ export const ProjectDetails = () => {
     return <NotFound />;
   }
 
-  const screenshots = projectScreenshots(project.slug);
+  const screenshots = projectScreenshots(project);
   const download = projectDownload(project.slug);
   return (
     <ProjectDetailsBox>
@@ -101,8 +101,11 @@ export const ProjectDetails = () => {
         showThumbs={false}
         autoPlay
       >
-        {screenshots.map((screenshot) => (
-          <img key={screenshot} src={screenshot} />
+        {screenshots.map(({ url, caption }) => (
+          <div key={url}>
+            <img src={url} />
+            {caption && <p className="legend">{caption}</p>}
+          </div>
         ))}
       </ProjectCarousel>
       <p>{project.description}</p>

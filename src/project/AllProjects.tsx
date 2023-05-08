@@ -105,6 +105,10 @@ export const PROJECT_LIST: Project[] = [
       </>
     ),
     platforms: [Platform.WEB],
+    screenshotCaptions: {
+      flamingo:
+        "The contest page where users can view photos that have been submitted to the contest.",
+    },
     additionalLinks: [
       {
         url: "https://github.com/RevolutionTech/flamingo",
@@ -126,6 +130,15 @@ export const PROJECT_LIST: Project[] = [
       </>
     ),
     platforms: [Platform.WEB],
+    screenshotCaptions: {
+      searedquail0:
+        "Users can view your menu and order from their phone or tablet, no download required.",
+      searedquail1: "Simply select your items and a table to place an order.",
+      searedquail2:
+        "Administrators can update item descriptions and other details in real-time.",
+      searedquail3:
+        "Kitchen staff see all of the incoming orders as they arrive.",
+    },
     additionalLinks: [
       {
         url: "https://github.com/RevolutionTech/seared-quail",
@@ -147,6 +160,9 @@ export const PROJECT_LIST: Project[] = [
       </>
     ),
     platforms: [Platform.WEB, Platform.WINDOWS, Platform.MACOS, Platform.LINUX],
+    screenshotCaptions: {
+      djangoconditions: "Updating a ConditionsField in the Django admin.",
+    },
     additionalLinks: [
       {
         url: "http://django-conditions.readthedocs.org/",
@@ -785,6 +801,12 @@ export const PROJECT_LIST: Project[] = [
     platforms: [Platform.LINUX, Platform.ANDROID],
     minPlayers: 2,
     maxPlayers: 2,
+    screenshotCaptions: {
+      "tic-tac-toe-java":
+        "This is the Java client of the game running on Linux.",
+      "tic-tac-toe-android":
+        "This is the Android version of the game running on a Galaxy Nexus.",
+    },
     additionalLinks: [
       {
         url: "https://bitbucket.org/RevolutionTech/tic-tac-toe",

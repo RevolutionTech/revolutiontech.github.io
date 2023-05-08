@@ -1,3 +1,4 @@
+import last from "lodash/last";
 import { IconDefinition } from "@fortawesome/fontawesome-common-types";
 import { faCloud } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -36,14 +37,21 @@ export const PLATFORM_TO_FA_ICON: Record<Platform, IconDefinition> = {
   [Platform.ANDROID]: faAndroid,
 };
 
-export const projectScreenshots = (projectSlug: string) => [
-  ...Object.values(
-    (JPG_SCREENSHOTS as Record<string, string[]>)[projectSlug] ?? {}
-  ),
-  ...Object.values(
-    (PNG_SCREENSHOTS as Record<string, string[]>)[projectSlug] ?? {}
-  ),
-];
+export const projectScreenshots = (project: Project) => {
+  const screenshots = [
+    ...Object.values(
+      (JPG_SCREENSHOTS as Record<string, string[]>)[project.slug] ?? {}
+    ),
+    ...Object.values(
+      (PNG_SCREENSHOTS as Record<string, string[]>)[project.slug] ?? {}
+    ),
+  ];
+  return screenshots.map((url) => {
+    const screenshotName = (last(url.split("/")) ?? "").split(".")[0];
+    const caption = project.screenshotCaptions?.[screenshotName];
+    return { url, caption };
+  });
+};
 
 export const projectDownload = (projectSlug: string) =>
   (EXE_DOWNLOADS as Record<string, string>)[projectSlug] ??
@@ -64,5 +72,6 @@ export type Project = {
   platforms: Platform[];
   minPlayers?: number;
   maxPlayers?: number;
+  screenshotCaptions?: Record<string, string>;
   additionalLinks?: ProjectLink[];
 };

@@ -51,12 +51,12 @@ interface ProjectCardProps {
 }
 
 export const ProjectPreviewCard = ({ project }: ProjectCardProps) => {
-  const randomScreenshot = sample(projectScreenshots(project.slug));
+  const screenshot = sample(projectScreenshots(project));
   return (
     <ProjectPreviewCardBox to={`/project/${project.slug}`}>
       <ProjectPreviewScreenshotBox>
-        {randomScreenshot && (
-          <ProjectPreviewScreenshot src={randomScreenshot} alt={project.name} />
+        {screenshot && (
+          <ProjectPreviewScreenshot src={screenshot.url} alt={project.name} />
         )}
       </ProjectPreviewScreenshotBox>
       <div>
