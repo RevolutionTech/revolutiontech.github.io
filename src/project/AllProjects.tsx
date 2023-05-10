@@ -1010,19 +1010,24 @@ export const PROJECT_LIST: Project[] = [
     maxPlayers: 1,
   },
   {
-    name: "Jumble",
-    slug: "jumble",
+    name: "Bumblebee",
+    slug: "bumblebee",
     visible: false,
-    year: 2009,
+    year: 2013,
     description: (
       <>
-        Jumble is a simple word game that requires you to unscramble the word
-        entered by another player.
+        Bumblebee is a small program for creating simple patterns (can be good
+        for drawing flowers or similar shapes). The project was created for an
+        assignment in CS 349 (User Interfaces).
       </>
     ),
-    platforms: [Platform.WINDOWS],
-    minPlayers: 2,
-    maxPlayers: 2,
+    platforms: [Platform.LINUX],
+    additionalLinks: [
+      {
+        url: "https://bitbucket.org/RevolutionTech/bumblebee",
+        description: "View Source Code",
+      },
+    ],
   },
   {
     name: "Tic-Tac-Toe",
@@ -1104,56 +1109,6 @@ export const PROJECT_LIST: Project[] = [
     maxPlayers: 1,
   },
   {
-    name: "Poison Penny",
-    slug: "poison-penny",
-    visible: false,
-    year: 2009,
-    description: (
-      <>
-        Poison Penny is an implementation of basic childhood game where the
-        objective is to get the other player to take the last penny.
-      </>
-    ),
-    platforms: [Platform.WINDOWS],
-    minPlayers: 2,
-    maxPlayers: 2,
-  },
-  {
-    name: "Rock, Paper, Scissors!",
-    slug: "rock-paper-scissors",
-    visible: false,
-    year: 2008,
-    description: (
-      <>
-        Rock, Paper, Scissors! is an implementation of the childhood classic
-        game. In this version, you play against the computer.
-      </>
-    ),
-    platforms: [Platform.WINDOWS],
-    minPlayers: 1,
-    maxPlayers: 1,
-  },
-  {
-    name: "Bumblebee",
-    slug: "bumblebee",
-    visible: false,
-    year: 2013,
-    description: (
-      <>
-        Bumblebee is a small program for creating simple patterns (can be good
-        for drawing flowers or similar shapes). The project was created for an
-        assignment in CS 349 (User Interfaces).
-      </>
-    ),
-    platforms: [Platform.LINUX],
-    additionalLinks: [
-      {
-        url: "https://bitbucket.org/RevolutionTech/bumblebee",
-        description: "View Source Code",
-      },
-    ],
-  },
-  {
     name: "Switchy-Switchy",
     slug: "switchy-switchy-nai",
     visible: false,
@@ -1186,6 +1141,21 @@ export const PROJECT_LIST: Project[] = [
     maxPlayers: 2,
   },
   {
+    name: "Poison Penny",
+    slug: "poison-penny",
+    visible: false,
+    year: 2009,
+    description: (
+      <>
+        Poison Penny is an implementation of basic childhood game where the
+        objective is to get the other player to take the last penny.
+      </>
+    ),
+    platforms: [Platform.WINDOWS],
+    minPlayers: 2,
+    maxPlayers: 2,
+  },
+  {
     name: "My Desktop",
     slug: "my-desktop",
     visible: false,
@@ -1202,16 +1172,27 @@ export const PROJECT_LIST: Project[] = [
     platforms: [Platform.WINDOWS],
   },
   {
-    name: "Particle System",
-    slug: "particle-system",
+    name: "Shrek Adventure Game",
+    slug: "shrek-adventure-game-nai",
     visible: false,
+    year: 2003,
     description: (
       <>
-        Particle System is a simple program I developed while testing out
-        particle effects in Game Maker.
+        Shrek Adventure Game was the very first game I ever created (and
+        finished).
+        <br />
+        <br />
+        This game is here purely for posterity, I wouldn&apos;t actually
+        recommend playing this game unless you wish to make fun of my early
+        work. Hey&hellip; we all start somewhere, right? The version released
+        here is actually a slightly revised version that improves some bugs,
+        player mechanics, and some of the graphics. That&apos;s right, it used
+        to be even worse!
       </>
     ),
     platforms: [Platform.WINDOWS],
+    minPlayers: 1,
+    maxPlayers: 4,
   },
   {
     name: "Eyes",
@@ -1255,27 +1236,32 @@ export const PROJECT_LIST: Project[] = [
     platforms: [Platform.WINDOWS],
   },
   {
-    name: "Shrek Adventure Game",
-    slug: "shrek-adventure-game-nai",
+    name: "Dice Roll Simulator",
+    slug: "dice-roll-simulator",
     visible: false,
-    year: 2003,
+    year: 2009,
     description: (
       <>
-        Shrek Adventure Game was the very first game I ever created (and
-        finished).
-        <br />
-        <br />
-        This game is here purely for posterity, I wouldn&apos;t actually
-        recommend playing this game unless you wish to make fun of my early
-        work. Hey&hellip; we all start somewhere, right? The version released
-        here is actually a slightly revised version that improves some bugs,
-        player mechanics, and some of the graphics. That&apos;s right, it used
-        to be even worse!
+        Dice Roll Simulator simulates the rolling of 2 dice. It loops 250 times
+        and displays the results of totals continuously until it has completed.
       </>
     ),
     platforms: [Platform.WINDOWS],
-    minPlayers: 1,
-    maxPlayers: 4,
+  },
+  {
+    name: "Jumble",
+    slug: "jumble",
+    visible: false,
+    year: 2009,
+    description: (
+      <>
+        Jumble is a simple word game that requires you to unscramble the word
+        entered by another player.
+      </>
+    ),
+    platforms: [Platform.WINDOWS],
+    minPlayers: 2,
+    maxPlayers: 2,
   },
   {
     name: "Guess the Number",
@@ -1311,14 +1297,28 @@ export const PROJECT_LIST: Project[] = [
     maxPlayers: 2,
   },
   {
-    name: "Dice Roll Simulator",
-    slug: "dice-roll-simulator",
+    name: "Rock, Paper, Scissors!",
+    slug: "rock-paper-scissors",
     visible: false,
-    year: 2009,
+    year: 2008,
     description: (
       <>
-        Dice Roll Simulator simulates the rolling of 2 dice. It loops 250 times
-        and displays the results of totals continuously until it has completed.
+        Rock, Paper, Scissors! is an implementation of the childhood classic
+        game. In this version, you play against the computer.
+      </>
+    ),
+    platforms: [Platform.WINDOWS],
+    minPlayers: 1,
+    maxPlayers: 1,
+  },
+  {
+    name: "Particle System",
+    slug: "particle-system",
+    visible: false,
+    description: (
+      <>
+        Particle System is a simple program I developed while testing out
+        particle effects in Game Maker.
       </>
     ),
     platforms: [Platform.WINDOWS],
