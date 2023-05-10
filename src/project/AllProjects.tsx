@@ -1311,17 +1311,5 @@ export const PROJECT_LIST: Project[] = [
     minPlayers: 1,
     maxPlayers: 1,
   },
-  {
-    name: "Particle System",
-    slug: "particle-system",
-    visible: false,
-    description: (
-      <>
-        Particle System is a simple program I developed while testing out
-        particle effects in Game Maker.
-      </>
-    ),
-    platforms: [Platform.WINDOWS],
-  },
 ];
 export const PROJECT_MAP = keyBy(PROJECT_LIST, "slug");
