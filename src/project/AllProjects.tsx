@@ -1154,20 +1154,6 @@ export const PROJECT_LIST: Project[] = [
     ],
   },
   {
-    name: "Color Selector",
-    slug: "color-selector",
-    visible: false,
-    year: 2012,
-    description: <>A simple tool to inspire color selections.</>,
-    platforms: [Platform.ANDROID],
-    additionalLinks: [
-      {
-        url: "https://bitbucket.org/RevolutionTech/color-selector",
-        description: "View Source Code",
-      },
-    ],
-  },
-  {
     name: "Switchy-Switchy",
     slug: "switchy-switchy-nai",
     visible: false,
@@ -1216,27 +1202,6 @@ export const PROJECT_LIST: Project[] = [
     platforms: [Platform.WINDOWS],
   },
   {
-    name: "Tasks",
-    slug: "tasks",
-    visible: false,
-    year: 2009,
-    description: (
-      <>
-        Inspired from Douglas Coupland&apos;s novel JPod, Tasks is a simple
-        program that I created as a tool for pursuing an experiment that I had
-        titled "The Lucas Connors Social Experiment". After entering the names
-        of all participants, the program randomly generates preset tasks for
-        each person to do throughout the week (Note that the primary location
-        for this is meant to be in a school). The tasks are silly random acts
-        that are intended to get people confused or ask questions. Some tasks
-        include "Take all speech literally" or "Burst into fake laughter when
-        asked a question". The user of course can add their own tasks to the
-        program if they wish.
-      </>
-    ),
-    platforms: [Platform.WINDOWS],
-  },
-  {
     name: "Particle System",
     slug: "particle-system",
     visible: false,
@@ -1244,19 +1209,6 @@ export const PROJECT_LIST: Project[] = [
       <>
         Particle System is a simple program I developed while testing out
         particle effects in Game Maker.
-      </>
-    ),
-    platforms: [Platform.WINDOWS],
-  },
-  {
-    name: "Pascal's Triangle",
-    slug: "pascals-triangle",
-    visible: false,
-    year: 2009,
-    description: (
-      <>
-        This program calculates a triangular array of values displayed according
-        to the famous arrangement known as Pascal&apos;s triangle.
       </>
     ),
     platforms: [Platform.WINDOWS],
@@ -1326,52 +1278,6 @@ export const PROJECT_LIST: Project[] = [
     maxPlayers: 4,
   },
   {
-    name: "Factor",
-    slug: "factor",
-    visible: false,
-    year: 2008,
-    description: (
-      <>Factor determines the prime factorization of an entered value.</>
-    ),
-    platforms: [Platform.WINDOWS],
-  },
-  {
-    name: "Fraction Reducer",
-    slug: "fraction-reducer",
-    visible: false,
-    year: 2010,
-    description: <>Fraction Reducer puts fractions into lowest terms.</>,
-    platforms: [Platform.WEB],
-  },
-  {
-    name: "Fibonacci Numbers",
-    slug: "fibonacci",
-    visible: false,
-    year: 2010,
-    description: (
-      <>
-        This program displays the Fibonacci number according to the term
-        provided. Note that this program naively uses recursion to find the
-        solution for each term, so unsurprisingly it doesn&apos;t perform well
-        on larger terms.
-      </>
-    ),
-    platforms: [Platform.WEB],
-  },
-  {
-    name: "n Choose R",
-    slug: "n-choose-r",
-    visible: false,
-    year: 2010,
-    description: (
-      <>
-        n Choose r calculates inputted numbers using the n Choose r (nCr)
-        function.
-      </>
-    ),
-    platforms: [Platform.WEB],
-  },
-  {
     name: "Guess the Number",
     slug: "guess-the-number",
     visible: false,
@@ -1414,27 +1320,6 @@ export const PROJECT_LIST: Project[] = [
         Dice Roll Simulator simulates the rolling of 2 dice. It loops 250 times
         and displays the results of totals continuously until it has completed.
       </>
-    ),
-    platforms: [Platform.WINDOWS],
-  },
-  {
-    name: "Coin Flip",
-    slug: "coin-flip",
-    visible: false,
-    description: (
-      <>
-        Coin Flip simply allows you to choose any Canadian coin and randomly get
-        a heads or tails result.
-      </>
-    ),
-    platforms: [Platform.WINDOWS],
-  },
-  {
-    name: "Random Number Generator",
-    slug: "random-number-generator",
-    visible: false,
-    description: (
-      <>A classic random number generator that generates numbers from 0 to 9.</>
     ),
     platforms: [Platform.WINDOWS],
   },
