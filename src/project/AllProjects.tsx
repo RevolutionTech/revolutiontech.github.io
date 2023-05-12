@@ -74,6 +74,30 @@ export const PROJECT_LIST: Project[] = [
     ],
   },
   {
+    name: "K & L",
+    slug: "k-and-l",
+    visible: false,
+    year: 2022,
+    description: (
+      <>
+        A static website with information about the wedding of my partner
+        Katrina &amp; I for the guests that attended. The website remains
+        available to host the photo gallery from our special day.
+      </>
+    ),
+    platforms: [Platform.WEB],
+    additionalLinks: [
+      {
+        url: "https://katrinaand.lucasconnors.com/",
+        description: "View Site",
+      },
+      {
+        url: "https://github.com/RevolutionTech/k-and-l",
+        description: "View Source Code",
+      },
+    ],
+  },
+  {
     name: "Esprit's Labyrinth",
     slug: "esprits-labyrinth",
     visible: true,
@@ -98,6 +122,54 @@ export const PROJECT_LIST: Project[] = [
       {
         url: "https://www.youtube.com/watch?v=8udWR2oizvs",
         description: "Watch the Trailer",
+      },
+    ],
+  },
+  {
+    name: "Rooster",
+    slug: "rooster",
+    visible: true,
+    year: 2020,
+    description: (
+      <>
+        Rooster is a tool to review activity on GitHub, JIRA, and other
+        developer tools for reference in a daily standup.
+      </>
+    ),
+    platforms: [Platform.WEB],
+    additionalLinks: [
+      {
+        url: "https://github.com/RevolutionTech/rooster",
+        description: "View Source Code (Backend)",
+      },
+      {
+        url: "https://github.com/RevolutionTech/rooster-frontend",
+        description: "View Source Code (Frontend)",
+      },
+    ],
+  },
+  {
+    name: "Goslinks",
+    slug: "goslinks",
+    visible: true,
+    year: 2019,
+    description: (
+      <>
+        Goslinks allows users to create easy-to-remember "go" links to share
+        with the rest of their team.
+        <br />
+        <br />
+        All links are isolated by team, so for instance go/dashboard may
+        redirect to a custom Tableau dashboard for one team, but the same go
+        link might redirect to an internal GSheets spreadsheet for a different
+        team.
+      </>
+    ),
+    platforms: [Platform.WEB],
+    additionalLinks: [
+      {
+        url: "https://github.com/RevolutionTech/goslinks",
+        description: "View Source Code",
       },
     ],
   },
@@ -180,6 +252,10 @@ export const PROJECT_LIST: Project[] = [
       {
         url: "http://django-conditions.readthedocs.org/",
         description: "View Documentation",
+      },
+      {
+        url: "https://pypi.org/project/django-conditions/",
+        description: "View on PyPI",
       },
       {
         url: "https://github.com/RevolutionTech/django-conditions/",
@@ -554,6 +630,92 @@ export const PROJECT_LIST: Project[] = [
     maxPlayers: 4,
   },
   {
+    name: "Carrier Owl",
+    slug: "carrier-owl",
+    visible: true,
+    year: 2019,
+    description: (
+      <>
+        An assistant for sending out personalized invitations. Users can
+        configure messages to be sent out on a recurring basis to a list of
+        guests.
+      </>
+    ),
+    platforms: [Platform.WEB],
+    additionalLinks: [
+      {
+        url: "https://github.com/RevolutionTech/carrier-owl",
+        description: "View Source Code",
+      },
+    ],
+  },
+  {
+    name: "Letterboard",
+    slug: "letterboard",
+    visible: true,
+    year: 2019,
+    description: (
+      <>
+        Letterboard is a simple web application used to count the number of
+        characters used in a short message for a letterboard.
+      </>
+    ),
+    platforms: [Platform.WEB],
+    additionalLinks: [
+      {
+        url: "http://letterboard.revolutiontech.ca/",
+        description: "Try Letterboard",
+      },
+      {
+        url: "https://github.com/RevolutionTech/letterboard",
+        description: "View Source Code",
+      },
+    ],
+  },
+  {
+    name: "BG Teach",
+    slug: "bg-teach",
+    visible: true,
+    year: 2022,
+    description: (
+      <>
+        A simple checklist app for the purpose of faciliating the teaching
+        experience of more complex board games.
+      </>
+    ),
+    platforms: [Platform.WEB],
+    additionalLinks: [
+      {
+        url: "http://bgteach.revolutiontech.ca/",
+        description: "View Site",
+      },
+      {
+        url: "https://github.com/RevolutionTech/bg-teach",
+        description: "View Source Code",
+      },
+    ],
+  },
+  {
+    name: "Mockingbird",
+    slug: "mockingbird",
+    visible: true,
+    year: 2020,
+    description: (
+      <>
+        A simple Discord bot that provides random values for virtual games.
+        Mockingbird can select random users from a server, divide users into
+        teams, and even generate random messages for the game Decrypto.
+      </>
+    ),
+    platforms: [Platform.WINDOWS, Platform.MACOS, Platform.LINUX],
+    additionalLinks: [
+      {
+        url: "https://github.com/RevolutionTech/mockingbird",
+        description: "View Source Code",
+      },
+    ],
+  },
+  {
     name: "Dutch Blitz Sidekick",
     slug: "dutch-blitz-sidekick",
     visible: true,
@@ -728,6 +890,33 @@ export const PROJECT_LIST: Project[] = [
     platforms: [Platform.WINDOWS],
     minPlayers: 1,
     maxPlayers: 2,
+  },
+  {
+    name: "django-pigeon",
+    slug: "django-pigeon",
+    visible: true,
+    year: 2017,
+    description: (
+      <>
+        django-pigeon provides some basic test utilities for Django projects,
+        particularly to simplify the task of testing that certain endpoints
+        render without errors.
+        <br />
+        <br />I would not suggest using django-pigeon for most Django projects,
+        but in certain cases it can be useful.
+      </>
+    ),
+    platforms: [Platform.WINDOWS, Platform.MACOS, Platform.LINUX],
+    additionalLinks: [
+      {
+        url: "https://pypi.org/project/django-pigeon/",
+        description: "View on PyPI",
+      },
+      {
+        url: "https://github.com/RevolutionTech/django-pigeon",
+        description: "View Source Code",
+      },
+    ],
   },
   {
     name: "Pacman's Back in Red",
