@@ -46,6 +46,7 @@ const ProjectCarousel = styled(Carousel)`
 
 const ProjectButtons = styled.div`
   display: flex;
+  flex-wrap: wrap;
   gap: 4px;
 `;
 
