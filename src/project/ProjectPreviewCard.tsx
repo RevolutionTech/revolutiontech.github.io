@@ -6,6 +6,7 @@ import styled from "styled-components";
 import { PlatformList } from "./PlatformList";
 import { PlayerCount } from "./PlayerCount";
 import { Project, projectScreenshots } from "./project";
+import { ProjectScreenshot } from "./ProjectScreenshot";
 
 const ProjectPreviewCardBox = styled(Link)`
   display: flex;
@@ -26,18 +27,12 @@ const ProjectPreviewCardBox = styled(Link)`
   }
 `;
 
-const ProjectPreviewScreenshotBox = styled.div`
+const ProjectPreviewScreenshot = styled.div`
   display: flex;
   justify-content: center;
   min-width: 264px;
   max-width: 264px;
   height: 200px;
-`;
-
-const ProjectPreviewScreenshot = styled.img`
-  max-width: 264px;
-  max-height: 200px;
-  object-fit: cover;
 `;
 
 const ProjectPreviewTitle = styled.h3`
@@ -54,11 +49,11 @@ export const ProjectPreviewCard = ({ project }: ProjectCardProps) => {
   const screenshot = sample(projectScreenshots(project));
   return (
     <ProjectPreviewCardBox to={`/project/${project.slug}`}>
-      <ProjectPreviewScreenshotBox>
+      <ProjectPreviewScreenshot>
         {screenshot && (
-          <ProjectPreviewScreenshot src={screenshot.url} alt={project.name} />
+          <ProjectScreenshot url={screenshot.url} alt={project.name} />
         )}
-      </ProjectPreviewScreenshotBox>
+      </ProjectPreviewScreenshot>
       <div>
         <ProjectPreviewTitle>
           <div>
