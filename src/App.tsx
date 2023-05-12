@@ -30,7 +30,6 @@ const ContentBox = styled.div`
   justify-content: center;
   max-width: 856px;
   margin: 64px auto;
-  text-align: justify;
 `;
 
 const App = () => (
