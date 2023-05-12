@@ -37,8 +37,8 @@ const ProjectPreviewScreenshot = styled.div`
 
 const ProjectPreviewTitle = styled.h3`
   display: flex;
+  flex-wrap: wrap;
   gap: 4px;
-  white-space: nowrap;
 `;
 
 interface ProjectCardProps {
@@ -59,6 +59,7 @@ export const ProjectPreviewCard = ({ project }: ProjectCardProps) => {
           <div>
             {project.name}
             {project.year && ` (${project.year})`}
+            &nbsp;
           </div>
           <PlatformList platforms={project.platforms} />
           <PlayerCount
