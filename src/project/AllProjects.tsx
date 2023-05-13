@@ -61,8 +61,10 @@ export const PROJECT_LIST: Project[] = [
         the investors that fund them.
         <br />
         <br />
-        PerDiem is the brainchild of Brandon Nelson; I created the backend of
-        the website.
+        <small>
+          PerDiem is the brainchild of Brandon Nelson. I just created the
+          backend of the website.
+        </small>
       </>
     ),
     platforms: [Platform.WEB],
@@ -85,8 +87,10 @@ export const PROJECT_LIST: Project[] = [
         available to host the photo gallery from our special day.
         <br />
         <br />
-        The website was built on top of a Creative Commons HTML template; I
-        cannot claim any credit for the design.
+        <small>
+          The website was built on top of a Creative Commons HTML template. I
+          cannot claim any credit for the design.
+        </small>
       </>
     ),
     platforms: [Platform.WEB],
@@ -113,10 +117,12 @@ export const PROJECT_LIST: Project[] = [
         bloodthirsty monsters, and amusing puzzles.
         <br />
         <br />
-        Esprit&apos;s Labyrinth was created as an Independent Study Unit project
-        in my grade 12 Communications Technology class and won first place in
-        the Interactive Game category of the &apos;10 Cawthra Animation
-        Festival.
+        <small>
+          Esprit&apos;s Labyrinth was created as an Independent Study Unit
+          project in my grade 12 Communications Technology class and won first
+          place in the Interactive Game category of the &apos;10 Cawthra
+          Animation Festival.
+        </small>
       </>
     ),
     platforms: [Platform.WINDOWS],
@@ -210,9 +216,12 @@ export const PROJECT_LIST: Project[] = [
         Seared Quail is a digital restaurant menu and order management web
         application.
         <br />
-        <br />I created this for a party in 2015, but restaurant owners could
-        deploy Seared Quail in their restaurants to improve efficiency and
-        communication of orders.
+        <br />
+        <small>
+          I created this for a party in 2015, but restaurant owners could deploy
+          Seared Quail in their restaurants to improve efficiency and
+          communication of orders.
+        </small>
       </>
     ),
     platforms: [Platform.WEB],
@@ -279,10 +288,12 @@ export const PROJECT_LIST: Project[] = [
         shape and/or colour in a horizontal or vertical row of three blocks.
         <br />
         <br />
-        Blockade was a project created as a result of an Independent Study Unit
-        project in my grade 11 Communications Technology class. Blockade won
-        first place in the Interactive Game category of the &apos;09 Cawthra
-        Animation Festival.
+        <small>
+          Blockade was a project created as a result of an Independent Study
+          Unit project in my grade 11 Communications Technology class. Blockade
+          won first place in the Interactive Game category of the &apos;09
+          Cawthra Animation Festival.
+        </small>
       </>
     ),
     platforms: [Platform.WINDOWS],
@@ -302,10 +313,10 @@ export const PROJECT_LIST: Project[] = [
     year: 2006,
     description: (
       <>
-        In Evil Clutches, you control a dragon parent who must collect his/her
-        young from the evil boss. Watch out for demons which the boss will
-        launch at you without warning. There are also power-ups to help you
-        survive and collect your children.
+        In Evil Clutches, players control a dragon parent who must collect their
+        young from the evil boss while avoiding demons the boss launches without
+        warning. There are also power-ups to help players survive and collect
+        their children.
         <br />
         <br />
         <small>
@@ -326,10 +337,10 @@ export const PROJECT_LIST: Project[] = [
     year: 2006,
     description: (
       <>
-        Galactic Mail is a simple space-themed game where you must travel to all
-        of the moons on the screen to deliver mail to each one. After all of the
-        mail is delivered, you can then travel to the planet to proceed to the
-        next level.
+        Galactic Mail is a simple space-themed game where players must travel to
+        all of the moons on the screen to deliver mail to each one. After all of
+        the mail is delivered, players can then travel to the planet to proceed
+        to the next level.
         <br />
         <br />
         <small>
@@ -350,11 +361,10 @@ export const PROJECT_LIST: Project[] = [
     year: 2006,
     description: (
       <>
-        What would happen if an evil villain had access to a pit at the bottom
-        of machinery capable of dropping heavy blocks on top of you? Lazarus
-        would happen! Play as the friendly blob Lazarus as he tries to use the
-        blocks to his advantage puzzling his way out of the pit and stop the
-        machinery!
+        Players navigate a dangerous pit as the friendly blob Lazarus, avoiding
+        heavy blocks dropped from above machinery. To escape, players must use
+        the blocks to their advantage to puzzle their way out of the pit and
+        stop the machinery!
         <br />
         <br />
         <small>
@@ -375,7 +385,7 @@ export const PROJECT_LIST: Project[] = [
     year: 2006,
     description: (
       <>
-        Memories of the classic Breakout should arise as you play through this
+        Memories of the classic Breakout will arise as players experience this
         game. Super Rainbow Reef plays similarly to the classic game, but with
         many new features and of course a relaxing reef theme.
         <br />
@@ -398,18 +408,18 @@ export const PROJECT_LIST: Project[] = [
     year: 2006,
     description: (
       <>
-        Koala-BR8 really makes you think. You control the movement of several
-        separated koalas simultaneously through a maze, and they all must reach
-        an exit without a single one being eliminated.
-        <br />
-        <br />I intended on creating an additional 6 levels of a higher
-        difficulty, but that was never completed.
+        Koala-BR8 is a puzzle-lover&apos;s delight! Players control the movement
+        of several separated koalas simultaneously through a maze, which must
+        all reach an exit without a single one being eliminated.
         <br />
         <br />
         <small>
           Koala-BR8 was originally designed by Mark Overmars and Jacob Habgood
           for <em>The Game Maker&apos;s Apprentice</em>. This is just my
           implementation.
+          <br />
+          <br />I intended on creating an additional 6 levels of a higher
+          difficulty, but that was never completed.
         </small>
       </>
     ),
@@ -424,10 +434,10 @@ export const PROJECT_LIST: Project[] = [
     year: 2006,
     description: (
       <>
-        Grab a friend and take down the opposing planes in Wingman Sam! Fire at
-        the planes as they come to attack you in preparation for the final boss
-        battle. Be careful though, if one of you is lost in action, the game is
-        over.
+        Wingman Sam is a cooperative squadron shoot-down for two pilots. Players
+        fire at the planes as they come to attack in preparation for the final
+        boss battle. Players must maneuver carefully though&mdash; if one pilot
+        is lost in action, the game is over.
         <br />
         <br />
         <small>
@@ -448,9 +458,9 @@ export const PROJECT_LIST: Project[] = [
     year: 2006,
     description: (
       <>
-        Tank War is a multi-player shooting game where each player controls a
-        tank. Travel around the map to find your opponent and defeat them, there
-        are various power-ups available to use to defeat your opponent.
+        Tank War is a competitive shooting game where each player controls a
+        tank. Players will discover power-ups throughout the map to assist with
+        defeating their opponent.
         <br />
         <br />
         <small>
@@ -471,9 +481,9 @@ export const PROJECT_LIST: Project[] = [
     year: 2006,
     description: (
       <>
-        It&apos;s Tic-Tac-Toe: get three symbols of your kind in a row, column,
-        or diagonal to win! You may notice that instead of X&apos;s and
-        O&apos;s, Game Maker logos are used.
+        In the classic game of Tic-Tac-Toe players need three symbols in a row,
+        column, or diagonal to win. In this implementation, you may notice that
+        instead of X&apos;s and O&apos;s, Game Maker logos are used.
         <br />
         <br />
         <small>
@@ -494,10 +504,10 @@ export const PROJECT_LIST: Project[] = [
     year: 2006,
     description: (
       <>
-        In Pyramid Panic, you control an explorer searching for an ancient
-        treasure called the "Sword of RA". To get there, you must avoid giant
-        scorpions and beetles, and destroy mummies. Only those who have ever
-        held the "Sword of RA" know its true power. Will you?
+        In Pyramid Panic, players control an explorer searching for an ancient
+        treasure called the "Sword of RA". To get there, they must avoid giant
+        scorpions and beetles, and destroy mummies. With substantial bravery and
+        some luck, players can learn of the sword&apos;s true power!
         <br />
         <br />
         <small>
@@ -540,15 +550,17 @@ export const PROJECT_LIST: Project[] = [
     year: 2006,
     description: (
       <>
-        The game of Acid Drop is simple. Watch the light for a colour, and run
-        to it as fast as you can! You must reach the correctly coloured block
-        before the rest sink into the acid or you will face a painful burning
-        sensation. Ouch! After the blocks have been in the acid long enough, the
-        colours begin to burn away and you have to remember which block belongs
-        to which colour.
+        In Acid Drop, players avoid falling into the acid by paying close
+        attention to the light in the top-right corner. When the colour for the
+        light changes, players rush for the platform of the matching colour
+        before the rest sink into the acid. After the platforms have been in the
+        acid long enough, the colours begin to burn away and players have to
+        remember which platform belongs to which colour.
         <br />
         <br />
-        Acid Drop was inspired by the Mario Party mini-game Mushroom Mix-Up.
+        <small>
+          Acid Drop was inspired by the Mario Party mini-game Mushroom Mix-Up.
+        </small>
       </>
     ),
     platforms: [Platform.WINDOWS],
@@ -562,11 +574,11 @@ export const PROJECT_LIST: Project[] = [
     year: 2006,
     description: (
       <>
-        Do you remember the occasional boss battles in Super Mario Brothers 3 at
-        the end of each fortress? This game is dedicated to reliving those
-        moments of the game by challenging you with an unstoppable Boom-Boom.
-        Try to live as long as you can and see how many times you can hit
-        Boom-Boom on the head. Watch out though, he can get quite vicious!
+        Inspired by the occasional boss battles at the end of each fortress from
+        Super Mario Brothers 3, this game challenges players with an unstoppable
+        Boom-Boom. Players try to survive as long as possible while stomping the
+        Boom-Boom on the head to progress. Be warned though, he can get quite
+        vicious!
       </>
     ),
     platforms: [Platform.WINDOWS],
@@ -580,9 +592,9 @@ export const PROJECT_LIST: Project[] = [
     year: 2005,
     description: (
       <>
-        Soccer, Hockey, and Water Polo, all in one! The competition? Farm
-        animals. It&apos;s Ballistix! Guard your goal and try to shoot into
-        another player&apos;s goal to get them out. Up to 4 people can play.
+        In Ballistix, players guard their goal while simultaneously trying to
+        land goals on their opponents' sides. Players can choose from soccer,
+        hockey, or water polo themes.
         <br />
         <br />
         Don&apos;t be fooled by the resolution of your screen, every player has
@@ -600,12 +612,11 @@ export const PROJECT_LIST: Project[] = [
     year: 2006,
     description: (
       <>
-        When a hurricane strikes Mushroom Kingdom, it&apos;s up to Mario, Luigi,
-        Peach, and Bowser to face the wind in a challenge to see who can stand
-        the largest gust of wind. Jump over the boxes to avoid them, you can
-        also jump on top of them to push them downwards. You can also collect
-        lives and other special bonus items. Oh, and about the background
-        music... don&apos;t ask.
+        A hurricane strikes Mushroom Kingdom, and it&apos;s up to Mario, Luigi,
+        Peach, and Bowser to face the forces of nature in a challenge to see who
+        can stand the largest gust of wind. In Spring Thing, players jump over
+        the boxes to avoid them or jump on top of the boxes to push them
+        downwards. Players can also collect lives and other special bonus items.
       </>
     ),
     platforms: [Platform.WINDOWS],
@@ -623,10 +634,10 @@ export const PROJECT_LIST: Project[] = [
         same name.
         <br />
         <br />
-        My Grade 12 Computer Science partner, Christopher Pashartis, and myself
-        created it as a final project for the course. You have the ability to
-        play with up to four players, and can also store high scores in the high
-        score table which is saved locally.
+        <small>
+          My Grade 12 Computer Science partner, Christopher Pashartis, and
+          myself created it as a final project for the course.
+        </small>
       </>
     ),
     platforms: [Platform.WEB],
@@ -726,9 +737,8 @@ export const PROJECT_LIST: Project[] = [
     year: 2012,
     description: (
       <>
-        Your sidekick to playing the card game Dutch Blitz! A simple app to keep
-        track of each player&apos;s score, designed to be quick and keep the
-        game going.
+        A simple app to keep track of each player&apos;s score in the card game
+        Dutch Blitz.
       </>
     ),
     platforms: [Platform.ANDROID],
@@ -746,11 +756,10 @@ export const PROJECT_LIST: Project[] = [
     year: 2005,
     description: (
       <>
-        In Tree Obviator, you control a person running through the woods. On
-        your journey, you will find bonuses which you can collect to increase
-        your points, slow down or speed up the game, and even destroy all the
-        trees currently on the screen. The game goes on forever until you hit a
-        tree.
+        In Tree Obviator, players control a person running through the woods. On
+        the journey, players will find bonuses to increase points, slow down or
+        speed up the game, and even destroy all the trees currently on the
+        screen. The game goes on forever until the player hits a tree.
       </>
     ),
     platforms: [Platform.WINDOWS],
@@ -764,10 +773,9 @@ export const PROJECT_LIST: Project[] = [
     year: 2006,
     description: (
       <>
-        My implementation of the classic arcade game. Just as in the original,
-        shoot at the asteroids to make them break into smaller pieces and gain
-        points. Remember not to get hit by the asteroids, last as long as you
-        can.
+        An implementation of the arcade classic. Just as in the original, shoot
+        at the asteroids to make them break into smaller pieces and gain points.
+        Remember not to get hit by the asteroids, last as long as you can.
       </>
     ),
     platforms: [Platform.WINDOWS],
@@ -781,13 +789,16 @@ export const PROJECT_LIST: Project[] = [
     year: 2006,
     description: (
       <>
-        Get in. Get the diamonds. Then get out. They sure made it seem like a
-        simple enough mission. But will it really be that easy?
+        In Jewel Hunter, players play as an adventurer trying to collect all of
+        the diamonds in a series of dungeons.
         <br />
         <br />
-        One level of Jewel Hunter claims to be shaking due to earthquakes
-        created by the final boss, but in reality this was due to a glitch I
-        couldn&apos;t fix at the time and I simply made up a false explanation.
+        <small>
+          One level of Jewel Hunter claims to be shaking due to earthquakes
+          created by the final boss, but in reality this was due to a glitch I
+          couldn&apos;t fix at the time and I simply made up a false
+          explanation.
+        </small>
       </>
     ),
     platforms: [Platform.WINDOWS],
@@ -801,8 +812,11 @@ export const PROJECT_LIST: Project[] = [
     year: 2005,
     description: (
       <>
-        3D Maze was my first attempt at a 3D game. This game will definitely
-        give you Windows 95 screensaver vibes.
+        The vibe is Windows 95 screensaver in this simple first-person maze
+        game.
+        <br />
+        <br />
+        <small>3D Maze was my first attempt at making a game in 3D.</small>
       </>
     ),
     platforms: [Platform.WINDOWS],
@@ -816,10 +830,15 @@ export const PROJECT_LIST: Project[] = [
     year: 2004,
     description: (
       <>
-        Platform Time was the first platform game I made, and this was where I
-        first understood how to create gravity and a moving camera for platform
-        games. There are three cheat codes that can be used in the game, but
-        I&apos;m not telling!
+        Platform Time is a simple retro platform game.
+        <br />
+        <br />
+        <small>
+          This was the first platform game I made, and where I first understood
+          how to create gravity and a moving camera for platform games. There
+          are three cheat codes that can be used in the game, but I&apos;m not
+          telling!
+        </small>
       </>
     ),
     platforms: [Platform.WINDOWS],
@@ -833,8 +852,14 @@ export const PROJECT_LIST: Project[] = [
     year: 2004,
     description: (
       <>
-        Maze Daze was the first maze game I ever made. There are a variety of
-        flaws, but at least it&apos;s fairly simple to play.
+        In Maze Daze, players control an adventurer navigating through a series
+        of dungeons.
+        <br />
+        <br />
+        <small>
+          Maze Daze was the first maze game I ever made. There are a variety of
+          flaws, but at least it&apos;s fairly simple to play.
+        </small>
       </>
     ),
     platforms: [Platform.WINDOWS],
@@ -872,8 +897,8 @@ export const PROJECT_LIST: Project[] = [
         Brick is another implementation of the classic retro game (also known as
         Breakout). Simply use the paddle at the bottom of the screen to help
         control where the ball will go, to destroy all of the blocks on the
-        screen. Once you&apos;ve destroyed all of the blocks, you will pass the
-        level.
+        screen. Once all of the blocks are destroyed, players will advance to
+        the next level.
       </>
     ),
     platforms: [Platform.WINDOWS],
@@ -886,9 +911,9 @@ export const PROJECT_LIST: Project[] = [
     visible: false,
     description: (
       <>
-        Pong. Everyone knows this game. Control the paddle to avoid the ball
-        from going in on your side. The first player to ten points wins. Play
-        against the computer, or another human player.
+        Players control the paddle to prevent the ball from going in on their
+        side. The first player to ten points wins. Players can play against the
+        computer, or another human player.
       </>
     ),
     platforms: [Platform.WINDOWS],
@@ -906,8 +931,11 @@ export const PROJECT_LIST: Project[] = [
         particularly to simplify the task of testing that certain endpoints
         render without errors.
         <br />
-        <br />I would not suggest using django-pigeon for most Django projects,
-        but in certain cases it can be useful.
+        <br />
+        <small>
+          I would not suggest using django-pigeon for most Django projects, but
+          in certain cases it can be useful.
+        </small>
       </>
     ),
     platforms: [Platform.WINDOWS, Platform.MACOS, Platform.LINUX],
@@ -932,7 +960,7 @@ export const PROJECT_LIST: Project[] = [
         Pacman&apos;s Back in Red is a platform game featuring a red version of
         the classic video game character. Jump to the top of each level,
         blasting away any monsters in your way with Pac-Dots. In later levels,
-        you will need to collect all the atoms in the level to proceed.
+        players will need to collect all the atoms in the level to proceed.
       </>
     ),
     platforms: [Platform.WINDOWS],
@@ -945,16 +973,21 @@ export const PROJECT_LIST: Project[] = [
     visible: false,
     description: (
       <>
-        Flag Frenzy would seem incredibly arbitrary at first glance. You can
-        play as either a British flag, or Turkish flag and destroy zombies
-        travelling from level to level. The truth is, I made this game as a gift
-        for a couple that was getting married using limited information I knew
-        about them. The flowers the British flag shoots out are trademarked by
-        the bride, and the guitar that the Turkish flag plays is a picture of
-        the groom&apos;s guitar. The background music is &apos;their song&apos;.
+        Flag Frenzy would seem incredibly arbitrary at first glance. Players
+        travel from level to level defeating zombies and can play as either a
+        British or Turkish flag.
         <br />
         <br />
-        This game is dedicated to Mr. and Mrs. Yetkiner.
+        <small>
+          The truth is that I made this game as a gift for an engaged couple
+          using limited information I knew about them. The flowers the British
+          flag shoots out are trademarked by the bride, and the guitar that the
+          Turkish flag plays is a picture of the groom&apos;s guitar. The
+          background music is &apos;their song&apos;.
+          <br />
+          <br />
+          This game is dedicated to Mr. and Mrs. Yetkiner.
+        </small>
       </>
     ),
     platforms: [Platform.WINDOWS],
@@ -967,16 +1000,18 @@ export const PROJECT_LIST: Project[] = [
     visible: false,
     description: (
       <>
-        Play as the skull and find the hidden wall creatures within your
-        surroundings. Sometimes they will camouflage with the true walls. Once
-        you&apos;ve gathered all of the wall creatures, you must burn them all!
+        Players play as a skull searching for hidden wall creatures within their
+        surroundings. Sometimes the creatures will camouflage with the true
+        walls. Once gathering all of the wall creatures, they must be destroyed!
         <br />
         <br />
-        I&apos;ll be the first to admit: Walls of Pure Evil is a very strange
-        game. The way this game was designed was rather foolish in hindsight and
-        the end result really doesn&apos;t make that much sense. Regardless, the
-        game avoided the dust bin because it is fairly unique once you wrap your
-        head around it.
+        <small>
+          I&apos;ll be the first to admit: Walls of Pure Evil is a very strange
+          game. The way this game was designed was rather foolish in hindsight
+          and the end result really doesn&apos;t make that much sense.
+          Regardless, the game avoided the dust bin because it is fairly unique
+          once you wrap your head around it.
+        </small>
       </>
     ),
     platforms: [Platform.WINDOWS],
@@ -990,12 +1025,11 @@ export const PROJECT_LIST: Project[] = [
     year: 2003,
     description: (
       <>
-        The simplest version of the catching games I provide. Catch the Clown is
-        a simple clicking game where the object is to click on the clowns
-        without clicking on the evil clowns. The clowns get faster when you
-        click them, and the real clowns need to be clicked twice. Oh, and
-        don&apos;t let a clown get invincibility or you won&apos;t be able to
-        click on it for 30 seconds.
+        Catch the Clown is a simple clicking game where the object is to click
+        on the clowns without clicking on the evil clowns. The clowns get faster
+        when you click them, and the real clowns need to be clicked twice. If a
+        clown manages to get invincibility players won&apos;t be able to click
+        on it for 30 seconds.
         <br />
         <br />
         <small>
@@ -1015,13 +1049,14 @@ export const PROJECT_LIST: Project[] = [
     year: 2003,
     description: (
       <>
-        Runaway Dog is another remake of the Catch the Clown game I made while
-        in elementary school. This one includes a dog and a cat running on the
-        loose.
+        Runaway Dog is another catching game featuring a dog and cat running on
+        the loose.
         <br />
         <br />
-        The dog was drawn by a friend who wanted to see her picture appear in a
-        game.
+        <small>
+          I made this game in elementary school. The dog was drawn by a friend
+          who wanted to see her picture appear in a game.
+        </small>
       </>
     ),
     platforms: [Platform.WINDOWS],
@@ -1050,11 +1085,11 @@ export const PROJECT_LIST: Project[] = [
     visible: false,
     description: (
       <>
-        Money Maker is a different Catching & Clicking game that&apos;s really
-        unique. Instead of hunting for the specific object, there are tons of
-        coins flowing down the screen, and the object is to click on the largest
-        coins to get the most amount of money. Go to the next level when
-        you&apos;re ready by clicking on the dynamite.
+        Money Maker is a different catching &amp; clicking game that&apos;s
+        really unique. Instead of hunting for the specific object, there are
+        tons of coins flowing down the screen, and the object is to click on the
+        largest coins to get the most amount of money. Players can advance to
+        the next level when ready by clicking on the dynamite.
       </>
     ),
     platforms: [Platform.WINDOWS],
@@ -1069,7 +1104,7 @@ export const PROJECT_LIST: Project[] = [
     description: (
       <>
         Mario Catcher is another remake of the Catch the Clown game. This time
-        you&apos;re catching Mario and Luigi, with Bowser as the villain.
+        players are catching Mario and Luigi, with Bowser as the villain.
         <br />
         <br />
         The complexity progresses slightly in this game. For example, every once
@@ -1087,9 +1122,9 @@ export const PROJECT_LIST: Project[] = [
     visible: false,
     description: (
       <>
-        My final catching game, Fish Catching. This game is the most complex of
-        the clicking games. There are all kinds of bonus interactions all over
-        the place and a variety of different levels.
+        Fish Catching is the most complex of these clicking games. There are all
+        kinds of bonus interactions all over the place and a variety of
+        different levels.
       </>
     ),
     platforms: [Platform.WINDOWS],
@@ -1119,8 +1154,8 @@ export const PROJECT_LIST: Project[] = [
     description: (
       <>
         Car Shooter is a simple game where the player&apos;s objective is to
-        shoot at the cars which appear on the street. Don&apos;t let the cops
-        catch you!
+        shoot at the cars which appear on the street without getting caught by
+        the cops.
       </>
     ),
     platforms: [Platform.WINDOWS],
@@ -1133,8 +1168,8 @@ export const PROJECT_LIST: Project[] = [
     visible: false,
     description: (
       <>
-        It&apos;s time to take revenge on the helicopters! Fire! Shoot down as
-        many helicopters as you can in many different levels.
+        In Helicopter Chase, players shoot down as many helicopters as they can
+        in many different levels.
       </>
     ),
     platforms: [Platform.WINDOWS],
@@ -1147,8 +1182,8 @@ export const PROJECT_LIST: Project[] = [
     visible: false,
     description: (
       <>
-        Watch many vehicles pass the horizon and shoot them down! Click to fire
-        at the vehicles and destroy them.
+        In Shooter, players click to fire at the vehicles passing over the
+        horizon and try to destroy them.
       </>
     ),
     platforms: [Platform.WINDOWS],
@@ -1162,9 +1197,9 @@ export const PROJECT_LIST: Project[] = [
     year: 2004,
     description: (
       <>
-        In Smiley the Smiley you control a small smiley face in a maze and
-        defeat the enemies by punching them. You can proceed to the next level
-        by hitting the flag in each level.
+        In Smiley the Smiley players control a small smiley face in a maze and
+        defeat the enemies by punching them. Players proceed to the next level
+        by hitting the flag.
       </>
     ),
     platforms: [Platform.WINDOWS],
@@ -1178,8 +1213,8 @@ export const PROJECT_LIST: Project[] = [
     description: (
       <>
         Pacman&apos;s Back For Those Dots! was inspired by the classic game
-        Snake. Travel through the level and collect the dots as you see them.
-        Each dot is worth a different amount of points.
+        Snake. Players travel through the level and collect the dots as they
+        appear. Each dot is worth a different amount of points.
       </>
     ),
     platforms: [Platform.WINDOWS],
@@ -1194,8 +1229,8 @@ export const PROJECT_LIST: Project[] = [
     description: (
       <>
         Whack-A-Mole is a simple game where the object is to whack the moles
-        over the head! Click on the moles to defeat them, but keep your eye out
-        for the ghost moles, which will try to trick you!
+        over the head! Players click on the moles to defeat them, but should
+        keep their eyes peeled for the ghost moles, which can be tricky!
       </>
     ),
     platforms: [Platform.WINDOWS],
@@ -1210,8 +1245,12 @@ export const PROJECT_LIST: Project[] = [
     description: (
       <>
         Bumblebee is a small program for creating simple patterns (can be good
-        for drawing flowers or similar shapes). The project was created for an
-        assignment in CS 349 (User Interfaces).
+        for drawing flowers or similar shapes).
+        <br />
+        <br />
+        <small>
+          The project was created for an assignment in CS 349 (User Interfaces).
+        </small>
       </>
     ),
     platforms: [Platform.LINUX],
@@ -1229,10 +1268,14 @@ export const PROJECT_LIST: Project[] = [
     year: 2013,
     description: (
       <>
-        Yet another version of Tic-Tac-Toe. This version was created in Java for
-        CS 349 (User Interfaces) using a Model-View-Controller design pattern.
-        There is a Java desktop client as well as an Android client, which both
-        run the same model code.
+        Yet another version of Tic-Tac-Toe.
+        <br />
+        <br />
+        <small>
+          This version was created in Java for CS 349 (User Interfaces) using a
+          Model-View-Controller design pattern. There is a Java desktop client
+          as well as an Android client, which both run the same model code.
+        </small>
       </>
     ),
     platforms: [Platform.LINUX, Platform.ANDROID],
@@ -1258,9 +1301,15 @@ export const PROJECT_LIST: Project[] = [
     year: 2010,
     description: (
       <>
-        Tic-Tac-Toe (4x4) is another version of Tic-Tac-Toe that I created. I
-        made this version in Adobe Flash in accordance with a Grade 12 Computer
-        Science project.
+        Tic-Tac-Toe (4x4) is another version of Tic-Tac-Toe, but where players
+        must get 4 symbols in a row.
+        <br />
+        <br />
+        <small>
+          I made this version in Adobe Flash in accordance with a Grade 12
+          Computer Science project
+        </small>
+        .
       </>
     ),
     platforms: [Platform.WEB],
@@ -1275,11 +1324,16 @@ export const PROJECT_LIST: Project[] = [
     description: (
       <>
         Super Smash Brothers Brawl: Memory Edition is an implementation of the
-        classic game Concentration. In this edition, watch where the various
-        Nintendo characters are and select both of them to eliminate both of
-        their cards. You win once all the cards are removed from the game.
+        classic game Concentration. In this edition, players watch where the
+        various Nintendo characters are and select both of them to eliminate
+        both of their cards. To win, all the cards must be removed from the
+        game.
         <br />
-        <br />I created this game for a Grade 12 Computer Science project.
+        <br />
+        <small>
+          I created this game for a Grade 12 Computer Science project
+        </small>
+        .
       </>
     ),
     platforms: [Platform.WEB],
@@ -1355,11 +1409,16 @@ export const PROJECT_LIST: Project[] = [
     year: 2009,
     description: (
       <>
-        My Desktop is your personal kitchen sink. You can add pictures, music,
-        notes, to-do lists, and similar information to personalize your own
-        space. Multiple people can use the program with their own accounts with
-        their own information. I created My Desktop for my summative project in
-        grade 11 computer science.
+        My Desktop is a personalizable kitchen sink of various widgets. Users
+        can add pictures, music, notes, to-do lists, and similar information to
+        personalize their own space. Multiple people can use the program with
+        their own accounts with their own information.
+        <br />
+        <br />
+        <small>
+          I created My Desktop for my summative project in grade 11 computer
+          science.
+        </small>
       </>
     ),
     platforms: [Platform.WINDOWS],
@@ -1371,16 +1430,16 @@ export const PROJECT_LIST: Project[] = [
     year: 2003,
     description: (
       <>
-        Shrek Adventure Game was the very first game I ever created (and
-        finished).
+        Shrek Adventure Game follows the cast of Shrek characters through the
+        story of the first film.
         <br />
         <br />
-        This game is here purely for posterity, I wouldn&apos;t actually
-        recommend playing this game unless you wish to make fun of my early
-        work. Hey&hellip; we all start somewhere, right? The version released
-        here is actually a slightly revised version that improves some bugs,
-        player mechanics, and some of the graphics. That&apos;s right, it used
-        to be even worse!
+        <small>
+          Shrek Adventure Game was the very first computer game I ever created
+          (and finished). This entry is here purely for posterity, I
+          wouldn&apos;t actually recommend playing this game unless you wish to
+          make fun of my early work. Hey&hellip; we all start somewhere, right?
+        </small>
       </>
     ),
     platforms: [Platform.WINDOWS],
@@ -1407,9 +1466,13 @@ export const PROJECT_LIST: Project[] = [
     description: (
       <>
         Lotto 649 Ticket Generator randomly generates values appropriate for
-        entering on a Lotto 649 ticket. I developed this program when I got
-        tired of my parents asking me to pick numbers for their next lottery
-        ticket.
+        entering on a Lotto 649 ticket.
+        <br />
+        <br />
+        <small>
+          I developed this program when I got tired of my parents asking me to
+          pick numbers for their next lottery ticket.
+        </small>
       </>
     ),
     platforms: [Platform.WINDOWS],
@@ -1422,8 +1485,12 @@ export const PROJECT_LIST: Project[] = [
     description: (
       <>
         Lotto 649 Simulator simulates the results of playing the Lotto 649.
-        Running the program repeatedly by holding ALT+R reminds me why I do not
-        play lottery games.
+        <br />
+        <br />
+        <small>
+          Running the program repeatedly by holding ALT+R reminds me why I do
+          not play lottery games.
+        </small>
       </>
     ),
     platforms: [Platform.WINDOWS],
@@ -1448,8 +1515,8 @@ export const PROJECT_LIST: Project[] = [
     year: 2009,
     description: (
       <>
-        Jumble is a simple word game that requires you to unscramble the word
-        entered by another player.
+        Jumble is a simple word game that requires one player to unscramble the
+        word entered by another player.
       </>
     ),
     platforms: [Platform.WINDOWS],
@@ -1463,7 +1530,7 @@ export const PROJECT_LIST: Project[] = [
     year: 2008,
     description: (
       <>
-        Guess the Number is a classic game where you try to guess the number
+        Guess the Number is a classic game where players try to guess the number
         between 1 and 100 that the computer has randomly selected. The game
         keeps track of your wrong guesses, but gives you slight hints along the
         way.
@@ -1497,7 +1564,7 @@ export const PROJECT_LIST: Project[] = [
     description: (
       <>
         Rock, Paper, Scissors! is an implementation of the childhood classic
-        game. In this version, you play against the computer.
+        game. In this version, players play against the computer.
       </>
     ),
     platforms: [Platform.WINDOWS],
