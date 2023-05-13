@@ -83,6 +83,10 @@ export const PROJECT_LIST: Project[] = [
         A static website with information about the wedding of my partner
         Katrina &amp; I for the guests that attended. The website remains
         available to host the photo gallery from our special day.
+        <br />
+        <br />
+        The website was built on top of a Creative Commons HTML template; I
+        cannot claim any credit for the design.
       </>
     ),
     platforms: [Platform.WEB],
