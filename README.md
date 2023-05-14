@@ -2,6 +2,8 @@
 
 #### Revolution Technologies website
 
+![CI](https://github.com/RevolutionTech/revolutiontech.github.io/actions/workflows/ci.yml/badge.svg)
+
 ## Installation
 
     yarn install
