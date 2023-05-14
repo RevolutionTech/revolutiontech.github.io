@@ -1,3 +1,19 @@
-# Revolution Technologies website
+# revolutiontech.github.io
 
-This repo has been deprecated as the new Revolution Technologies website is not a static site, but built on top of a Django backend in a different repo. This repo will remain here so that revolutiontech.github.io will redirect to the new Revolution Technologies website.
+#### Revolution Technologies website
+
+![CI](https://github.com/RevolutionTech/revolutiontech.github.io/actions/workflows/ci.yml/badge.svg)
+
+## Installation
+
+    yarn install
+
+## Development
+
+To run in hot module reloading mode:
+
+    yarn start
+
+To create a production build:
+
+    yarn run build
