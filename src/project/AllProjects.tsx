@@ -197,7 +197,7 @@ export const PROJECT_LIST: Project[] = [
     platforms: [Platform.WEB],
     screenshotCaptions: {
       flamingo:
-        "The contest page where users can view photos that have been submitted to the contest.",
+        "The contest page where users can view and vote on photos that have been submitted to the contest.",
     },
     additionalLinks: [
       {
