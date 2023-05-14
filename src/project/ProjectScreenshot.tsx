@@ -26,7 +26,7 @@ const ScreenshotImg = styled.img<{ isLoading: boolean }>`
   display: ${(props) => (props.isLoading ? "none" : "inherit")};
   max-width: 264px;
   max-height: 200px;
-  object-fit: cover;
+  object-fit: contain;
 `;
 
 interface ProjectScreenshotProps {
