@@ -24,9 +24,13 @@ const Skeleton = styled.div`
 `;
 const ScreenshotImg = styled.img<{ isLoading: boolean }>`
   display: ${(props) => (props.isLoading ? "none" : "inherit")};
-  max-width: 264px;
+  width: 100%;
   max-height: 200px;
   object-fit: contain;
+
+  @media (min-width: 720px) {
+    max-width: 264px;
+  }
 `;
 
 interface ProjectScreenshotProps {

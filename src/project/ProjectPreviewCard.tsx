@@ -16,7 +16,7 @@ const ProjectPreviewCardBox = styled(Link)`
   border: solid 1px #d8d8d8;
   transition: box-shadow 200ms ease-out;
 
-  @media (max-width: 720px) {
+  @media (max-width: 719px) {
     flex-direction: column;
     align-items: center;
     gap: 0;
@@ -30,9 +30,12 @@ const ProjectPreviewCardBox = styled(Link)`
 const ProjectPreviewScreenshot = styled.div`
   display: flex;
   justify-content: center;
-  min-width: 264px;
-  max-width: 264px;
-  height: 200px;
+
+  @media (min-width: 720px) {
+    min-width: 264px;
+    max-width: 264px;
+    height: 200px;
+  }
 `;
 
 const ProjectPreviewTitle = styled.h3`
