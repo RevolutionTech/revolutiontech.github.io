@@ -800,9 +800,8 @@ export const PROJECT_LIST: Project[] = [
         <br />
         <small>
           One level of Jewel Hunter claims to be shaking due to earthquakes
-          created by the final boss, but in reality this was due to a glitch I
-          couldn&apos;t fix at the time and I simply made up a false
-          explanation.
+          created by the final boss, but in reality this was due to a bug with
+          the camera logic I couldn&apos;t fix at that time.
         </small>
       </>
     ),

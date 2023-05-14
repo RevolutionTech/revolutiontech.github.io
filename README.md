@@ -16,4 +16,4 @@ To run in hot module reloading mode:
 
 To create a production build:
 
-    yarn run build
+    yarn build
