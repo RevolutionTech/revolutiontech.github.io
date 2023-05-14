@@ -1,20 +1,5 @@
-declare module "*.jpg" {
-  const content: any;
-  export default content;
-}
-declare module "*.png" {
-  const content: any;
-  export default content;
-}
-declare module "*.exe" {
-  const content: any;
-  export default content;
-}
-declare module "*.swf" {
-  const content: any;
-  export default content;
-}
-declare module "*.zip" {
-  const content: any;
-  export default content;
-}
+declare module "*.jpg";
+declare module "*.png";
+declare module "*.exe";
+declare module "*.swf";
+declare module "*.zip";

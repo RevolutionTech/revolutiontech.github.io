@@ -13,18 +13,23 @@ export const PROJECT_LIST: Project[] = [
       <>
         Letter Joy is a cooperative word deduction game inspired by the board
         game{" "}
-        <a href="https://czechgames.com/en/letter-jam/" target="_blank">
+        <a
+          href="https://czechgames.com/en/letter-jam/"
+          target="_blank"
+          rel="noreferrer"
+        >
           Letter Jam
         </a>{" "}
         designed by{" "}
         <a
           href="https://boardgamegeek.com/boardgamedesigner/116183/ondra-skoupy"
           target="_blank"
+          rel="noreferrer"
         >
           Ondra Skoup&#xfd;
         </a>{" "}
         and published by{" "}
-        <a href="https://czechgames.com/" target="_blank">
+        <a href="https://czechgames.com/" target="_blank" rel="noreferrer">
           Czech Games Edition
         </a>
         .
@@ -165,8 +170,8 @@ export const PROJECT_LIST: Project[] = [
     year: 2019,
     description: (
       <>
-        Goslinks allows users to create easy-to-remember "go" links to share
-        with the rest of their team.
+        Goslinks allows users to create easy-to-remember &quot;go&quot; links to
+        share with the rest of their team.
         <br />
         <br />
         All links are isolated by team, so for instance go/dashboard may
@@ -505,9 +510,9 @@ export const PROJECT_LIST: Project[] = [
     description: (
       <>
         In Pyramid Panic, players control an explorer searching for an ancient
-        treasure called the "Sword of RA". To get there, they must avoid giant
-        scorpions and beetles, and destroy mummies. With substantial bravery and
-        some luck, players can learn of the sword&apos;s true power!
+        treasure called the &quot;Sword of RA&quot;. To get there, they must
+        avoid giant scorpions and beetles, and destroy mummies. With substantial
+        bravery and some luck, players can learn of the sword&apos;s true power!
         <br />
         <br />
         <small>
@@ -593,8 +598,8 @@ export const PROJECT_LIST: Project[] = [
     description: (
       <>
         In Ballistix, players guard their goal while simultaneously trying to
-        land goals on their opponents' sides. Players can choose from soccer,
-        hockey, or water polo themes.
+        land goals on their opponents&apos; sides. Players can choose from
+        soccer, hockey, or water polo themes.
         <br />
         <br />
         Don&apos;t be fooled by the resolution of your screen, every player has

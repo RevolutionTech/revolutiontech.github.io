@@ -36,7 +36,7 @@ export const Intro = (props: IntroProps) => (
     ) : (
       <p>
         Hi! &#x1f44b; I&apos;m Lucas Connors. I work at{" "}
-        <a href="https://www.cascade.io/" target="_blank">
+        <a href="https://www.cascade.io/" target="_blank" rel="noreferrer">
           Cascade
         </a>{" "}
         in San Francisco as a Software Engineer, but outside of work I enjoy
