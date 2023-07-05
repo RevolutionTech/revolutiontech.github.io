@@ -27,7 +27,7 @@
   "devDependencies": {
     "@parcel/resolver-glob": "^2.9.1",
     "@types/lodash": "^4.14.195",
-    "@types/react": "^18.2.8",
+    "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.4",
     "@types/styled-components": "^5.1.26",
     "@typescript-eslint/eslint-plugin": "^5.59.8",
