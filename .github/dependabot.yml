@@ -12,6 +12,32 @@ updates:
     open-pull-requests-limit: 10
     reviewers:
       - RevolutionTech
+    groups:
+      font-awesome:
+        patterns:
+          - "@fortawesome/*"
+      react:
+        patterns:
+          - "react"
+          - "react-dom"
+      react-router:
+        patterns:
+          - "react-router"
+          - "react-router-dom"
+      parcel:
+        patterns:
+          - "@parcel/*"
+          - "parcel"
+      formatting:
+        patterns:
+          - "@typescript-eslint/*"
+          - "eslint"
+          - "eslint-plugin-*"
+          - "prettier"
+      types:
+        patterns:
+          - "@types/*"
+          - "typescript"
   - package-ecosystem: github-actions
     directory: "/"
     schedule:
