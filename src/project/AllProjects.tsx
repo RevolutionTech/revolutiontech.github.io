@@ -683,7 +683,7 @@ export const PROJECT_LIST: Project[] = [
     platforms: [Platform.WEB],
     additionalLinks: [
       {
-        url: "http://letterboard.revolutiontech.ca/",
+        url: "https://letterboard.revolutiontech.ca/",
         description: "Try Letterboard",
       },
       {
@@ -706,7 +706,7 @@ export const PROJECT_LIST: Project[] = [
     platforms: [Platform.WEB],
     additionalLinks: [
       {
-        url: "http://bgteach.revolutiontech.ca/",
+        url: "https://bgteach.revolutiontech.ca/",
         description: "View Site",
       },
       {
