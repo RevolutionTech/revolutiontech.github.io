@@ -4,10 +4,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { Platform, PLATFORM_TO_NAME, PLATFORM_TO_FA_ICON } from "./project";
 
-const PlatformListBox = styled.span<{ full?: boolean }>`
+const PlatformListBox = styled.span<{ $full?: boolean }>`
   display: flex;
   align-items: center;
-  gap: ${(props) => (props.full ? "16px" : "4px")};
+  gap: ${(props) => (props.$full ? "16px" : "4px")};
 `;
 
 interface PlatformListProps {
@@ -16,7 +16,7 @@ interface PlatformListProps {
 }
 
 export const PlatformList = (props: PlatformListProps) => (
-  <PlatformListBox full={props.full}>
+  <PlatformListBox $full={props.full}>
     {props.platforms.map((platform) => {
       const icon = PLATFORM_TO_FA_ICON[platform];
       return (

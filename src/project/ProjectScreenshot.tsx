@@ -22,8 +22,8 @@ const Skeleton = styled.div`
     }
   }
 `;
-const ScreenshotImg = styled.img<{ isLoading: boolean }>`
-  display: ${(props) => (props.isLoading ? "none" : "inherit")};
+const ScreenshotImg = styled.img<{ $isLoading: boolean }>`
+  display: ${(props) => (props.$isLoading ? "none" : "inherit")};
   width: 100%;
   max-height: 200px;
   object-fit: contain;
@@ -47,7 +47,7 @@ export const ProjectScreenshot = (props: ProjectScreenshotProps) => {
       <ScreenshotImg
         src={props.url}
         alt={props.alt}
-        isLoading={isLoading}
+        $isLoading={isLoading}
         onLoad={onImageLoad}
       />
     </>

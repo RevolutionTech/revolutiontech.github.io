@@ -22,7 +22,7 @@ const ProjectPreviewCardBox = styled(Link)`
     gap: 0;
   }
 
-  :hover {
+  &:hover {
     box-shadow: 0 0 4px 1px rgba(0, 140, 186, 0.5);
   }
 `;

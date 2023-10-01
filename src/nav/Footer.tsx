@@ -24,7 +24,7 @@ const FooterLink = styled.a`
   gap: 8px;
   color: #fff;
 
-  :hover {
+  &:hover {
     color: #000;
   }
 `;

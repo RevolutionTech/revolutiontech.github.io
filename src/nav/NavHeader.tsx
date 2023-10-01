@@ -7,7 +7,7 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 const NAV_HEADER_LINK_COMMON = `
   color: #fff;
 
-  :hover {
+  &:hover {
     background-color: #222;
   }
 `;

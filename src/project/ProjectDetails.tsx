@@ -50,16 +50,16 @@ const ProjectButtons = styled.div`
   gap: 4px;
 `;
 
-const ProjectButton = styled.a<{ isPrimary: boolean }>`
+const ProjectButton = styled.a<{ $isPrimary: boolean }>`
   padding: 16px 24px;
   cursor: pointer;
-  background-color: ${(props) => (props.isPrimary ? "#008cba" : "#a0d3e8")};
-  color: ${(props) => (props.isPrimary ? "#fff" : "#000")};
+  background-color: ${(props) => (props.$isPrimary ? "#008cba" : "#a0d3e8")};
+  color: ${(props) => (props.$isPrimary ? "#fff" : "#000")};
   transition: background-color 300ms ease-out;
 
-  :hover {
+  &:hover {
     color: #fff;
-    background-color: ${(props) => (props.isPrimary ? "#007095" : "#61b6d9")};
+    background-color: ${(props) => (props.$isPrimary ? "#007095" : "#61b6d9")};
   }
 `;
 
@@ -112,7 +112,7 @@ export const ProjectDetails = () => {
       <p>{project.description}</p>
       <ProjectButtons>
         {download && (
-          <ProjectButton href={download} isPrimary>
+          <ProjectButton href={download} $isPrimary>
             Download {project.name}
           </ProjectButton>
         )}
@@ -121,7 +121,7 @@ export const ProjectDetails = () => {
             key={link.url}
             href={link.url}
             target="_blank"
-            isPrimary={!download && i === 0}
+            $isPrimary={!download && i === 0}
           >
             {link.description}
           </ProjectButton>
