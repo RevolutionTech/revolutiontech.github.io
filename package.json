@@ -30,12 +30,12 @@
     "@types/lodash": "^4.14.200",
     "@types/react": "^18.2.33",
     "@types/react-dom": "^18.2.14",
-    "@typescript-eslint/eslint-plugin": "^6.9.1",
-    "@typescript-eslint/parser": "^6.9.1",
-    "eslint": "^8.52.0",
+    "@typescript-eslint/eslint-plugin": "^6.13.1",
+    "@typescript-eslint/parser": "^6.13.1",
+    "eslint": "^8.54.0",
     "eslint-plugin-react": "^7.33.2",
     "parcel": "^2.10.2",
-    "prettier": "^3.0.3",
+    "prettier": "^3.1.0",
     "process": "^0.11.10",
     "typescript": "^5.2.2"
   }
