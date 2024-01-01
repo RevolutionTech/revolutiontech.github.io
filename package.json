@@ -23,7 +23,7 @@
     "react-router": "^6.21.1",
     "react-router-dom": "^6.21.1",
     "styled-components": "^6.1.1",
-    "stylis": "^4.0.0"
+    "stylis": "^4.3.1"
   },
   "devDependencies": {
     "@parcel/resolver-glob": "^2.10.3",
