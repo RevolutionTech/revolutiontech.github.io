@@ -790,7 +790,7 @@ export const PROJECT_LIST: Project[] = [
   {
     name: "Jewel Hunter",
     slug: "jewel-hunter",
-    visible: true,
+    visible: false,
     year: 2006,
     description: (
       <>
@@ -927,7 +927,7 @@ export const PROJECT_LIST: Project[] = [
   {
     name: "django-pigeon",
     slug: "django-pigeon",
-    visible: true,
+    visible: false,
     year: 2017,
     description: (
       <>
