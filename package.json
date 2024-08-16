@@ -8,8 +8,8 @@
     "start": "parcel src/index.html",
     "build": "parcel build src/index.html src/404.html",
     "typecheck": "tsc --noemit",
-    "lint": "eslint . --ext .ts,.tsx",
-    "lint:fix": "eslint --fix . --ext .ts,.tsx"
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
