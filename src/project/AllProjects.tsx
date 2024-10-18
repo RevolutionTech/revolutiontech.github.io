@@ -143,7 +143,7 @@ export const PROJECT_LIST: Project[] = [
   {
     name: "Rooster",
     slug: "rooster",
-    visible: true,
+    visible: false,
     year: 2020,
     description: (
       <>
@@ -191,7 +191,7 @@ export const PROJECT_LIST: Project[] = [
   {
     name: "Flamingo",
     slug: "flamingo",
-    visible: true,
+    visible: false,
     year: 2015,
     description: (
       <>
@@ -214,7 +214,7 @@ export const PROJECT_LIST: Project[] = [
   {
     name: "Seared Quail",
     slug: "seared-quail",
-    visible: true,
+    visible: false,
     year: 2015,
     description: (
       <>
@@ -249,7 +249,7 @@ export const PROJECT_LIST: Project[] = [
   {
     name: "django-conditions",
     slug: "django-conditions",
-    visible: true,
+    visible: false,
     year: 2014,
     description: (
       <>
@@ -551,7 +551,7 @@ export const PROJECT_LIST: Project[] = [
   {
     name: "Acid Drop",
     slug: "acid-drop",
-    visible: true,
+    visible: false,
     year: 2006,
     description: (
       <>
@@ -575,7 +575,7 @@ export const PROJECT_LIST: Project[] = [
   {
     name: "Attack of the Boom-Boom",
     slug: "attack-of-the-boom-boom",
-    visible: true,
+    visible: false,
     year: 2006,
     description: (
       <>
@@ -593,7 +593,7 @@ export const PROJECT_LIST: Project[] = [
   {
     name: "Ballistix",
     slug: "ballistix",
-    visible: true,
+    visible: false,
     year: 2005,
     description: (
       <>
@@ -613,7 +613,7 @@ export const PROJECT_LIST: Project[] = [
   {
     name: "Spring Thing",
     slug: "spring-thing",
-    visible: true,
+    visible: false,
     year: 2006,
     description: (
       <>
@@ -652,7 +652,7 @@ export const PROJECT_LIST: Project[] = [
   {
     name: "Carrier Owl",
     slug: "carrier-owl",
-    visible: true,
+    visible: false,
     year: 2019,
     description: (
       <>
@@ -718,7 +718,7 @@ export const PROJECT_LIST: Project[] = [
   {
     name: "Mockingbird",
     slug: "mockingbird",
-    visible: true,
+    visible: false,
     year: 2020,
     description: (
       <>
@@ -757,7 +757,7 @@ export const PROJECT_LIST: Project[] = [
   {
     name: "Tree Obviator",
     slug: "tree-obviator",
-    visible: true,
+    visible: false,
     year: 2005,
     description: (
       <>
@@ -812,7 +812,7 @@ export const PROJECT_LIST: Project[] = [
   {
     name: "3D Maze",
     slug: "3d-maze",
-    visible: true,
+    visible: false,
     year: 2005,
     description: (
       <>
@@ -873,7 +873,7 @@ export const PROJECT_LIST: Project[] = [
   {
     name: "Lunar Lander",
     slug: "lunar-lander",
-    visible: true,
+    visible: false,
     year: 2013,
     description: (
       <>
