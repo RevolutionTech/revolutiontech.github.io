@@ -2,8 +2,10 @@ import * as React from "react";
 import keyBy from "lodash/keyBy";
 
 import { Platform, Project } from "./project";
+import { PROJECT_TELEGRAM } from "./Telegram";
 
 export const PROJECT_LIST: Project[] = [
+  PROJECT_TELEGRAM,
   {
     name: "Letter Joy",
     slug: "letter-joy",

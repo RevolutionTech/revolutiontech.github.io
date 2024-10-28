@@ -1,6 +1,6 @@
 import last from "lodash/last";
 import { IconDefinition } from "@fortawesome/fontawesome-common-types";
-import { faCloud } from "@fortawesome/free-solid-svg-icons";
+import { faCloud, faDice } from "@fortawesome/free-solid-svg-icons";
 import {
   faWindows,
   faApple,
@@ -20,6 +20,7 @@ export enum Platform {
   MACOS,
   LINUX,
   ANDROID,
+  BOARD_GAME,
 }
 
 export const PLATFORM_TO_NAME: Record<Platform, string> = {
@@ -28,6 +29,7 @@ export const PLATFORM_TO_NAME: Record<Platform, string> = {
   [Platform.MACOS]: "macOS",
   [Platform.LINUX]: "Linux",
   [Platform.ANDROID]: "Android",
+  [Platform.BOARD_GAME]: "Board Game",
 };
 export const PLATFORM_TO_FA_ICON: Record<Platform, IconDefinition> = {
   [Platform.WEB]: faCloud,
@@ -35,6 +37,7 @@ export const PLATFORM_TO_FA_ICON: Record<Platform, IconDefinition> = {
   [Platform.MACOS]: faApple,
   [Platform.LINUX]: faLinux,
   [Platform.ANDROID]: faAndroid,
+  [Platform.BOARD_GAME]: faDice,
 };
 
 export const projectScreenshots = (project: Project) => {
@@ -69,6 +72,7 @@ export type Project = {
   visible: boolean;
   year?: number;
   description: React.ReactNode;
+  details?: React.ReactNode;
   platforms: Platform[];
   minPlayers?: number;
   maxPlayers?: number;

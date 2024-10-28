@@ -5,7 +5,7 @@
     "..."
   ],
   "transformers": {
-    "*.(exe|swf|zip)": [
+    "*.(exe|swf|zip|pdf|pcio)": [
       "@parcel/transformer-raw"
     ]
   }

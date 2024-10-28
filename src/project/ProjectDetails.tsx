@@ -110,6 +110,7 @@ export const ProjectDetails = () => {
         ))}
       </ProjectCarousel>
       <p>{project.description}</p>
+      {project.details}
       <ProjectButtons>
         {download && (
           <ProjectButton href={download} $isPrimary>
