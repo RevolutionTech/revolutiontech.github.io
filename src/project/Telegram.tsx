@@ -78,6 +78,25 @@ export const PROJECT_TELEGRAM: Project = {
         </a>{" "}
         and something to write with.
       </p>
+      <br />
+      <p>
+        The PlayingCards.io implementation contains a few automations that will
+        help you get up and running quickly:
+        <ol>
+          <li>
+            Setup will recall all cards and shuffle all decks for the game
+            setup.
+          </li>
+          <li>
+            Draw Offering will deal out the word fragment and letter cards for
+            the round.
+          </li>
+          <li>
+            Draw Reserve will select a card from the bottom of the letter deck
+            and place it into the Reserve Placeholder.
+          </li>
+        </ol>
+      </p>
       <h2 style={{ marginBottom: 0 }}>Resources</h2>
     </div>
   ),
