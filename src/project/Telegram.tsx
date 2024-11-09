@@ -37,7 +37,7 @@ export const PROJECT_TELEGRAM: Project = {
       <iframe
         width="560"
         height="315"
-        src="https://www.youtube.com/embed/7DTSu78uB_s?si=cekhYr3erlPv3t9D"
+        src="https://www.youtube.com/embed/4iI7xua37Ps?si=-VqSlBFlBgdP81Gr"
         title="YouTube video player"
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
