@@ -85,8 +85,7 @@ export const PROJECT_TELEGRAM: Project = {
         <ol>
           <li>
             The Setup automations will recall all cards and shuffle all decks
-            for the game setup. There is one for solo play and another for
-            multiplayer games.
+            for the game setup.
           </li>
           <li>
             Draw Offering will deal out the word fragment and letter cards for
