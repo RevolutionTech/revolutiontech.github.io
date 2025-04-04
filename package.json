@@ -27,7 +27,7 @@
     "stylis": "^4.3.6"
   },
   "devDependencies": {
-    "@parcel/resolver-glob": "^2.13.3",
+    "@parcel/resolver-glob": "^2.14.4",
     "@types/lodash": "^4.17.16",
     "@types/node": "^22.13.17",
     "@types/react": "^18.3.12",
@@ -36,7 +36,7 @@
     "@typescript-eslint/parser": "^8.25.0",
     "eslint": "^9.21.0",
     "eslint-plugin-react": "^7.37.4",
-    "parcel": "^2.13.3",
+    "parcel": "^2.14.4",
     "prettier": "^3.5.2",
     "process": "^0.11.10",
     "typescript": "^5.8.2"
