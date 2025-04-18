@@ -3,7 +3,7 @@ updates:
   - package-ecosystem: npm
     directory: "/"
     schedule:
-      interval: monthly
+      interval: quarterly
       time: "09:00"
       timezone: US/Pacific
     commit-message:
@@ -41,7 +41,7 @@ updates:
   - package-ecosystem: github-actions
     directory: "/"
     schedule:
-      interval: monthly
+      interval: quarterly
       time: "09:00"
       timezone: US/Pacific
     commit-message:
