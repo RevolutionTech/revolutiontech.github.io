@@ -16,7 +16,7 @@ export const PROJECT_TELEGRAM: Project = {
   name: "Telegram",
   slug: "telegram",
   visible: true,
-  year: 2024,
+  year: 2025,
   description: (
     <>
       In this flip-and-write game for word puzzle lovers, you will fill letters
@@ -27,12 +27,10 @@ export const PROJECT_TELEGRAM: Project = {
   platforms: [Platform.BOARD_GAME],
   minPlayers: 1,
   maxPlayers: 6,
+  playtime: 30,
+  minAge: 12,
   details: (
     <div>
-      <h2>Sell Sheet</h2>
-      <a href={TELEGRAM_SELL_SHEET_PDF} target="_blank" rel="noreferrer">
-        <SellSheet src={TELEGRAM_SELL_SHEET_IMAGE} />
-      </a>
       <h2>Pitch Video</h2>
       <iframe
         width="560"
@@ -44,6 +42,10 @@ export const PROJECT_TELEGRAM: Project = {
         referrerPolicy="strict-origin-when-cross-origin"
         allowFullScreen
       ></iframe>
+      <h2>Sell Sheet</h2>
+      <a href={TELEGRAM_SELL_SHEET_PDF} target="_blank" rel="noreferrer">
+        <SellSheet src={TELEGRAM_SELL_SHEET_IMAGE} />
+      </a>
       <h2>PlayingCards.io Implementation</h2>
       <p>
         To play Telegram on PlayingCards.io, first{" "}
@@ -100,6 +102,9 @@ export const PROJECT_TELEGRAM: Project = {
       <h2 style={{ marginBottom: 0 }}>Resources</h2>
     </div>
   ),
+  showYearInProjectDetails: false,
+  showPlatformsInProjectDetails: false,
+  showScreenshotsInProjectDetails: false,
   additionalLinks: [
     {
       url: "https://telegram.revolutiontech.ca/",

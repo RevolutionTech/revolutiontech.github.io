@@ -3,6 +3,8 @@ import { useParams } from "react-router";
 import styled from "styled-components";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBirthdayCake, faHourglass } from "@fortawesome/free-solid-svg-icons";
 
 import { NotFound } from "../nav/NotFound";
 import { PlatformList } from "./PlatformList";
@@ -23,8 +25,7 @@ const ProjectDetailsBox = styled.div`
 
 const ProjectFacts = styled.div`
   display: flex;
-  flex-direction: column;
-  gap: 8px;
+  gap: 16px;
   font-size: 20pt;
 `;
 
@@ -79,10 +80,14 @@ export const ProjectDetails = () => {
     <ProjectDetailsBox>
       <h1>
         {project.name}
-        {project.year && ` (${project.year})`}
+        {project.year &&
+          (project.showYearInProjectDetails ?? true) &&
+          ` (${project.year})`}
       </h1>
       <ProjectFacts>
-        <PlatformList platforms={project.platforms} full />
+        {(project.showPlatformsInProjectDetails ?? true) && (
+          <PlatformList platforms={project.platforms} full />
+        )}
         {(project.minPlayers || project.maxPlayers) && (
           <div>
             <PlayerCount
@@ -93,22 +98,34 @@ export const ProjectDetails = () => {
             {(project.maxPlayers ?? project.minPlayers) !== 1 && "s"}
           </div>
         )}
-      </ProjectFacts>
-      <ProjectCarousel
-        showArrows
-        showStatus={false}
-        showIndicators={screenshots.length > 1}
-        infiniteLoop
-        showThumbs={false}
-        autoPlay
-      >
-        {screenshots.map(({ url, caption }) => (
-          <div key={url}>
-            <img src={url} />
-            {caption && <p className="legend">{caption}</p>}
+        {project.playtime && (
+          <div>
+            <FontAwesomeIcon icon={faHourglass} /> {project.playtime} Mins
           </div>
-        ))}
-      </ProjectCarousel>
+        )}
+        {project.minAge && (
+          <div>
+            <FontAwesomeIcon icon={faBirthdayCake} /> Ages {project.minAge}+
+          </div>
+        )}
+      </ProjectFacts>
+      {(project.showScreenshotsInProjectDetails ?? true) && (
+        <ProjectCarousel
+          showArrows
+          showStatus={false}
+          showIndicators={screenshots.length > 1}
+          infiniteLoop
+          showThumbs={false}
+          autoPlay
+        >
+          {screenshots.map(({ url, caption }) => (
+            <div key={url}>
+              <img src={url} />
+              {caption && <p className="legend">{caption}</p>}
+            </div>
+          ))}
+        </ProjectCarousel>
+      )}
       <p>{project.description}</p>
       {project.details}
       <ProjectButtons>

@@ -76,6 +76,11 @@ export type Project = {
   platforms: Platform[];
   minPlayers?: number;
   maxPlayers?: number;
+  playtime?: number;
+  minAge?: number;
+  showYearInProjectDetails?: boolean;
+  showPlatformsInProjectDetails?: boolean;
+  showScreenshotsInProjectDetails?: boolean;
   screenshotCaptions?: Record<string, string>;
   additionalLinks?: ProjectLink[];
 };

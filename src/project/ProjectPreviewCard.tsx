@@ -2,6 +2,8 @@ import * as React from "react";
 import { Link } from "react-router";
 import sample from "lodash/sample";
 import styled from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBirthdayCake, faHourglass } from "@fortawesome/free-solid-svg-icons";
 
 import { PlatformList } from "./PlatformList";
 import { PlayerCount } from "./PlayerCount";
@@ -44,6 +46,11 @@ const ProjectPreviewTitle = styled.h3`
   gap: 4px;
 `;
 
+const ProjectFacts = styled.div`
+  display: flex;
+  gap: 8px;
+`;
+
 interface ProjectCardProps {
   project: Project;
 }
@@ -65,10 +72,24 @@ export const ProjectPreviewCard = ({ project }: ProjectCardProps) => {
             &nbsp;
           </div>
           <PlatformList platforms={project.platforms} />
-          <PlayerCount
-            minPlayers={project.minPlayers}
-            maxPlayers={project.maxPlayers}
-          />
+          <ProjectFacts>
+            <div>
+              <PlayerCount
+                minPlayers={project.minPlayers}
+                maxPlayers={project.maxPlayers}
+              />
+            </div>
+            {project.playtime && (
+              <div>
+                <FontAwesomeIcon icon={faHourglass} /> {project.playtime}m
+              </div>
+            )}
+            {project.minAge && (
+              <div>
+                <FontAwesomeIcon icon={faBirthdayCake} /> {project.minAge}+
+              </div>
+            )}
+          </ProjectFacts>
         </ProjectPreviewTitle>
         <p>{project.description}</p>
       </div>
