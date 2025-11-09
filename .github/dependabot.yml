@@ -10,8 +10,6 @@ updates:
       prefix: "build"
       include: "scope"
     open-pull-requests-limit: 10
-    reviewers:
-      - RevolutionTech
     groups:
       font-awesome:
         patterns:
@@ -48,5 +46,3 @@ updates:
       prefix: "build"
       include: "scope"
     open-pull-requests-limit: 10
-    reviewers:
-      - RevolutionTech
