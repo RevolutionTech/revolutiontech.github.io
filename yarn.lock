@@ -3075,10 +3075,10 @@ lodash@^4.17.21:
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
 
-logrocket@^10.1.0:
-  version "10.1.0"
-  resolved "https://registry.yarnpkg.com/logrocket/-/logrocket-10.1.0.tgz#923c3d498c3a2250f2284b51510b9cf550574073"
-  integrity sha512-wcVb+fkM7V6+nhUkhpTdnY/b31C5xy0hlEEs8UOMZiHFUrv0/2kIV+NjtmOlksniIQmUawC5ozw6ZID4qbJmUg==
+logrocket@^11.0.0:
+  version "11.0.0"
+  resolved "https://registry.yarnpkg.com/logrocket/-/logrocket-11.0.0.tgz#e15b9e1892563b94514046ae87f2c7146ab349f7"
+  integrity sha512-/WBl2VJ/WVRsveU0PhWcO++XZpKUifRQZwAFqjUyPSwxdy+OFEgKk+W69WSQFM9pejizarXRwmb3Wo7msD75+g==
 
 loose-envify@^1.4.0:
   version "1.4.0"
