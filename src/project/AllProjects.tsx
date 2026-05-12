@@ -57,6 +57,36 @@ export const PROJECT_LIST: Project[] = [
     ],
   },
   {
+    name: "BG RFID",
+    slug: "bg-rfid",
+    visible: true,
+    year: 2026,
+    description: (
+      <>
+        A simple app for searching games on{" "}
+        <a href="https://boardgamegeek.com/" target="_blank" rel="noreferrer">
+          BoardGameGeek
+        </a>{" "}
+        to generate an RFID tag to be used in conjunction with the{" "}
+        <a href="https://www.bgstatsapp.com/" target="_blank" rel="noreferrer">
+          Board Game Stats app
+        </a>
+        .
+      </>
+    ),
+    platforms: [Platform.WEB],
+    additionalLinks: [
+      {
+        url: "https://bgrfid.revolutiontech.ca/",
+        description: "View Site",
+      },
+      {
+        url: "https://github.com/RevolutionTech/bg-rfid",
+        description: "View Source Code",
+      },
+    ],
+  },
+  {
     name: "PerDiem",
     slug: "perdiem",
     visible: true,
