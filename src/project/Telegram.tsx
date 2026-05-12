@@ -16,7 +16,7 @@ export const PROJECT_TELEGRAM: Project = {
   name: "Telegram",
   slug: "telegram",
   visible: true,
-  year: 2025,
+  year: 2026,
   description: (
     <>
       In this flip-and-write game for word puzzle lovers, you will fill letters
