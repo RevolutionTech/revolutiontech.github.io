@@ -1,5 +1,4 @@
 import * as React from "react";
-import styled from "styled-components";
 
 import TELEGRAM_PLAYER_SHEETS from "../assets/download/telegram-player-sheets.pdf";
 import TELEGRAM_RULES from "../assets/download/telegram-rules.pdf";
@@ -7,10 +6,7 @@ import TELEGRAM_SELL_SHEET_IMAGE from "../assets/img/telegram/telegram-sell-shee
 import TELEGRAM_SELL_SHEET_PDF from "../assets/download/telegram-sell-sheet.pdf";
 import TELEGRAM_PCIO from "../assets/download/telegram.pcio";
 import { Platform, Project } from "./project";
-
-const SellSheet = styled.img`
-  max-width: 100%;
-`;
+import { SellSheet } from "./SellSheet";
 
 export const PROJECT_TELEGRAM: Project = {
   name: "Telegram",
@@ -43,9 +39,10 @@ export const PROJECT_TELEGRAM: Project = {
         allowFullScreen
       ></iframe>
       <h2>Sell Sheet</h2>
-      <a href={TELEGRAM_SELL_SHEET_PDF} target="_blank" rel="noreferrer">
-        <SellSheet src={TELEGRAM_SELL_SHEET_IMAGE} />
-      </a>
+      <SellSheet
+        sellSheetPdf={TELEGRAM_SELL_SHEET_PDF}
+        sellSheetImage={TELEGRAM_SELL_SHEET_IMAGE}
+      />
       <h2>PlayingCards.io Implementation</h2>
       <p>
         To play Telegram on PlayingCards.io, first{" "}

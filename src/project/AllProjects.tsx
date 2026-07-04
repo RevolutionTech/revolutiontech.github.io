@@ -2,9 +2,13 @@ import * as React from "react";
 import keyBy from "lodash/keyBy";
 
 import { Platform, Project } from "./project";
+import { PROJECT_REDACTED } from "./Redacted";
+import { PROJECT_SEMANTIC_SORTING } from "./SemanticSorting";
 import { PROJECT_TELEGRAM } from "./Telegram";
 
 export const PROJECT_LIST: Project[] = [
+  PROJECT_REDACTED,
+  PROJECT_SEMANTIC_SORTING,
   PROJECT_TELEGRAM,
   {
     name: "Letter Joy",
