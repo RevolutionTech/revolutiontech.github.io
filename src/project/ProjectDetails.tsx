@@ -25,8 +25,13 @@ const ProjectDetailsBox = styled.div`
 
 const ProjectFacts = styled.div`
   display: flex;
+  flex-wrap: wrap;
   gap: 16px;
   font-size: 20pt;
+
+  > * {
+    white-space: nowrap;
+  }
 `;
 
 const ProjectCarousel = styled(Carousel)`
