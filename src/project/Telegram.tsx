@@ -5,6 +5,7 @@ import TELEGRAM_RULES from "../assets/download/telegram-rules.pdf";
 import TELEGRAM_SELL_SHEET_IMAGE from "../assets/img/telegram/telegram-sell-sheet.png";
 import TELEGRAM_SELL_SHEET_PDF from "../assets/download/telegram-sell-sheet.pdf";
 import TELEGRAM_PCIO from "../assets/download/telegram.pcio";
+import { PitchVideo } from "./PitchVideo";
 import { Platform, Project } from "./project";
 import { SellSheet } from "./SellSheet";
 
@@ -28,16 +29,7 @@ export const PROJECT_TELEGRAM: Project = {
   details: (
     <div>
       <h2>Pitch Video</h2>
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/TvgizlYslT8?si=AuZM1X2Y8gv_KL9R"
-        title="YouTube video player"
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerPolicy="strict-origin-when-cross-origin"
-        allowFullScreen
-      ></iframe>
+      <PitchVideo videoUrl="https://www.youtube.com/embed/TvgizlYslT8?si=AuZM1X2Y8gv_KL9R" />
       <h2>Sell Sheet</h2>
       <SellSheet
         sellSheetPdf={TELEGRAM_SELL_SHEET_PDF}
