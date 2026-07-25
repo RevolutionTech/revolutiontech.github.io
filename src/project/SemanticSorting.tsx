@@ -3,13 +3,14 @@ import * as React from "react";
 import SEMANTIC_SORTING_RULES from "../assets/download/directionally-correct-rules.pdf";
 import SEMANTIC_SORTING_SELL_SHEET_IMAGE from "../assets/img/semantic-sorting/north-star-sell-sheet.png";
 import SEMANTIC_SORTING_SELL_SHEET_PDF from "../assets/download/north-star-sell-sheet.pdf";
+import { PitchVideo } from "./PitchVideo";
 import { Platform, Project } from "./project";
 import { SellSheet } from "./SellSheet";
 
 export const PROJECT_SEMANTIC_SORTING: Project = {
   name: "North Star",
   slug: "semantic-sorting",
-  visible: false,
+  visible: true,
   year: 2026,
   description: (
     <>
@@ -25,6 +26,8 @@ export const PROJECT_SEMANTIC_SORTING: Project = {
   minAge: 8,
   details: (
     <div>
+      <h2>Pitch Video</h2>
+      <PitchVideo videoUrl="https://www.youtube.com/embed/5jPs_C8qS8U" />
       <h2>Sell Sheet</h2>
       <SellSheet
         sellSheetPdf={SEMANTIC_SORTING_SELL_SHEET_PDF}
