@@ -16,7 +16,7 @@
     "@fortawesome/free-brands-svg-icons": "^7.1.0",
     "@fortawesome/free-solid-svg-icons": "^7.1.0",
     "@fortawesome/react-fontawesome": "^3.1.1",
-    "lodash": "^4.17.21",
+    "lodash": "^4.17.23",
     "logrocket": "^10.1.0",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "@parcel/resolver-glob": "^2.13.3",
-    "@types/lodash": "^4.17.20",
+    "@types/lodash": "^4.17.24",
     "@types/node": "^25.2.0",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
