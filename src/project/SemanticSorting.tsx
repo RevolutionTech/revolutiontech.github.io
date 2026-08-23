@@ -27,7 +27,7 @@ export const PROJECT_SEMANTIC_SORTING: Project = {
   details: (
     <div>
       <h2>Pitch Video</h2>
-      <PitchVideo videoUrl="https://www.youtube.com/embed/5jPs_C8qS8U" />
+      <PitchVideo videoUrl="https://www.youtube.com/embed/1dWFYuKtLsc" />
       <h2>Sell Sheet</h2>
       <SellSheet
         sellSheetPdf={SEMANTIC_SORTING_SELL_SHEET_PDF}
