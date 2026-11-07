@@ -29,7 +29,7 @@
   "devDependencies": {
     "@parcel/resolver-glob": "^2.16.4",
     "@types/lodash": "^4.17.20",
-    "@types/node": "^25.2.0",
+    "@types/node": "^26.6.6",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
     "@typescript-eslint/eslint-plugin": "^8.54.0",
