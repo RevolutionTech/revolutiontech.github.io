@@ -1,4 +1,3 @@
-import * as React from "react";
 import TELEGRAM_PCIO from "../assets/download/telegram.pcio";
 import TELEGRAM_PLAYER_SHEETS from "../assets/download/telegram-player-sheets.pdf";
 import TELEGRAM_RULES from "../assets/download/telegram-rules.pdf";

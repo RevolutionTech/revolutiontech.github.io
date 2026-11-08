@@ -1,4 +1,3 @@
-import * as React from "react";
 import { Intro } from "./Intro";
 import { ProjectList } from "./project/ProjectList";
 

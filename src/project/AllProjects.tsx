@@ -1,5 +1,4 @@
 import keyBy from "lodash/keyBy";
-import * as React from "react";
 
 import { Platform, type Project } from "./project";
 import { PROJECT_REDACTED } from "./Redacted";
