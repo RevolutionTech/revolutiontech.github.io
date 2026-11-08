@@ -11,7 +11,7 @@ export default defineConfig({
     // Inlined assets become data URLs, which breaks downloads of small files.
     assetsInlineLimit: 0,
     rolldownOptions: {
-      input: ["src/index.html", "src/404.html"],
+      input: ["index.html", "404.html"],
     },
   },
 });
