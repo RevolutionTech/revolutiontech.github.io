@@ -12,17 +12,19 @@ This repo is the portfolio website of Lucas Connors. It is a React SPA. It showc
 - `src/nav/`: header, footer, and not-found page.
 - `src/assets/`: images, downloads, and favicon.
 - `src/404.html`: fallback page for GitHub Pages.
+- `vite.config.ts`: build config. Vite's root is `src/`.
 - `.github/workflows/`: CI (`ci.yml`) and deploy (`deploy.yml`).
 
-Stack: TypeScript, React 19, styled-components, Parcel, Biome. Package manager: Yarn.
+Stack: TypeScript, React 19, styled-components, Vite, Biome. Package manager: pnpm.
 
 ## Key Commands
 
 ```bash
-yarn install    # install dependencies
-yarn start      # dev server with hot reload
-yarn build      # production build
-yarn typecheck  # TypeScript check
-yarn lint       # Biome lint, format, and import checks (use lint:fix to auto-fix)
-yarn clean      # remove .parcel-cache and dist
+pnpm install    # install dependencies
+pnpm start      # dev server with hot reload
+pnpm build      # production build
+pnpm preview    # serve the production build locally
+pnpm typecheck  # TypeScript check
+pnpm lint       # Biome lint, format, and import checks (use lint:fix to auto-fix)
+pnpm clean      # remove dist
 ```

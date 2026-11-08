@@ -22,10 +22,10 @@ updates:
         patterns:
           - "react-router"
           - "react-router-dom"
-      parcel:
+      vite:
         patterns:
-          - "@parcel/*"
-          - "parcel"
+          - "vite"
+          - "@vitejs/*"
       types:
         patterns:
           - "@types/*"

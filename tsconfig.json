@@ -1,19 +1,15 @@
 {
   "compilerOptions": {
-    "outDir": "./dist/",
-    "sourceMap": true,
     "strict": true,
     "noImplicitReturns": true,
-    "noImplicitAny": true,
-    "allowSyntheticDefaultImports": true,
-    "module": "es6",
+    "noEmit": true,
+    "module": "preserve",
     "moduleResolution": "bundler",
-    "target": "es2017",
-    "lib": ["es2017", "dom"],
-    "allowJs": true,
+    "target": "es2022",
+    "lib": ["es2022", "dom", "dom.iterable"],
     "jsx": "react-jsx",
     "skipLibCheck": true,
-    "types": ["node"]
+    "types": []
   },
-  "include": ["src"]
+  "include": ["src", "vite.config.ts"]
 }

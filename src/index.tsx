@@ -7,7 +7,7 @@ import App from "./App";
 const LOG_ROCKET_APP_ID = "q6cfij/revolutiontechgithubio";
 
 // Init LogRocket
-if (process.env.NODE_ENV === "production") {
+if (import.meta.env.PROD) {
   LogRocket.init(LOG_ROCKET_APP_ID);
 }
 

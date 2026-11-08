@@ -1,4 +1,3 @@
-.parcel-cache/
 coverage/
 dist/*
 !dist/index.html
