@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.7",
-    "@eslint/js": "^9.39.2",
+    "@eslint/js": "^10.0.1",
     "@parcel/resolver-glob": "^2.16.4",
     "@types/lodash": "^4.17.27",
     "@types/node": "^26.6.6",
