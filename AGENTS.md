@@ -15,7 +15,7 @@ This repo is the portfolio website of Lucas Connors. It is a React SPA. It showc
 - `vite.config.ts`: build config. Vite's root is `src/`.
 - `.github/workflows/`: CI (`ci.yml`) and deploy (`deploy.yml`).
 
-Stack: TypeScript, React 19, styled-components, Vite, Biome. Package manager: pnpm.
+Stack: TypeScript, React 19, CSS Modules, Vite, Biome. Package manager: pnpm.
 
 ## Key Commands
 

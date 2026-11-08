@@ -1,16 +1,17 @@
-import styled from "styled-components";
-
-const SellSheetImg = styled.img`
-  max-width: 100%;
-`;
+import styles from "./SellSheet.module.css";
 
 interface SellSheetProps {
+  projectName: string;
   sellSheetPdf: string;
   sellSheetImage: string;
 }
 
 export const SellSheet = (props: SellSheetProps) => (
   <a href={props.sellSheetPdf} target="_blank" rel="noreferrer">
-    <SellSheetImg src={props.sellSheetImage} />
+    <img
+      className={styles.sellSheet}
+      src={props.sellSheetImage}
+      alt={`${props.projectName} sell sheet`}
+    />
   </a>
 );

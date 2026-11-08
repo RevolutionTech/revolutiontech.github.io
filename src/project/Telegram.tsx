@@ -30,6 +30,7 @@ export const PROJECT_TELEGRAM: Project = {
       <PitchVideo videoUrl="https://www.youtube.com/embed/TvgizlYslT8?si=AuZM1X2Y8gv_KL9R" />
       <h2>Sell Sheet</h2>
       <SellSheet
+        projectName="Telegram"
         sellSheetPdf={TELEGRAM_SELL_SHEET_PDF}
         sellSheetImage={TELEGRAM_SELL_SHEET_IMAGE}
       />

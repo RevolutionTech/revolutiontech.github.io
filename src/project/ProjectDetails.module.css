@@ -1,0 +1,49 @@
+.projectDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.projectDetails h1,
+.projectDetails p {
+  margin: 0;
+}
+
+.facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-size: 20pt;
+}
+
+.facts > * {
+  white-space: nowrap;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.button {
+  padding: 16px 24px;
+  cursor: pointer;
+  background-color: #a0d3e8;
+  color: #000;
+  transition: background-color 300ms ease-out;
+}
+
+.button:hover {
+  color: #fff;
+  background-color: #61b6d9;
+}
+
+.primaryButton {
+  background-color: #008cba;
+  color: #fff;
+}
+
+.primaryButton:hover {
+  background-color: #007095;
+}

@@ -1,44 +1,27 @@
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import styled from "styled-components";
 
-import FooterBackground from "../assets/img/footer.png";
-
-const FooterLinks = styled.div`
-  position: relative;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  gap: 32px;
-  width: 100%;
-  min-height: 160px;
-  background: url(${FooterBackground}) no-repeat center bottom;
-  color: #fff;
-`;
-
-const FooterLink = styled.a`
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: #fff;
-
-  &:hover {
-    color: #000;
-  }
-`;
+import styles from "./Footer.module.css";
 
 export const Footer = () => (
   <>
-    <FooterLinks>
-      <FooterLink href="https://github.com/RevolutionTech/" target="_blank">
+    <div className={styles.footer}>
+      <a
+        className={styles.link}
+        href="https://github.com/RevolutionTech/"
+        target="_blank"
+        rel="noopener"
+      >
         <FontAwesomeIcon icon={faGithub} size="2x" /> RevolutionTech
-      </FooterLink>
-      <FooterLink
+      </a>
+      <a
+        className={styles.link}
         href="https://www.linkedin.com/in/lucasconnors/"
         target="_blank"
+        rel="noopener"
       >
         <FontAwesomeIcon icon={faLinkedin} size="2x" /> Lucas Connors
-      </FooterLink>
-    </FooterLinks>
+      </a>
+    </div>
   </>
 );

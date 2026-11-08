@@ -1,0 +1,22 @@
+.footer {
+  position: relative;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  width: 100%;
+  min-height: 160px;
+  background: url("../assets/img/footer.png") no-repeat center bottom;
+  color: #fff;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+}
+
+.link:hover {
+  color: #000;
+}

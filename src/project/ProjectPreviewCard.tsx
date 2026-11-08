@@ -1,53 +1,12 @@
 import { faBirthdayCake, faHourglass } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router";
-import styled from "styled-components";
 
 import { PlatformList } from "./PlatformList";
 import { PlayerCount } from "./PlayerCount";
+import styles from "./ProjectPreviewCard.module.css";
 import { ProjectScreenshot } from "./ProjectScreenshot";
 import { type Project, projectScreenshots } from "./project";
-
-const ProjectPreviewCardBox = styled(Link)`
-  display: flex;
-  gap: 16px;
-  padding: 8px 16px;
-  color: #000;
-  border: solid 1px #d8d8d8;
-  transition: box-shadow 200ms ease-out;
-
-  @media (max-width: 719px) {
-    flex-direction: column;
-    align-items: center;
-    gap: 0;
-  }
-
-  &:hover {
-    box-shadow: 0 0 4px 1px rgba(0, 140, 186, 0.5);
-  }
-`;
-
-const ProjectPreviewScreenshot = styled.div`
-  display: flex;
-  justify-content: center;
-
-  @media (min-width: 720px) {
-    min-width: 264px;
-    max-width: 264px;
-    height: 200px;
-  }
-`;
-
-const ProjectPreviewTitle = styled.h3`
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px;
-`;
-
-const ProjectFacts = styled.div`
-  display: flex;
-  gap: 8px;
-`;
 
 interface ProjectCardProps {
   project: Project;
@@ -58,21 +17,21 @@ export const ProjectPreviewCard = ({ project }: ProjectCardProps) => {
   const screenshot =
     screenshots[Math.floor(Math.random() * screenshots.length)];
   return (
-    <ProjectPreviewCardBox to={`/project/${project.slug}`}>
-      <ProjectPreviewScreenshot>
+    <Link className={styles.card} to={`/project/${project.slug}`}>
+      <div className={styles.screenshot}>
         {screenshot && (
           <ProjectScreenshot url={screenshot.url} alt={project.name} />
         )}
-      </ProjectPreviewScreenshot>
+      </div>
       <div>
-        <ProjectPreviewTitle>
+        <h3 className={styles.title}>
           <div>
             {project.name}
             {project.year && ` (${project.year})`}
             &nbsp;
           </div>
           <PlatformList platforms={project.platforms} />
-          <ProjectFacts>
+          <div className={styles.facts}>
             <div>
               <PlayerCount
                 minPlayers={project.minPlayers}
@@ -89,10 +48,10 @@ export const ProjectPreviewCard = ({ project }: ProjectCardProps) => {
                 <FontAwesomeIcon icon={faBirthdayCake} /> {project.minAge}+
               </div>
             )}
-          </ProjectFacts>
-        </ProjectPreviewTitle>
+          </div>
+        </h3>
         <p>{project.description}</p>
       </div>
-    </ProjectPreviewCardBox>
+    </Link>
   );
 };

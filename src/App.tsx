@@ -1,53 +1,29 @@
 import { BrowserRouter, Route, Routes } from "react-router";
-import styled from "styled-components";
+import styles from "./App.module.css";
 import { Home } from "./Home";
 import { Footer } from "./nav/Footer";
 import { NavHeader } from "./nav/NavHeader";
 import { NotFound } from "./nav/NotFound";
 import { ProjectDetails } from "./project/ProjectDetails";
 
-const AppContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 100vh;
-`;
-
-const NonFooterContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-
-const ContentContainer = styled.div`
-  margin: 0 16px;
-`;
-
-const ContentBox = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 856px;
-  margin: 64px auto;
-`;
-
 const App = () => (
   <BrowserRouter>
-    <AppContainer>
-      <NonFooterContainer>
+    <div className={styles.app}>
+      <div className={styles.nonFooter}>
         <NavHeader />
-        <ContentContainer>
-          <ContentBox>
+        <div className={styles.content}>
+          <div className={styles.contentBox}>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/everything" element={<Home everything />} />
               <Route path="project/:projectSlug" element={<ProjectDetails />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
-          </ContentBox>
-        </ContentContainer>
-      </NonFooterContainer>
+          </div>
+        </div>
+      </div>
       <Footer />
-    </AppContainer>
+    </div>
   </BrowserRouter>
 );
 

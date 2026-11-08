@@ -1,17 +1,10 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import styled from "styled-components";
-
+import styles from "./PlatformList.module.css";
 import {
   PLATFORM_TO_FA_ICON,
   PLATFORM_TO_NAME,
   type Platform,
 } from "./project";
-
-const PlatformListBox = styled.span<{ $full?: boolean }>`
-  display: flex;
-  align-items: center;
-  gap: ${(props) => (props.$full ? "16px" : "4px")};
-`;
 
 interface PlatformListProps {
   platforms: Platform[];
@@ -19,7 +12,11 @@ interface PlatformListProps {
 }
 
 export const PlatformList = (props: PlatformListProps) => (
-  <PlatformListBox $full={props.full}>
+  <span
+    className={
+      props.full ? `${styles.platformList} ${styles.full}` : styles.platformList
+    }
+  >
     {props.platforms.map((platform) => {
       const icon = PLATFORM_TO_FA_ICON[platform];
       return (
@@ -29,5 +26,5 @@ export const PlatformList = (props: PlatformListProps) => (
         </div>
       );
     })}
-  </PlatformListBox>
+  </span>
 );
