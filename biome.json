@@ -23,8 +23,7 @@
   "javascript": {
     "formatter": {
       "quoteStyle": "double"
-    },
-    "jsxRuntime": "reactClassic"
+    }
   },
   "assist": {
     "actions": {
