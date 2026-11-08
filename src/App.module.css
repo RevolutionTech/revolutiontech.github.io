@@ -1,0 +1,23 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.nonFooter {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  margin: 0 16px;
+}
+
+.contentBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 856px;
+  margin: 64px auto;
+}

@@ -1,0 +1,31 @@
+.navHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  background-color: #333;
+  color: #fff;
+}
+
+.homeLink {
+  padding: 0 16px;
+}
+
+.links {
+  display: flex;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+}
+
+.homeLink,
+.link {
+  color: #fff;
+}
+
+.homeLink:hover,
+.link:hover {
+  background-color: #222;
+}

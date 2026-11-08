@@ -2,12 +2,13 @@
   "name": "revolutiontech-react",
   "version": "1.0.0",
   "license": "UNLICENSED",
-  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "type": "module",
   "scripts": {
-    "clean": "rimraf .parcel-cache dist",
-    "start": "parcel src/index.html",
-    "build": "parcel build src/index.html src/404.html",
-    "typecheck": "tsc --noemit",
+    "clean": "rm -rf dist",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc",
     "lint": "biome check .",
     "lint:fix": "biome check --write ."
   },
@@ -16,28 +17,20 @@
     "@fortawesome/free-brands-svg-icons": "^7.3.1",
     "@fortawesome/free-solid-svg-icons": "^7.3.1",
     "@fortawesome/react-fontawesome": "^3.5.0",
-    "lodash": "^4.18.1",
+    "embla-carousel-autoplay": "^8.6.0",
+    "embla-carousel-react": "^8.6.0",
     "logrocket": "^12.4.0",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
-    "react-responsive-carousel": "^3.2.23",
-    "react-router": "^8.5.1",
-    "styled-components": "^6.6.0",
-    "stylis": "^4.4.0"
+    "react-router": "^8.5.1"
   },
   "devDependencies": {
     "@biomejs/biome": "2.6.6",
-    "@parcel/resolver-glob": "^2.16.4",
-    "@types/lodash": "^4.17.27",
-    "@types/node": "^26.6.6",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
-    "parcel": "^2.16.4",
-    "process": "^0.11.10",
-    "rimraf": "^6.1.4",
-    "typescript": "^7.0.2"
+    "@vitejs/plugin-react": "^6.2.1",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.6"
   },
-  "@parcel/resolver-default": {
-    "packageExports": true
-  }
+  "packageManager": "pnpm@12.18.0"
 }

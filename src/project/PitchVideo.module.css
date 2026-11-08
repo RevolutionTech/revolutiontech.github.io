@@ -1,0 +1,9 @@
+.pitchVideo {
+  display: flex;
+  justify-content: center;
+}
+
+.pitchVideo iframe {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}

@@ -1,0 +1,9 @@
+.platformList {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.full {
+  gap: 16px;
+}

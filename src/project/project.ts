@@ -1,4 +1,4 @@
-import type { IconDefinition } from "@fortawesome/fontawesome-common-types";
+import type { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 import {
   faAndroid,
   faApple,
@@ -6,13 +6,22 @@ import {
   faWindows,
 } from "@fortawesome/free-brands-svg-icons";
 import { faCloud, faDice } from "@fortawesome/free-solid-svg-icons";
-import last from "lodash/last";
 
-import EXE_DOWNLOADS from "../assets/download/*.exe";
-import SWF_DOWNLOADS from "../assets/download/*.swf";
-import ZIP_DOWNLOADS from "../assets/download/*.zip";
-import JPG_SCREENSHOTS from "../assets/img/project/*/*.jpg";
-import PNG_SCREENSHOTS from "../assets/img/project/*/*.png";
+const fileStem = (path: string) => (path.split("/").pop() ?? "").split(".")[0];
+
+const DOWNLOAD_URLS_BY_SLUG = Object.fromEntries(
+  Object.entries(
+    import.meta.glob<string>("../assets/download/*.{exe,zip,swf}", {
+      eager: true,
+      import: "default",
+    }),
+  ).map(([path, url]) => [fileStem(path), url]),
+);
+
+const SCREENSHOT_URLS_BY_PATH = import.meta.glob<string>(
+  "../assets/img/project/*/*.{jpg,png}",
+  { eager: true, import: "default" },
+);
 
 export enum Platform {
   WEB,
@@ -40,26 +49,16 @@ export const PLATFORM_TO_FA_ICON: Record<Platform, IconDefinition> = {
   [Platform.BOARD_GAME]: faDice,
 };
 
-export const projectScreenshots = (project: Project) => {
-  const screenshots = [
-    ...Object.values(
-      (JPG_SCREENSHOTS as Record<string, string[]>)[project.slug] ?? {},
-    ),
-    ...Object.values(
-      (PNG_SCREENSHOTS as Record<string, string[]>)[project.slug] ?? {},
-    ),
-  ];
-  return screenshots.map((url) => {
-    const screenshotName = (last(url.split("/")) ?? "").split(".")[0];
-    const caption = project.screenshotCaptions?.[screenshotName];
-    return { url, caption };
-  });
-};
+export const projectScreenshots = (project: Project) =>
+  Object.entries(SCREENSHOT_URLS_BY_PATH)
+    .filter(([path]) => path.split("/").at(-2) === project.slug)
+    .map(([path, url]) => ({
+      url,
+      caption: project.screenshotCaptions?.[fileStem(path)],
+    }));
 
-export const projectDownload = (projectSlug: string) =>
-  (EXE_DOWNLOADS as Record<string, string>)[projectSlug] ??
-  (ZIP_DOWNLOADS as Record<string, string>)[projectSlug] ??
-  (SWF_DOWNLOADS as Record<string, string>)[projectSlug];
+export const projectDownload = (projectSlug: string): string | undefined =>
+  DOWNLOAD_URLS_BY_SLUG[projectSlug];
 
 type ProjectLink = {
   url: string;

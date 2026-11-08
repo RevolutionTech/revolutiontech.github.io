@@ -1,0 +1,60 @@
+.carousel {
+  position: relative;
+}
+
+.viewport {
+  overflow: hidden;
+}
+
+.track {
+  display: flex;
+}
+
+.slide {
+  position: relative;
+  display: flex;
+  flex: 0 0 100%;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.slide img {
+  max-width: 100%;
+}
+
+.caption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  text-align: center;
+}
+
+.arrow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  padding: 0 12px;
+  border: 0;
+  background: none;
+  color: #fff;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.arrow:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.previous {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}

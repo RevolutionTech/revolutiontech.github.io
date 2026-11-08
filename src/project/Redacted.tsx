@@ -28,6 +28,7 @@ export const PROJECT_REDACTED: Project = {
       <PitchVideo videoUrl="https://www.youtube.com/embed/G-oW5s3fTSQ" />
       <h2>Sell Sheet</h2>
       <SellSheet
+        projectName="Redacted"
         sellSheetPdf={REDACTED_SELL_SHEET_PDF}
         sellSheetImage={REDACTED_SELL_SHEET_IMAGE}
       />

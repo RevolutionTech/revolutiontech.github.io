@@ -1,30 +1,12 @@
-import styled from "styled-components";
-
 import Lucas from "./assets/img/Lucas.jpg";
-
-const IntroCard = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 16px;
-  margin-bottom: 64px;
-  padding: 16px;
-  background-color: #f2f2f2;
-  border: solid 1px #d8d8d8;
-  font-size: 13pt;
-`;
-
-const ProfilePhoto = styled.img`
-  max-height: 88px;
-  border-radius: 50%;
-`;
+import styles from "./Intro.module.css";
 
 interface IntroProps {
   everything?: boolean;
 }
 
 export const Intro = (props: IntroProps) => (
-  <IntroCard>
+  <div className={styles.intro}>
     {props.everything ? (
       <p>
         Wow, you really want to see everything, huh? &#x1f633; A lot of the old
@@ -44,7 +26,7 @@ export const Intro = (props: IntroProps) => (
       </p>
     )}
     <div>
-      <ProfilePhoto src={Lucas} alt="Lucas Connors" />
+      <img className={styles.profilePhoto} src={Lucas} alt="Lucas Connors" />
     </div>
-  </IntroCard>
+  </div>
 );

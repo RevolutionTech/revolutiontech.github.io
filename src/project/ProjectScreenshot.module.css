@@ -1,0 +1,36 @@
+/* Skeleton animation inspired by https://codepen.io/viktorstrate/pen/yoBRLy */
+.skeleton {
+  width: 100%;
+  height: 100%;
+  background-color: #ccc;
+  background-image: linear-gradient(90deg, #ddd 0px, #e8e8e8 40px, #ddd 80px);
+  background-size: 344px;
+  animation: shine 1.6s infinite linear;
+}
+
+@keyframes shine {
+  0% {
+    background-position: -80px;
+  }
+  40%,
+  100% {
+    background-position: 264px;
+  }
+}
+
+.screenshot {
+  display: inherit;
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+}
+
+.loading {
+  display: none;
+}
+
+@media (min-width: 720px) {
+  .screenshot {
+    max-width: 264px;
+  }
+}

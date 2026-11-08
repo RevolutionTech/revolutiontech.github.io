@@ -6,14 +6,14 @@
 
 ## Installation
 
-    yarn install
+    pnpm install
 
 ## Development
 
 To run in hot module reloading mode:
 
-    yarn start
+    pnpm start
 
 To create a production build:
 
-    yarn build
+    pnpm build

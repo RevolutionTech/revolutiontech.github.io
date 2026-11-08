@@ -1,21 +1,11 @@
-import styled from "styled-components";
-
-const PitchVideoContainer = styled.div`
-  display: flex;
-  justify-content: center;
-
-  iframe {
-    aspect-ratio: 16 / 9;
-    width: 100% !important;
-  }
-`;
+import styles from "./PitchVideo.module.css";
 
 interface PitchVideoProps {
   videoUrl: string;
 }
 
 export const PitchVideo = (props: PitchVideoProps) => (
-  <PitchVideoContainer>
+  <div className={styles.pitchVideo}>
     <iframe
       src={props.videoUrl}
       title="YouTube video player"
@@ -24,5 +14,5 @@ export const PitchVideo = (props: PitchVideoProps) => (
       referrerPolicy="strict-origin-when-cross-origin"
       allowFullScreen
     ></iframe>
-  </PitchVideoContainer>
+  </div>
 );

@@ -1,0 +1,16 @@
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 64px;
+  padding: 16px;
+  background-color: #f2f2f2;
+  border: solid 1px #d8d8d8;
+  font-size: 13pt;
+}
+
+.profilePhoto {
+  max-height: 88px;
+  border-radius: 50%;
+}

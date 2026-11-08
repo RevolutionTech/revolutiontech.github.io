@@ -28,6 +28,7 @@ export const PROJECT_SEMANTIC_SORTING: Project = {
       <PitchVideo videoUrl="https://www.youtube.com/embed/1dWFYuKtLsc" />
       <h2>Sell Sheet</h2>
       <SellSheet
+        projectName="North Star"
         sellSheetPdf={SEMANTIC_SORTING_SELL_SHEET_PDF}
         sellSheetImage={SEMANTIC_SORTING_SELL_SHEET_IMAGE}
       />
