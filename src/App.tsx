@@ -1,4 +1,3 @@
-import * as React from "react";
 import { BrowserRouter, Route, Routes } from "react-router";
 import styled from "styled-components";
 import { Home } from "./Home";

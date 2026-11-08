@@ -1,4 +1,3 @@
-import * as React from "react";
 import { Carousel } from "react-responsive-carousel";
 import { useParams } from "react-router";
 import styled from "styled-components";

@@ -1,4 +1,3 @@
-import * as React from "react";
 import styled from "styled-components";
 
 import Lucas from "./assets/img/Lucas.jpg";

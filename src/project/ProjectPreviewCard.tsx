@@ -1,7 +1,6 @@
 import { faBirthdayCake, faHourglass } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import sample from "lodash/sample";
-import * as React from "react";
 import { Link } from "react-router";
 import styled from "styled-components";
 

@@ -1,6 +1,5 @@
 import { faUser, faUsers } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import * as React from "react";
 
 interface PlayerCountProps {
   minPlayers?: number;

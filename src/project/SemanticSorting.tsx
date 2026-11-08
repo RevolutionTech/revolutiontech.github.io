@@ -1,5 +1,3 @@
-import * as React from "react";
-
 import SEMANTIC_SORTING_RULES from "../assets/download/north-star-rules.pdf";
 import SEMANTIC_SORTING_SELL_SHEET_PDF from "../assets/download/north-star-sell-sheet.pdf";
 import SEMANTIC_SORTING_SELL_SHEET_IMAGE from "../assets/img/semantic-sorting/north-star-sell-sheet.png";
