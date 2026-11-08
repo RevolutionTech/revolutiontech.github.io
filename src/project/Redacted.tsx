@@ -1,10 +1,10 @@
 import * as React from "react";
 
 import REDACTED_RULES from "../assets/download/redacted-rules.pdf";
-import REDACTED_SELL_SHEET_IMAGE from "../assets/img/redacted/redacted-sell-sheet.png";
 import REDACTED_SELL_SHEET_PDF from "../assets/download/redacted-sell-sheet.pdf";
+import REDACTED_SELL_SHEET_IMAGE from "../assets/img/redacted/redacted-sell-sheet.png";
 import { PitchVideo } from "./PitchVideo";
-import { Platform, Project } from "./project";
+import { Platform, type Project } from "./project";
 import { SellSheet } from "./SellSheet";
 
 export const PROJECT_REDACTED: Project = {

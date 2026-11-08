@@ -1,12 +1,12 @@
-import last from "lodash/last";
-import { IconDefinition } from "@fortawesome/fontawesome-common-types";
-import { faCloud, faDice } from "@fortawesome/free-solid-svg-icons";
+import type { IconDefinition } from "@fortawesome/fontawesome-common-types";
 import {
-  faWindows,
+  faAndroid,
   faApple,
   faLinux,
-  faAndroid,
+  faWindows,
 } from "@fortawesome/free-brands-svg-icons";
+import { faCloud, faDice } from "@fortawesome/free-solid-svg-icons";
+import last from "lodash/last";
 
 import EXE_DOWNLOADS from "../assets/download/*.exe";
 import SWF_DOWNLOADS from "../assets/download/*.swf";
@@ -43,10 +43,10 @@ export const PLATFORM_TO_FA_ICON: Record<Platform, IconDefinition> = {
 export const projectScreenshots = (project: Project) => {
   const screenshots = [
     ...Object.values(
-      (JPG_SCREENSHOTS as Record<string, string[]>)[project.slug] ?? {}
+      (JPG_SCREENSHOTS as Record<string, string[]>)[project.slug] ?? {},
     ),
     ...Object.values(
-      (PNG_SCREENSHOTS as Record<string, string[]>)[project.slug] ?? {}
+      (PNG_SCREENSHOTS as Record<string, string[]>)[project.slug] ?? {},
     ),
   ];
   return screenshots.map((url) => {

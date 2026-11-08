@@ -14,7 +14,7 @@ This repo is the portfolio website of Lucas Connors. It is a React SPA. It showc
 - `src/404.html`: fallback page for GitHub Pages.
 - `.github/workflows/`: CI (`ci.yml`) and deploy (`deploy.yml`).
 
-Stack: TypeScript, React 19, styled-components, Parcel, ESLint. Package manager: Yarn.
+Stack: TypeScript, React 19, styled-components, Parcel, Biome. Package manager: Yarn.
 
 ## Key Commands
 
@@ -23,6 +23,6 @@ yarn install    # install dependencies
 yarn start      # dev server with hot reload
 yarn build      # production build
 yarn typecheck  # TypeScript check
-yarn lint       # ESLint (use lint:fix to auto-fix)
+yarn lint       # Biome lint, format, and import checks (use lint:fix to auto-fix)
 yarn clean      # remove .parcel-cache and dist
 ```

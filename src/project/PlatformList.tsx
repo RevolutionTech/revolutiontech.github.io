@@ -1,8 +1,12 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import * as React from "react";
 import styled from "styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { Platform, PLATFORM_TO_NAME, PLATFORM_TO_FA_ICON } from "./project";
+import {
+  PLATFORM_TO_FA_ICON,
+  PLATFORM_TO_NAME,
+  type Platform,
+} from "./project";
 
 const PlatformListBox = styled.span<{ $full?: boolean }>`
   display: flex;
