@@ -10,6 +10,7 @@
       "src/**/*.ts",
       "src/**/*.tsx",
       "src/**/*.css",
+      "e2e/**/*.ts",
       "*.ts",
       "*.json",
       "!**/dist"
