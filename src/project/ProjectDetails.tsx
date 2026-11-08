@@ -1,16 +1,16 @@
 import * as React from "react";
+import { Carousel } from "react-responsive-carousel";
 import { useParams } from "react-router";
 import styled from "styled-components";
-import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBirthdayCake, faHourglass } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { NotFound } from "../nav/NotFound";
+import { PROJECT_MAP } from "./AllProjects";
 import { PlatformList } from "./PlatformList";
 import { PlayerCount } from "./PlayerCount";
-import { projectScreenshots, projectDownload } from "./project";
-import { PROJECT_MAP } from "./AllProjects";
+import { projectDownload, projectScreenshots } from "./project";
 
 const ProjectDetailsBox = styled.div`
   display: flex;
@@ -125,7 +125,7 @@ export const ProjectDetails = () => {
         >
           {screenshots.map(({ url, caption }) => (
             <div key={url}>
-              <img src={url} />
+              <img src={url} alt={caption ?? ""} />
               {caption && <p className="legend">{caption}</p>}
             </div>
           ))}

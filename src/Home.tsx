@@ -1,7 +1,6 @@
 import * as React from "react";
-
-import { ProjectList } from "./project/ProjectList";
 import { Intro } from "./Intro";
+import { ProjectList } from "./project/ProjectList";
 
 interface HomeProps {
   everything?: boolean;

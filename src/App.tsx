@@ -1,11 +1,10 @@
 import * as React from "react";
-import { BrowserRouter, Routes, Route } from "react-router";
+import { BrowserRouter, Route, Routes } from "react-router";
 import styled from "styled-components";
-
+import { Home } from "./Home";
 import { Footer } from "./nav/Footer";
 import { NavHeader } from "./nav/NavHeader";
 import { NotFound } from "./nav/NotFound";
-import { Home } from "./Home";
 import { ProjectDetails } from "./project/ProjectDetails";
 
 const AppContainer = styled.div`

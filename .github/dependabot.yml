@@ -26,12 +26,6 @@ updates:
         patterns:
           - "@parcel/*"
           - "parcel"
-      formatting:
-        patterns:
-          - "@typescript-eslint/*"
-          - "eslint"
-          - "eslint-plugin-*"
-          - "prettier"
       types:
         patterns:
           - "@types/*"

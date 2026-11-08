@@ -20,7 +20,7 @@ export const ProjectList = (props: ProjectListProps) => (
     {PROJECT_LIST.filter((project) => props.everything || project.visible).map(
       (project) => (
         <ProjectPreviewCard key={project.slug} project={project} />
-      )
+      ),
     )}
   </ProjectListBox>
 );

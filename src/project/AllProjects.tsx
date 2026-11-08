@@ -1,7 +1,7 @@
-import * as React from "react";
 import keyBy from "lodash/keyBy";
+import * as React from "react";
 
-import { Platform, Project } from "./project";
+import { Platform, type Project } from "./project";
 import { PROJECT_REDACTED } from "./Redacted";
 import { PROJECT_SEMANTIC_SORTING } from "./SemanticSorting";
 import { PROJECT_TELEGRAM } from "./Telegram";

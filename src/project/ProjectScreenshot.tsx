@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from "react";
+import React, { useCallback, useState } from "react";
 import styled from "styled-components";
 
 const Skeleton = styled.div`
@@ -40,7 +40,7 @@ interface ProjectScreenshotProps {
 
 export const ProjectScreenshot = (props: ProjectScreenshotProps) => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
-  const onImageLoad = useCallback(() => setIsLoading(false), [setIsLoading]);
+  const onImageLoad = useCallback(() => setIsLoading(false), []);
   return (
     <>
       {isLoading && <Skeleton />}

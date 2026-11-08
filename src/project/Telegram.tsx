@@ -1,12 +1,11 @@
 import * as React from "react";
-
+import TELEGRAM_PCIO from "../assets/download/telegram.pcio";
 import TELEGRAM_PLAYER_SHEETS from "../assets/download/telegram-player-sheets.pdf";
 import TELEGRAM_RULES from "../assets/download/telegram-rules.pdf";
-import TELEGRAM_SELL_SHEET_IMAGE from "../assets/img/telegram/telegram-sell-sheet.png";
 import TELEGRAM_SELL_SHEET_PDF from "../assets/download/telegram-sell-sheet.pdf";
-import TELEGRAM_PCIO from "../assets/download/telegram.pcio";
+import TELEGRAM_SELL_SHEET_IMAGE from "../assets/img/telegram/telegram-sell-sheet.png";
 import { PitchVideo } from "./PitchVideo";
-import { Platform, Project } from "./project";
+import { Platform, type Project } from "./project";
 import { SellSheet } from "./SellSheet";
 
 export const PROJECT_TELEGRAM: Project = {
