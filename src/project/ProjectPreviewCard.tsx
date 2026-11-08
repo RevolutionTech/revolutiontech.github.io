@@ -1,6 +1,5 @@
 import { faBirthdayCake, faHourglass } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import sample from "lodash/sample";
 import { Link } from "react-router";
 import styled from "styled-components";
 
@@ -55,7 +54,9 @@ interface ProjectCardProps {
 }
 
 export const ProjectPreviewCard = ({ project }: ProjectCardProps) => {
-  const screenshot = sample(projectScreenshots(project));
+  const screenshots = projectScreenshots(project);
+  const screenshot =
+    screenshots[Math.floor(Math.random() * screenshots.length)];
   return (
     <ProjectPreviewCardBox to={`/project/${project.slug}`}>
       <ProjectPreviewScreenshot>

@@ -4,7 +4,7 @@
   "license": "UNLICENSED",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "clean": "rimraf .parcel-cache dist",
+    "clean": "rm -rf .parcel-cache dist",
     "start": "parcel src/index.html",
     "build": "parcel build src/index.html src/404.html",
     "typecheck": "tsc --noemit",
@@ -16,25 +16,20 @@
     "@fortawesome/free-brands-svg-icons": "^7.3.1",
     "@fortawesome/free-solid-svg-icons": "^7.3.1",
     "@fortawesome/react-fontawesome": "^3.5.0",
-    "lodash": "^4.18.1",
     "logrocket": "^12.4.0",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
     "react-responsive-carousel": "^3.2.23",
     "react-router": "^8.5.1",
-    "styled-components": "^6.6.0",
-    "stylis": "^4.4.0"
+    "styled-components": "^6.6.0"
   },
   "devDependencies": {
     "@biomejs/biome": "2.6.6",
     "@parcel/resolver-glob": "^2.16.4",
-    "@types/lodash": "^4.17.27",
     "@types/node": "^26.6.6",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "parcel": "^2.16.4",
-    "process": "^0.11.10",
-    "rimraf": "^6.1.4",
     "typescript": "^7.0.2"
   },
   "@parcel/resolver-default": {

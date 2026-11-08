@@ -1,4 +1,4 @@
-import type { IconDefinition } from "@fortawesome/fontawesome-common-types";
+import type { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 import {
   faAndroid,
   faApple,
@@ -6,7 +6,6 @@ import {
   faWindows,
 } from "@fortawesome/free-brands-svg-icons";
 import { faCloud, faDice } from "@fortawesome/free-solid-svg-icons";
-import last from "lodash/last";
 
 import EXE_DOWNLOADS from "../assets/download/*.exe";
 import SWF_DOWNLOADS from "../assets/download/*.swf";
@@ -50,7 +49,7 @@ export const projectScreenshots = (project: Project) => {
     ),
   ];
   return screenshots.map((url) => {
-    const screenshotName = (last(url.split("/")) ?? "").split(".")[0];
+    const screenshotName = (url.split("/").pop() ?? "").split(".")[0];
     const caption = project.screenshotCaptions?.[screenshotName];
     return { url, caption };
   });

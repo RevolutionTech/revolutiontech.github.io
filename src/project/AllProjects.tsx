@@ -1,5 +1,3 @@
-import keyBy from "lodash/keyBy";
-
 import { Platform, type Project } from "./project";
 import { PROJECT_REDACTED } from "./Redacted";
 import { PROJECT_SEMANTIC_SORTING } from "./SemanticSorting";
@@ -1611,4 +1609,6 @@ export const PROJECT_LIST: Project[] = [
     maxPlayers: 1,
   },
 ];
-export const PROJECT_MAP = keyBy(PROJECT_LIST, "slug");
+export const PROJECT_MAP = Object.fromEntries(
+  PROJECT_LIST.map((project) => [project.slug, project]),
+);
