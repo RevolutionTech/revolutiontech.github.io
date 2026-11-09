@@ -8,14 +8,17 @@ This repo is the portfolio website of Lucas Connors. It is a React SPA. It showc
 
 - `src/index.tsx`, `src/App.tsx`: app entry point and routes (React Router).
 - `src/Home.tsx`, `src/Intro.tsx`: home page.
-- `src/project/`: project pages, cards, and the project data in `project.ts`.
+- `src/project/`: project types, pages, and cards. It holds no project content.
+- `src/content/`: every project and its assets. `App` gets the projects as a prop, so tests can render the site with their own projects.
 - `src/nav/`: header, footer, and not-found page.
 - `src/assets/`: images, downloads, and favicon.
 - `src/404.html`: fallback page for GitHub Pages.
-- `vite.config.ts`: build config. Vite's root is `src/`.
+- `src/test/`: test setup and the `renderSite` helper.
+- `e2e/`: Playwright tests and a server that serves `dist/` the way GitHub Pages does.
+- `vite.config.ts`: build and Vitest config. Vite's root is `src/`.
 - `.github/workflows/`: CI (`ci.yml`) and deploy (`deploy.yml`).
 
-Stack: TypeScript, React 19, CSS Modules, Vite, Biome. Package manager: pnpm.
+Stack: TypeScript, React 19, CSS Modules, Vite, Biome, Vitest, Playwright. Package manager: pnpm.
 
 ## Key Commands
 
@@ -26,5 +29,13 @@ pnpm build      # production build
 pnpm preview    # serve the production build locally
 pnpm typecheck  # TypeScript check
 pnpm lint       # Biome lint, format, and import checks (use lint:fix to auto-fix)
+pnpm test       # Vitest integration and unit tests
+pnpm test:e2e   # build, then run Playwright tests against the build
 pnpm clean      # remove dist
 ```
+
+## Testing
+
+- Tests must not check specific project content. Render the site with `renderSite` and fixtures from `makeProject` instead.
+- `src/content/content.test.ts` checks that the real content is consistent, without naming any project.
+- e2e tests read what they need (for example, project links) from the page itself.

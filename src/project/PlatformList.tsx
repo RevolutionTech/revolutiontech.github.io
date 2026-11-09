@@ -21,7 +21,10 @@ export const PlatformList = (props: PlatformListProps) => (
       const icon = PLATFORM_TO_FA_ICON[platform];
       return (
         <div key={platform}>
-          <FontAwesomeIcon key={platform} icon={icon} />
+          <FontAwesomeIcon
+            icon={icon}
+            aria-label={props.full ? undefined : PLATFORM_TO_NAME[platform]}
+          />
           &nbsp;{props.full && PLATFORM_TO_NAME[platform]}
         </div>
       );

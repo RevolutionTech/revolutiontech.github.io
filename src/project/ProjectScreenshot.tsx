@@ -21,6 +21,7 @@ export const ProjectScreenshot = (props: ProjectScreenshotProps) => {
         }
         src={props.url}
         alt={props.alt}
+        aria-busy={isLoading}
         onLoad={onImageLoad}
       />
     </>

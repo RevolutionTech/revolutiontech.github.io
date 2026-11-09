@@ -7,22 +7,6 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faCloud, faDice } from "@fortawesome/free-solid-svg-icons";
 
-const fileStem = (path: string) => (path.split("/").pop() ?? "").split(".")[0];
-
-const DOWNLOAD_URLS_BY_SLUG = Object.fromEntries(
-  Object.entries(
-    import.meta.glob<string>("../assets/download/*.{exe,zip,swf}", {
-      eager: true,
-      import: "default",
-    }),
-  ).map(([path, url]) => [fileStem(path), url]),
-);
-
-const SCREENSHOT_URLS_BY_PATH = import.meta.glob<string>(
-  "../assets/img/project/*/*.{jpg,png}",
-  { eager: true, import: "default" },
-);
-
 export enum Platform {
   WEB,
   WINDOWS,
@@ -49,23 +33,18 @@ export const PLATFORM_TO_FA_ICON: Record<Platform, IconDefinition> = {
   [Platform.BOARD_GAME]: faDice,
 };
 
-export const projectScreenshots = (project: Project) =>
-  Object.entries(SCREENSHOT_URLS_BY_PATH)
-    .filter(([path]) => path.split("/").at(-2) === project.slug)
-    .map(([path, url]) => ({
-      url,
-      caption: project.screenshotCaptions?.[fileStem(path)],
-    }));
-
-export const projectDownload = (projectSlug: string): string | undefined =>
-  DOWNLOAD_URLS_BY_SLUG[projectSlug];
-
 type ProjectLink = {
   url: string;
   description: string;
 };
 
-export type Project = {
+export type Screenshot = {
+  url: string;
+  caption?: string;
+};
+
+/** A project as written in the site content, before its assets are found. */
+export type ProjectDefinition = {
   name: string;
   slug: string;
   visible: boolean;
@@ -82,4 +61,9 @@ export type Project = {
   showScreenshotsInProjectDetails?: boolean;
   screenshotCaptions?: Record<string, string>;
   additionalLinks?: ProjectLink[];
+};
+
+export type Project = ProjectDefinition & {
+  screenshots: Screenshot[];
+  downloadUrl?: string;
 };

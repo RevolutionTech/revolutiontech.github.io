@@ -1,5 +1,5 @@
 import react from "@vitejs/plugin-react";
-import { defineConfig } from "vite";
+import { defineConfig } from "vitest/config";
 
 export default defineConfig({
   root: "src",
@@ -12,6 +12,16 @@ export default defineConfig({
     assetsInlineLimit: 0,
     rolldownOptions: {
       input: ["index.html", "404.html"],
+    },
+  },
+  test: {
+    environment: "jsdom",
+    include: ["**/*.test.{ts,tsx}"],
+    setupFiles: ["./test/setup.ts"],
+    css: {
+      include: /.+/,
+      // Readable class names let tests check which button is the primary one.
+      modules: { classNameStrategy: "non-scoped" },
     },
   },
 });

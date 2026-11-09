@@ -3,11 +3,11 @@ import TELEGRAM_PLAYER_SHEETS from "../assets/download/telegram-player-sheets.pd
 import TELEGRAM_RULES from "../assets/download/telegram-rules.pdf";
 import TELEGRAM_SELL_SHEET_PDF from "../assets/download/telegram-sell-sheet.pdf";
 import TELEGRAM_SELL_SHEET_IMAGE from "../assets/img/telegram/telegram-sell-sheet.png";
-import { PitchVideo } from "./PitchVideo";
-import { Platform, type Project } from "./project";
-import { SellSheet } from "./SellSheet";
+import { PitchVideo } from "../project/PitchVideo";
+import { Platform, type ProjectDefinition } from "../project/project";
+import { SellSheet } from "../project/SellSheet";
 
-export const PROJECT_TELEGRAM: Project = {
+export const PROJECT_TELEGRAM: ProjectDefinition = {
   name: "Telegram",
   slug: "telegram",
   visible: true,
