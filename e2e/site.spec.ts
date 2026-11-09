@@ -1,6 +1,9 @@
 import { expect, type Page, test } from "@playwright/test";
 
-const projectCards = (page: Page) => page.locator('a[href^="/project/"]');
+const projectCards = (page: Page) => page.getByTestId("project-card");
+const projectCard = (page: Page, href: string) =>
+  projectCards(page).and(page.locator(`[href="${href}"]`));
+const projectTitle = (page: Page) => page.getByTestId("project-title");
 
 const projectHrefs = async (page: Page, path: string): Promise<string[]> => {
   await page.goto(path);
@@ -26,13 +29,14 @@ test("opening a project card shows that project's details page", async ({
 }) => {
   await page.goto("/");
   const firstCard = projectCards(page).first();
-  const cardTitle = (await firstCard.locator("h3").textContent()) ?? "";
+  const cardTitle =
+    (await firstCard.getByTestId("project-card-title").textContent()) ?? "";
   const cardHref = await firstCard.getAttribute("href");
 
   await firstCard.click();
 
   await expect(page).toHaveURL(cardHref!);
-  const detailsTitle = (await page.locator("h1").textContent()) ?? "";
+  const detailsTitle = (await projectTitle(page).textContent()) ?? "";
   expect(cardTitle.startsWith(detailsTitle)).toBe(true);
 });
 
@@ -62,7 +66,7 @@ test("a direct link to a project page loads that page", async ({ page }) => {
   await page.goto(href);
 
   await expect(page).toHaveURL(href);
-  await expect(page.locator("h1")).toBeVisible();
+  await expect(projectTitle(page)).toBeVisible();
   await expect(page.getByText("404 Not Found!")).toHaveCount(0);
 });
 
@@ -72,7 +76,7 @@ test("a direct link keeps its query string and hash", async ({ page }) => {
   await page.goto(`${href}?a=1&b=2#top`);
 
   await expect(page).toHaveURL(`${href}?a=1&b=2#top`);
-  await expect(page.locator("h1")).toBeVisible();
+  await expect(projectTitle(page)).toBeVisible();
 });
 
 test("an unknown page shows the not found page", async ({ page }) => {
@@ -93,7 +97,7 @@ test("the screenshot carousel moves to the next and previous screenshot", async 
   let hrefWithCarousel: string | undefined;
   for (const href of hrefs) {
     await page.goto(href);
-    await expect(page.locator("h1")).toBeVisible();
+    await expect(projectTitle(page)).toBeVisible();
     if ((await nextButton.count()) > 0) {
       hrefWithCarousel = href;
       break;
@@ -104,10 +108,7 @@ test("the screenshot carousel moves to the next and previous screenshot", async 
     "no project has two or more screenshots",
   ).toBeTruthy();
 
-  const firstSlide = page
-    .getByRole("region", { name: "Screenshots" })
-    .locator("img")
-    .first();
+  const firstSlide = page.getByTestId("screenshot-slide").first();
   const startX = (await firstSlide.boundingBox())!.x;
 
   await nextButton.click();
@@ -146,9 +147,9 @@ test("every project page renders with working images and files", async ({
   // Pages open by a click, not by page.goto: a direct load of a deep link
   // starts with the expected 404 response from the GitHub Pages redirect.
   for (const href of hrefs) {
-    await page.locator(`a[href="${href}"]`).click();
+    await projectCard(page, href).click();
     await expect(page).toHaveURL(href);
-    await expect(page.locator("h1")).toBeVisible();
+    await expect(projectTitle(page)).toBeVisible();
     await expect(page.getByText("404 Not Found!")).toHaveCount(0);
 
     const urls = await page.evaluate(() => [

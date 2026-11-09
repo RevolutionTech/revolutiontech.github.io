@@ -17,14 +17,18 @@ export const ProjectPreviewCard = ({ project }: ProjectCardProps) => {
   const screenshot =
     screenshots[Math.floor(Math.random() * screenshots.length)];
   return (
-    <Link className={styles.card} to={`/project/${project.slug}`}>
+    <Link
+      className={styles.card}
+      to={`/project/${project.slug}`}
+      data-testid="project-card"
+    >
       <div className={styles.screenshot}>
         {screenshot && (
           <ProjectScreenshot url={screenshot.url} alt={project.name} />
         )}
       </div>
       <div>
-        <h3 className={styles.title}>
+        <h3 className={styles.title} data-testid="project-card-title">
           <div>
             {project.name}
             {project.year && ` (${project.year})`}

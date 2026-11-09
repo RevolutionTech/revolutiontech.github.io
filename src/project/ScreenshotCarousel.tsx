@@ -25,7 +25,11 @@ export const ScreenshotCarousel = ({
       <div className={styles.viewport} ref={emblaRef}>
         <div className={styles.track}>
           {screenshots.map(({ url, caption }) => (
-            <div key={url} className={styles.slide}>
+            <div
+              key={url}
+              className={styles.slide}
+              data-testid="screenshot-slide"
+            >
               <img src={url} alt={caption ?? ""} />
               {caption && <p className={styles.caption}>{caption}</p>}
             </div>

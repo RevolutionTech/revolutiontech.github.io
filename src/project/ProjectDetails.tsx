@@ -24,7 +24,7 @@ export const ProjectDetails = () => {
   const download = projectDownload(project.slug);
   return (
     <div className={styles.projectDetails}>
-      <h1>
+      <h1 data-testid="project-title">
         {project.name}
         {project.year &&
           (project.showYearInProjectDetails ?? true) &&
