@@ -54,6 +54,19 @@ describe("header and footer", () => {
     },
   );
 
+  test("footer links to the source code of the site", () => {
+    renderSite("/");
+
+    expect(
+      within(screen.getByRole("contentinfo")).getByRole("link", {
+        name: "View this site on GitHub",
+      }),
+    ).toHaveAttribute(
+      "href",
+      "https://github.com/RevolutionTech/revolutiontech.github.io",
+    );
+  });
+
   test("external links open in a new tab", () => {
     renderSite("/");
 
