@@ -1,15 +1,10 @@
 import { expect, test } from "vitest";
-import {
-  DOWNLOAD_URLS_BY_PATH,
-  SCREENSHOT_URLS_BY_PATH,
-  SITE_CONTENT,
-} from ".";
+import { DOWNLOAD_URLS_BY_PATH, PROJECTS, SCREENSHOT_URLS_BY_PATH } from ".";
 
 // These tests check that the site content is consistent. They do not check
 // any specific project.
 
-const { projects } = SITE_CONTENT;
-const slugs = projects.map(({ slug }) => slug);
+const slugs = PROJECTS.map(({ slug }) => slug);
 const fileStem = (path: string) => (path.split("/").pop() ?? "").split(".")[0];
 
 test("every project has a unique slug", () => {
@@ -23,7 +18,7 @@ test("every slug is safe to use in a URL", () => {
 });
 
 test("no project has more minimum players than maximum players", () => {
-  const projectsWithBoth = projects.filter(
+  const projectsWithBoth = PROJECTS.filter(
     ({ minPlayers, maxPlayers }) =>
       minPlayers !== undefined && maxPlayers !== undefined,
   );
@@ -47,7 +42,7 @@ test("every download belongs to a project", () => {
 });
 
 test("every screenshot caption belongs to a screenshot", () => {
-  for (const { slug, screenshots, screenshotCaptions = {} } of projects) {
+  for (const { slug, screenshots, screenshotCaptions = {} } of PROJECTS) {
     const captionCount = screenshots.filter(({ caption }) => caption).length;
     expect(captionCount, slug).toBe(Object.keys(screenshotCaptions).length);
   }

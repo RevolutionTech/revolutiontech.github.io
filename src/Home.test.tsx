@@ -2,39 +2,30 @@ import { fireEvent, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { describe, expect, test } from "vitest";
 import { Platform } from "./project/project";
-import {
-  makeProject,
-  renderSite,
-  TEST_EVERYTHING_INTRO,
-  TEST_INTRO,
-} from "./test/renderSite";
+import { makeProject, renderSite } from "./test/renderSite";
 
 const projectCard = (name: string) =>
   screen.getByRole("link", { name: new RegExp(name) });
 
 describe("home page", () => {
-  test("shows the intro and only visible projects", () => {
+  test("shows only visible projects", () => {
     renderSite("/", [
       makeProject({ name: "Shown Project", slug: "shown", visible: true }),
       makeProject({ name: "Hidden Project", slug: "hidden", visible: false }),
     ]);
 
-    expect(screen.getByText(TEST_INTRO)).toBeInTheDocument();
-    expect(screen.queryByText(TEST_EVERYTHING_INTRO)).not.toBeInTheDocument();
     expect(projectCard("Shown Project")).toBeInTheDocument();
     expect(screen.queryByText(/Hidden Project/)).not.toBeInTheDocument();
   });
 });
 
 describe("everything page", () => {
-  test("shows its own intro and all projects", () => {
+  test("shows all projects, including hidden ones", () => {
     renderSite("/everything", [
       makeProject({ name: "Shown Project", slug: "shown", visible: true }),
       makeProject({ name: "Hidden Project", slug: "hidden", visible: false }),
     ]);
 
-    expect(screen.getByText(TEST_EVERYTHING_INTRO)).toBeInTheDocument();
-    expect(screen.queryByText(TEST_INTRO)).not.toBeInTheDocument();
     expect(projectCard("Shown Project")).toBeInTheDocument();
     expect(projectCard("Hidden Project")).toBeInTheDocument();
   });

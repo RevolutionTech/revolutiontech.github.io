@@ -1,7 +1,7 @@
 import { screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { describe, expect, test } from "vitest";
-import { makeProject, renderSite, TEST_INTRO } from "./test/renderSite";
+import { makeProject, renderSite } from "./test/renderSite";
 
 describe("not found page", () => {
   test("shows for an unknown path", () => {
@@ -21,25 +21,25 @@ describe("not found page", () => {
   });
 
   test("links back to the home page", async () => {
-    renderSite("/no/such/page");
+    renderSite("/no/such/page", [makeProject({ name: "Card Game" })]);
 
     await userEvent.click(screen.getByRole("link", { name: "Home page" }));
 
     expect(window.location.pathname).toBe("/");
-    expect(screen.getByText(TEST_INTRO)).toBeInTheDocument();
+    expect(screen.getByRole("link", { name: /Card Game/ })).toBeInTheDocument();
   });
 });
 
 describe("header", () => {
   test("site title returns to the home page", async () => {
-    renderSite("/project/test-project", [makeProject()]);
+    renderSite("/project/test-project", [makeProject({ name: "Card Game" })]);
 
     await userEvent.click(
       screen.getByRole("link", { name: "Revolution Technologies" }),
     );
 
     expect(window.location.pathname).toBe("/");
-    expect(screen.getByText(TEST_INTRO)).toBeInTheDocument();
+    expect(screen.getByRole("link", { name: /Card Game/ })).toBeInTheDocument();
   });
 });
 
