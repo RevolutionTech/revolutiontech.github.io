@@ -3,25 +3,24 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useParams } from "react-router";
 
 import { NotFound } from "../nav/NotFound";
-import { PROJECT_MAP } from "./AllProjects";
 import { PlatformList } from "./PlatformList";
 import { PlayerCount } from "./PlayerCount";
 import styles from "./ProjectDetails.module.css";
-import { projectDownload, projectScreenshots } from "./project";
+import type { Project } from "./project";
 import { ScreenshotCarousel } from "./ScreenshotCarousel";
 
-export const ProjectDetails = () => {
+interface ProjectDetailsProps {
+  projects: Project[];
+}
+
+export const ProjectDetails = (props: ProjectDetailsProps) => {
   const { projectSlug } = useParams();
-  if (projectSlug == null) {
-    return <NotFound />;
-  }
-  const project = PROJECT_MAP[projectSlug];
+  const project = props.projects.find(({ slug }) => slug === projectSlug);
   if (project == null) {
     return <NotFound />;
   }
 
-  const screenshots = projectScreenshots(project);
-  const download = projectDownload(project.slug);
+  const download = project.downloadUrl;
   return (
     <div className={styles.projectDetails}>
       <h1 data-testid="project-title">
@@ -56,7 +55,7 @@ export const ProjectDetails = () => {
         )}
       </div>
       {(project.showScreenshotsInProjectDetails ?? true) && (
-        <ScreenshotCarousel screenshots={screenshots} />
+        <ScreenshotCarousel screenshots={project.screenshots} />
       )}
       <p>{project.description}</p>
       {project.details}

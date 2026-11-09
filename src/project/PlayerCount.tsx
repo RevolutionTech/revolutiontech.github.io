@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 interface PlayerCountProps {
   minPlayers?: number;
   maxPlayers?: number;
+  /** Gives the icon an accessible name. Omit when nearby text names it. */
+  label?: string;
 }
 
 const playerCountText = (minPlayers?: number, maxPlayers?: number): string => {
@@ -24,6 +26,7 @@ export const PlayerCount = (props: PlayerCountProps) => {
     <>
       <FontAwesomeIcon
         icon={(props.maxPlayers ?? props.minPlayers) === 1 ? faUser : faUsers}
+        aria-label={props.label}
       />{" "}
       {text}
     </>

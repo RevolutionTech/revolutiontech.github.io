@@ -6,7 +6,7 @@ import styles from "./NavHeader.module.css";
 
 export const NavHeader = () => (
   <>
-    <div className={styles.navHeader}>
+    <header className={styles.navHeader}>
       <Link className={styles.homeLink} to="/">
         <h2>Revolution Technologies</h2>
       </Link>
@@ -28,6 +28,6 @@ export const NavHeader = () => (
           <FontAwesomeIcon icon={faLinkedin} size="2x" />
         </a>
       </div>
-    </div>
+    </header>
   </>
 );

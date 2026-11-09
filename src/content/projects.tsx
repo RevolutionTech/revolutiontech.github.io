@@ -1,9 +1,9 @@
-import { Platform, type Project } from "./project";
+import { Platform, type ProjectDefinition } from "../project/project";
 import { PROJECT_REDACTED } from "./Redacted";
 import { PROJECT_SEMANTIC_SORTING } from "./SemanticSorting";
 import { PROJECT_TELEGRAM } from "./Telegram";
 
-export const PROJECT_LIST: Project[] = [
+export const PROJECT_DEFINITIONS: ProjectDefinition[] = [
   PROJECT_REDACTED,
   PROJECT_SEMANTIC_SORTING,
   PROJECT_TELEGRAM,
@@ -1609,6 +1609,3 @@ export const PROJECT_LIST: Project[] = [
     maxPlayers: 1,
   },
 ];
-export const PROJECT_MAP = Object.fromEntries(
-  PROJECT_LIST.map((project) => [project.slug, project]),
-);

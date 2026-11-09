@@ -1,11 +1,11 @@
 import SEMANTIC_SORTING_RULES from "../assets/download/north-star-rules.pdf";
 import SEMANTIC_SORTING_SELL_SHEET_PDF from "../assets/download/north-star-sell-sheet.pdf";
 import SEMANTIC_SORTING_SELL_SHEET_IMAGE from "../assets/img/semantic-sorting/north-star-sell-sheet.png";
-import { PitchVideo } from "./PitchVideo";
-import { Platform, type Project } from "./project";
-import { SellSheet } from "./SellSheet";
+import { PitchVideo } from "../project/PitchVideo";
+import { Platform, type ProjectDefinition } from "../project/project";
+import { SellSheet } from "../project/SellSheet";
 
-export const PROJECT_SEMANTIC_SORTING: Project = {
+export const PROJECT_SEMANTIC_SORTING: ProjectDefinition = {
   name: "North Star",
   slug: "semantic-sorting",
   visible: true,

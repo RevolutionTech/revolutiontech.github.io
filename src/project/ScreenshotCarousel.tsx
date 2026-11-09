@@ -1,12 +1,8 @@
 import Autoplay from "embla-carousel-autoplay";
 import useEmblaCarousel from "embla-carousel-react";
 
+import type { Screenshot } from "./project";
 import styles from "./ScreenshotCarousel.module.css";
-
-interface Screenshot {
-  url: string;
-  caption?: string;
-}
 
 interface ScreenshotCarouselProps {
   screenshots: Screenshot[];

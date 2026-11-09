@@ -5,8 +5,13 @@ import { Footer } from "./nav/Footer";
 import { NavHeader } from "./nav/NavHeader";
 import { NotFound } from "./nav/NotFound";
 import { ProjectDetails } from "./project/ProjectDetails";
+import type { SiteContent } from "./SiteContent";
 
-const App = () => (
+interface AppProps {
+  content: SiteContent;
+}
+
+const App = ({ content }: AppProps) => (
   <BrowserRouter>
     <div className={styles.app}>
       <div className={styles.nonFooter}>
@@ -14,9 +19,26 @@ const App = () => (
         <div className={styles.content}>
           <div className={styles.contentBox}>
             <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/everything" element={<Home everything />} />
-              <Route path="project/:projectSlug" element={<ProjectDetails />} />
+              <Route
+                path="/"
+                element={
+                  <Home intro={content.intro} projects={content.projects} />
+                }
+              />
+              <Route
+                path="/everything"
+                element={
+                  <Home
+                    intro={content.everythingIntro}
+                    projects={content.projects}
+                    everything
+                  />
+                }
+              />
+              <Route
+                path="project/:projectSlug"
+                element={<ProjectDetails projects={content.projects} />}
+              />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </div>

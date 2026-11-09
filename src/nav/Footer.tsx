@@ -5,7 +5,7 @@ import styles from "./Footer.module.css";
 
 export const Footer = () => (
   <>
-    <div className={styles.footer}>
+    <footer className={styles.footer}>
       <a
         className={styles.link}
         href="https://github.com/RevolutionTech/"
@@ -22,6 +22,6 @@ export const Footer = () => (
       >
         <FontAwesomeIcon icon={faLinkedin} size="2x" /> Lucas Connors
       </a>
-    </div>
+    </footer>
   </>
 );
