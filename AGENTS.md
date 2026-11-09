@@ -9,7 +9,7 @@ This repo is the portfolio website of Lucas Connors. It is a React SPA. It showc
 - `src/index.tsx`, `src/App.tsx`: app entry point and routes (React Router).
 - `src/Home.tsx`, `src/Intro.tsx`: home page.
 - `src/project/`: project types, pages, and cards. It holds no project content.
-- `src/content/`: the site content: every project, its assets, and the intro text. `App` gets it as a prop, so tests can render the site with their own content.
+- `src/content/`: every project and its assets. `App` gets the projects as a prop, so tests can render the site with their own projects.
 - `src/nav/`: header, footer, and not-found page.
 - `src/assets/`: images, downloads, and favicon.
 - `src/404.html`: fallback page for GitHub Pages.

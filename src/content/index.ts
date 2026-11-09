@@ -1,6 +1,5 @@
+import type { Project } from "../project/project";
 import { attachProjectAssets } from "../project/projectAssets";
-import type { SiteContent } from "../SiteContent";
-import { EVERYTHING_INTRO, INTRO } from "./intro";
 import { PROJECT_DEFINITIONS } from "./projects";
 
 export const SCREENSHOT_URLS_BY_PATH = import.meta.glob<string>(
@@ -13,12 +12,8 @@ export const DOWNLOAD_URLS_BY_PATH = import.meta.glob<string>(
   { eager: true, import: "default" },
 );
 
-export const SITE_CONTENT: SiteContent = {
-  projects: attachProjectAssets(
-    PROJECT_DEFINITIONS,
-    SCREENSHOT_URLS_BY_PATH,
-    DOWNLOAD_URLS_BY_PATH,
-  ),
-  intro: INTRO,
-  everythingIntro: EVERYTHING_INTRO,
-};
+export const PROJECTS: Project[] = attachProjectAssets(
+  PROJECT_DEFINITIONS,
+  SCREENSHOT_URLS_BY_PATH,
+  DOWNLOAD_URLS_BY_PATH,
+);
