@@ -2,6 +2,7 @@
   position: relative;
   bottom: 0;
   display: flex;
+  align-items: center;
   justify-content: center;
   gap: 32px;
   width: 100%;
@@ -18,5 +19,25 @@
 }
 
 .link:hover {
+  color: #000;
+}
+
+.linkGroup {
+  position: relative;
+}
+
+/* Out of flow so the primary link stays aligned with the other footer links. */
+.secondaryLink {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 4px;
+  white-space: nowrap;
+  color: #fff;
+  font-size: 0.8rem;
+  text-decoration: underline;
+}
+
+.secondaryLink:hover {
   color: #000;
 }

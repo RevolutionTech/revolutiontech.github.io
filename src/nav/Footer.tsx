@@ -6,14 +6,24 @@ import styles from "./Footer.module.css";
 export const Footer = () => (
   <>
     <footer className={styles.footer}>
-      <a
-        className={styles.link}
-        href="https://github.com/RevolutionTech/"
-        target="_blank"
-        rel="noopener"
-      >
-        <FontAwesomeIcon icon={faGithub} size="2x" /> RevolutionTech
-      </a>
+      <div className={styles.linkGroup}>
+        <a
+          className={styles.link}
+          href="https://github.com/RevolutionTech/"
+          target="_blank"
+          rel="noopener"
+        >
+          <FontAwesomeIcon icon={faGithub} size="2x" /> RevolutionTech
+        </a>
+        <a
+          className={styles.secondaryLink}
+          href="https://github.com/RevolutionTech/revolutiontech.github.io"
+          target="_blank"
+          rel="noopener"
+        >
+          View this site on GitHub
+        </a>
+      </div>
       <a
         className={styles.link}
         href="https://www.linkedin.com/in/lucasconnors/"
