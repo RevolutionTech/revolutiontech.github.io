@@ -58,6 +58,37 @@ export const PROJECT_DEFINITIONS: ProjectDefinition[] = [
     ],
   },
   {
+    name: "Where to Play",
+    slug: "where-to-play",
+    visible: true,
+    year: 2026,
+    description: (
+      <>
+        A simple app for searching games on{" "}
+        <a href="https://boardgamegeek.com/" target="_blank" rel="noreferrer">
+          BoardGameGeek
+        </a>{" "}
+        to find the conventions and board game cafes that have them in their
+        collection.
+      </>
+    ),
+    platforms: [Platform.WEB],
+    screenshotCaptions: {
+      wheretoplay0: "Search for a board game",
+      wheretoplay1: "See the cafes and conventions that have it",
+    },
+    additionalLinks: [
+      {
+        url: "https://wheretoplay.revolutiontech.ca/",
+        description: "View Site",
+      },
+      {
+        url: "https://github.com/RevolutionTech/where-to-play",
+        description: "View Source Code",
+      },
+    ],
+  },
+  {
     name: "BG RFID",
     slug: "bg-rfid",
     visible: true,
