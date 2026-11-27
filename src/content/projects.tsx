@@ -119,6 +119,29 @@ export const PROJECT_DEFINITIONS: ProjectDefinition[] = [
     ],
   },
   {
+    name: "BG Teach",
+    slug: "bg-teach",
+    visible: true,
+    year: 2022,
+    description: (
+      <>
+        A simple checklist app for the purpose of faciliating the teaching
+        experience of more complex board games.
+      </>
+    ),
+    platforms: [Platform.WEB],
+    additionalLinks: [
+      {
+        url: "https://bgteach.revolutiontech.ca/",
+        description: "View Site",
+      },
+      {
+        url: "https://github.com/RevolutionTech/bg-teach",
+        description: "View Source Code",
+      },
+    ],
+  },
+  {
     name: "PerDiem",
     slug: "perdiem",
     visible: true,
@@ -752,29 +775,6 @@ export const PROJECT_DEFINITIONS: ProjectDefinition[] = [
       },
       {
         url: "https://github.com/RevolutionTech/letterboard",
-        description: "View Source Code",
-      },
-    ],
-  },
-  {
-    name: "BG Teach",
-    slug: "bg-teach",
-    visible: true,
-    year: 2022,
-    description: (
-      <>
-        A simple checklist app for the purpose of faciliating the teaching
-        experience of more complex board games.
-      </>
-    ),
-    platforms: [Platform.WEB],
-    additionalLinks: [
-      {
-        url: "https://bgteach.revolutiontech.ca/",
-        description: "View Site",
-      },
-      {
-        url: "https://github.com/RevolutionTech/bg-teach",
         description: "View Source Code",
       },
     ],
